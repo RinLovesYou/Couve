@@ -626,10 +626,7 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount_ea7e65 {
   }
 
   // Account profile
-  .accountProfilePopoutWrapper_b2ca13 {
-    position: fixed;
-    top: 0;
-    left: 0;
+  .popout_13314 {
     height: 100%;
 
     & > div, .userProfileInner_c69a7b {

@@ -1,21 +1,21 @@
 :root {
   // Left bar
-  .searchBar_f0963d {
+  .searchBar__35e86 {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 20px);
+    width: 100%;
     background: linear-gradient(
                     180deg,
                     var(--background-secondary),
                     transparent
     );
     box-shadow: none;
+    border-color: transparent;
 
-    .searchBarComponent_f0963d {
+    .button__201d5 {
       background: var(--background-primary);
       border-radius: 20px;
-      font-size: 10px;
       text-align: center;
     }
   }
@@ -24,10 +24,18 @@
     background: var(--background-primary);
   }
 
-  .privateChannels_f0963d > .scroller_c47fa9 {
-    padding-top: 48px;
-    background: transparent;
+  .privateChannels__35e86 {
+    padding-bottom: 58px !important;
+    background: var(--background-secondary-alt);
+  }
 
+  .privateChannels__35e86 > .scroller__99e7c {
+    padding-top: 48px;
+    bottom: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    background: var(--background-secondary-alt);
+    border-color: transparent;
     &::-webkit-scrollbar {
       display: none;
     }

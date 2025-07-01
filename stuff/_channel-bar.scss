@@ -1,45 +1,85 @@
 :root {
+  .subtitleContainer_f75fb0 {
+    background: var(--background-primary);
+  }
   // Removing help buttons
-  .toolbar_fc4f04 > :last-child[href="https://support.discord.com"],
-  .searchLearnMore_b0286e {
+  .anchor_edefb8[href="https://support.discord.com"] {
     display: none;
   }
 
+  .title_c38106 {
+    background: var(--background-tertiary);
+  }
+
+  // .title_f75fb0 {
+  //   background: var(--background-secondary-alt);
+  //   border-color: transparent;
+
+  //   .search__97492 {
+  //     position: fixed;
+  //     right: 10px;
+
+  //     .searchBar__97492 {
+  //       background: var(--background-primary);
+  //       width: 200px;
+  //       height: 28px;
+  //       padding: 2px 10px;
+  //       border-radius: 4px;
+
+  //       .searchFilter_b0fa94,
+  //       .searchAnswer_b0fa94 {
+  //         background: transparent;
+  //       }
+  //       .icon_effbe2 {
+  //         color: var(--main-color);
+  //       }
+  //     }
+  //   }
+
+  //   .children__9293f::after {
+  //     display: none;
+  //   }
+  // }
+
   // Top bar
-  .container_fc4f04.title_a7d72e:not(.minimum_d880dc) {
+  .title_f75fb0 {
     z-index: 1;
     background: transparent;
-    width: calc(100% - 240px);
+    width: calc(100% - 265px);
+    border-color: transparent;
+    border-width: 0;
+    outline: none;
 
-    .toolbar_fc4f04,
-    .topic_bf3bbb {
+    .toolbar__9293f,
+    .topic__6ec1a {
       -webkit-app-region: no-drag;
     }
-    .icon_fc4f04 {
+    .icon_d98031 {
       -webkit-app-region: unset;
     }
     .followButton_a7d72e,
-    .children_fc4f04:after {
+    .children__9293f:after {
       display: none;
     }
 
     // Search bar
-    .search_ff5f90 {
+    .search__49676 {
       position: fixed;
       right: 10px;
 
-      .searchBar_a46bef {
+      .searchBar__97492 {
         background: var(--background-primary);
         width: 200px;
         height: 28px;
         padding: 2px 10px;
         border-radius: 4px;
+        border-color: transparent;
 
-        .searchFilter_b0fa94,
-        .searchAnswer_b0fa94 {
+        .searchFilter_bd8186,
+        .searchAnswer_bd8186 {
           background: transparent;
         }
-        .icon_effbe2 {
+        .icon_fea832 {
           color: var(--main-color);
         }
       }
@@ -47,18 +87,22 @@
   }
 
   // Search popout
-  .container_eedf95 {
+  .container__55c99 {
     background: var(--background-secondary-alt-alt);
     box-shadow: none;
+    
+    .queryContainer__55c99 {
+      background: var(--background-secondary);
+    }
 
-    .resultsGroup_b0286e {
+    .resultsGroup__56fec {
       // Options
-      .option_b0286e {
+      .option__56fec {
         padding: 0 20px;
         margin: 0;
         border-radius: 0;
 
-        &.selected-rZcOL-,
+        &.focused__55c99,
         &[aria-selected="true"] {
           background: var(--background-secondary);
         }
@@ -111,16 +155,17 @@
   }
 
   // Search results
-  .searchResultsWrap_c2b47d {
+  .searchResultsWrap_a9e706 {
     background: var(--background-secondary);
-    top: -48px;
-    padding-top: 48px;
+    top: -50px;
+    padding-top: 50px;
     width: 480px;
     height: 100%;
 
-    .searchHeader_b7c924 {
+    .searchHeader_f3b986 {
       position: absolute;
       width: 100%;
+      border-color: transparent;
       background: linear-gradient(
                       180deg,
                       var(--background-secondary),
@@ -128,29 +173,34 @@
       );
     }
 
-    .scroller_c2b47d {
+    .scroller_a9e706 {
       padding: 0;
-      padding-top: 48px;
+      padding-top: 50px;
 
       & > div {
         padding: 0 14px 0 20px;
       }
 
-      .channelName-3w2Y3c {
+      .button__02a39 {
+        background: var(--main-color);
+      }
+
+      .channelNameText_c68065,.parentChannelName_c68065 {
         background: transparent;
         padding: 8px 0;
       }
 
-      .searchResult_ddc613 {
+      .searchResult__02a39 {
         border: none;
         box-shadow: none;
         border-radius: 10px;
+        background: var(--background-primary);
       }
 
-      .pageButton_b48941 {
+      .pageButton_c15210 {
         background-color: var(--background-primary);
 
-        &.activeButton_b48941 {
+        &.activeButton_c15210 {
           background-color: var(--main-color);
         }
       }
