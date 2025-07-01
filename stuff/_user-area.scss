@@ -12,18 +12,68 @@
   .panels_c48ade {
     border-radius: 0;
     padding-right: 0px;
+    z-index: unset;
     border-color: transparent;
     background: var(--background-secondary);
     bottom: 0;
     left: 0;
-    
-    
 
-    //do left & width with transform instead
-    //width: calc(100% - 90px);
+    // Game part
+    .activityPanel_c48ade {
+      display: none;
 
-    transition: transform 0.2s ease-out, width 0.2s ease-out;
-}
+      .gameWrapper__5dec7 {
+        display: none;
+      }
+
+      .actions__4cd01 {
+        margin: 0;
+
+        .button__67645 {
+          color: var(--main-color);
+        }
+      }
+
+      &:hover {
+        background-color: var(--background-modifier-selected);
+      }
+    }
+
+
+    &>.container__37e49 {
+
+      // Avatar
+      .avatarWrapper__37e49[aria-expanded] {
+        // .wrapper__44b0c {
+        //   position: fixed;
+        //   left: 29px;
+        //   bottom: 23px;
+        //   z-index: 1;
+        // }
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      // Username
+      .title_b6c092 {
+        font-weight: 500;
+      }
+
+      // Buttons
+      .button__67645 {
+        color: #888;
+
+        &[aria-checked="false"].enabled__67645 {
+          color: var(--main-color);
+        }
+      }
+    }
+
+    transition: transform 0.2s ease-out,
+    width 0.2s ease-out;
+  }
 
   /*guilds*/
   nav.guilds_c48ade {
@@ -110,40 +160,43 @@
   //   }
   // }
 
-  // // Server call
-  // .noChat_d880dc {
-  //   &.wrapper_d880dc {
-  //     background: #000;
-  //     margin: 0;
-  //     border-radius: 0;
-  //     animation: unset;
+  // Server call
+  .noChat_cb9592 {
+    &.wrapper_cb9592 {
+      background: #000;
+      margin: 0;
+      border-radius: 0;
+      animation: unset;
 
-  //     // Header top
-  //     .headerWrapper_d880dc .container_fc4f04 {
-  //       width: unset;
-  //     }
+      // Header top
+      .headerWrapper_cb9592 .container__9293f {
+        width: unset;
+      }
 
-  //     // Speaking ring
-  //     .border_ba4b17.speaking_ba4b17 {
-  //       box-shadow: inset 0 0 0 2.5px #43b581,
-  //       inset 0 0 0 4.5px var(--background-secondary);
-  //     }
+      // Speaking ring
+      .border__2f4f7.speaking__2f4f7 {
+        box-shadow: inset 0 0 0 2.5px #43b581,
+          inset 0 0 0 4.5px var(--background-secondary);
+      }
 
-  //     // Button
-  //     .wrapper_b6e2f9 .button_dd4f85 {
-  //       border-radius: 50%;
-  //     }
-  //     .colorable_ef18ee.primaryDark_ef18ee,
-  //     .participantsButton_b83b18,
-  //     .participantsButton_b83b18:hover {
-  //       background: var(--background-secondary);
-  //     }
-  //     .css-1k9nrkn {
-  //       background: transparent;
-  //     }
-  //     .controlButton_b6e2f9 foreignObject {
-  //       mask: none;
-  //     }
-  //   }
-  // }
+      // Button
+      // .wrapper__1405b .button__201d5 {
+      //   border-radius: 50%;
+      // }
+      .colorable_f1ceac.primaryDark_f1ceac,
+      .buttonSection__1405b,
+      .participantsButton__211d1,
+      .participantsButton__211d1:hover {
+        background: var(--background-secondary);
+      }
+
+      .css-1k9nrkn {
+        background: transparent;
+      }
+
+      .controlButton__1405b foreignObject {
+        mask: none;
+      }
+    }
+  }
 }
