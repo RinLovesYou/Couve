@@ -1,0 +1,124 @@
+@use 'backend' as *;
+
+#{c(main appLayer)} {
+  transform: unset !important;
+  &#{c(main baseLayer)} {
+    opacity: 1 !important;
+
+    &.stop-animations {
+      transform: scale(1) !important;
+    }
+  }
+
+  &:not(#{c(main baseLayer)}) {
+    margin-left: 90px;
+  }
+
+  #{c(settings sidebarRegion)} {
+    flex: unset;
+    background: var(--background-tertiary);
+
+    #{c(settings sidebarRegionScroller)} {
+      justify-content: flex-start;
+      border-radius: 8px 0 0;
+
+      #{c(settings sidebar)} {
+        width: 300px;
+
+        // New search bar
+        #{c(searchbar settings container)} {
+          margin: 0 30px 15px 30px;
+          border-radius: 8px;
+        }
+
+        #{c(tab header)} {
+          color: var(--textcolor);
+        }
+
+        .bd-sidebar-header-label {
+          color: var(--textcolor);
+          padding: 0;
+        }
+
+        #{c(tab header)},
+        #{c(tab item)},
+        .bd-sidebar-header {
+          padding: 6px 30px;
+          border-radius: 0;
+        }
+
+        // Discord social stuff
+        #{c(settings sidebarSocialLinks)} {
+          justify-content: center;
+          display: flex;
+          flex-direction: row;
+        }
+
+        // Client informations
+        #{c(settings sidebarInfo)} {
+          justify-content: center;
+          display: flex;
+          flex-direction: row;
+        }
+      }
+      #{c(settings sidebar)} {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      #{c(userSettings sidebar nitroLabel)} {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+
+        svg {
+          margin-right: 8px;
+        }
+
+        & + #{c(userSettings sidebar nitroBackgroundSelected)} {
+          background-color: var(--background-modifier-selected);
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  #{c(settings contentRegion)},
+  #{c(settings contentColumn)} {
+    min-width: unset;
+    max-width: 95%;
+  }
+
+  #{c(other cv settingsToolsContainer)} {
+    position: absolute;
+    right: 0px;
+    #{c(settings closeButton)} {
+      &:active {
+        transform: none;
+      }
+
+      &::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 90px;
+        height: 100%;
+        z-index: 100;
+      }
+    }
+  }
+
+  //save bar
+  #{c(settings noticeRegion)} {
+    right: 0;
+    max-width: 100%;
+
+    #{c(settings noticeContainer)} {
+      background-color: var(--background-secondary) !important;
+    }
+  }
+}

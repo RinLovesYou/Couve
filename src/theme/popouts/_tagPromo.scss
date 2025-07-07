@@ -1,0 +1,9 @@
+@use 'backend' as *;
+
+#{c(popouts tagPromo container)} {
+  background: var(--background-primary);
+}
+
+#{c(popouts tagPromo tag)} {
+  background: var(--background-secondary);
+}

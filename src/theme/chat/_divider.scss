@@ -1,0 +1,46 @@
+@use 'backend' as *;
+
+#{c(chat divider divider)} {
+  margin: 0 56px;
+  border: none;
+  height: unset;
+  background: transparent;
+
+  #{c(chat divider isUnread)} {
+    &:not(#{c(chat divider hasContent)}) {
+      margin: 10px 47px;
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
+    }
+  }
+
+  #{c(chat divider content)},
+  #{c(chat divider unreadPill)} {
+    background: var(--background-secondary);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    height: unset;
+  }
+
+  #{c(chat divider unreadPill)} {
+    position: relative;
+    color: #f04747;
+    top: 0;
+  }
+
+  #{c(chat divider unreadPillCap)} {
+    display: none;
+  }
+
+  #{c(chat divider content)} {
+    border-radius: 5px 0 0 5px;
+
+    #{c(chat divider unreadPill)} {
+      border-radius: 0 5px 5px 0;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}

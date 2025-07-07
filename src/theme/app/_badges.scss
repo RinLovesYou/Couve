@@ -1,0 +1,25 @@
+@use 'backend' as *;
+
+#{c(badges text)} {
+  background: var(--background-primary) !important;
+  color: var(--main-color);
+}
+
+#{c(guildList upperBadge)} {
+  right: 5px;
+}
+
+#{c(guildList lowerBadge)} {
+  bottom: 4px;
+  right: -5px;
+
+  #{c(badges number)} {
+    min-width: 25px;
+    background: var(--main-color) !important;
+    font-size: 8px;
+  }
+
+  :last-child #{c(badges number)} {
+    box-shadow: 0 0 10px 0 #0008;
+  }
+}

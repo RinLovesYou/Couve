@@ -1,0 +1,18 @@
+@use 'backend' as *;
+
+//
+//   #{c(sidebar server channels voice clanTag)} {
+//     background: var(--background-secondary-alt-alt);
+//   }
+// }
+
+:root {
+  span[class*='clanTag_'],
+  span[class*='clanTagChiplet_'] {
+    background-color: var(--background-secondary);
+
+    &:hover {
+      background-color: var(--background-secondary);
+    }
+  }
+}

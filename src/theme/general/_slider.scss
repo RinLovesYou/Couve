@@ -1,0 +1,13 @@
+@use 'backend' as *;
+
+#{c(slider slider)} {
+  #{c(slider barFill)} {
+    background: var(--main-color);
+  }
+  #{c(slider grabber)} {
+    filter: drop-shadow(0 0 3px var(--main-color));
+  }
+  #{c(slider bar)} {
+    background: var(--background-secondary-alt-alt);
+  }
+}

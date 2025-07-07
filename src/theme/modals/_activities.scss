@@ -1,0 +1,10 @@
+@use 'backend' as *;
+
+#{c(popouts apps popout)} {
+  background-color: var(--background-primary);
+}
+
+#{c(popouts apps itemContainer)},
+#{c(popouts apps search itemClickable)} {
+  background-color: var(--background-secondary);
+}

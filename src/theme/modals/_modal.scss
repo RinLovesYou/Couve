@@ -1,0 +1,13 @@
+@use 'backend' as *;
+
+//the common modal
+#{c(modals root)} {
+  background: var(--background-primary);
+  border: none;
+  box-shadow: none;
+}
+#{c(modals header)},
+#{c(modals body)},
+#{c(modals footer)} {
+  background: transparent;
+}

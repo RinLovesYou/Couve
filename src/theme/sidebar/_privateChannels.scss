@@ -1,0 +1,141 @@
+@use 'backend' as *;
+
+#{c(sidebar private searchBar)} {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100%);
+  background: linear-gradient(180deg, var(--background-secondary), transparent);
+  box-shadow: none;
+  border-bottom: 0;
+
+  #{c(button lookFilled)} {
+    background: var(--background-primary) !important;
+    //font-size: 10px;
+    text-align: center;
+  }
+}
+
+#{c(header addFriend)} {
+  background-color: var(--main-color) !important;
+}
+
+#{c(sidebar list)} {
+  border-color: transparent;
+}
+
+#{c(sidebar private channels)} {
+  background: var(--background-secondary);
+}
+
+#{c(sidebar private channels)} > #{c(sidebar private scroller)} {
+  background: var(--background-secondary);
+  padding-top: 48px;
+  margin: 0;
+  margin-bottom: 70px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#{c(sidebar private channel)} {
+  background: var(--background-secondary);
+  margin: 0;
+  max-width: unset;
+  border-radius: 0;
+
+  #{c(sidebar private layout)} {
+    padding: 0 22px;
+    width: calc(100% - 22px);
+    border-radius: 0;
+  }
+}
+
+#{c(main page)} {
+  background-color: var(--background-tertiary);
+}
+
+// wide friends list
+#{c(friends container)} {
+  background: var(--background-primary);
+  border-top: none !important;
+  border-width: 0;
+  //it's just ever so slightly off, i hate it
+  margin-top: 1px;
+}
+
+#{c(header header)} {
+  border-color: transparent;
+}
+
+#{c(friends actionButton)} {
+  background: transparent;
+
+  &:hover {
+    background: var(--background-primary);
+  }
+}
+
+#{c(friends peopleColumn)} ::-webkit-scrollbar {
+  display: none;
+}
+
+#{c(friends tabBody)}::before {
+  content: none;
+}
+
+//friend activities
+#{c(friends nowPlayingColumn)} {
+  background: transparent;
+  margin: 3px 0 10px 0;
+}
+
+#{c(friends nowPlayingContainer)} {
+  background: var(--background-secondary);
+  border-radius: 15px 0 0 15px;
+}
+
+#{c(friends nowPlayingScroller)} {
+  border: none;
+  padding: 16px 0 !important;
+  margin: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#{c(friends nowPlayingHeader)} {
+  text-align: center;
+}
+
+#{c(friends emptyCard)} {
+  margin: 16px;
+}
+
+#{c(friends itemCard)} {
+  background: var(--background-secondary);
+  margin: 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+#{c(friends itemCardBody)} {
+  & > :nth-last-child(3) {
+    border-radius: 8px 8px 0 0;
+  }
+  #{c(friends itemCardSeparator)} {
+    display: none;
+  }
+  & > :nth-child(3) {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+#{c(header akaBadge)} {
+  background: var(--main-color);
+  color: #fff;
+}
+
+//todo: user profile

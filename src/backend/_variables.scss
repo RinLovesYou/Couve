@@ -1,0 +1,55 @@
+@use 'sass:color';
+@use 'classes' as *;
+
+:is(#{c(main themeLight)}, #{c(main themeDark)}, #{c(main themeDarker)}, #{c(main themeMidnight)}) {
+  &,
+  &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+    // Borders
+    --avatar-radius: 8px;
+
+    --main-color: #419e85;
+    --main-color-hover: #3c8b76;
+
+    --mention-color: #419e8515;
+    --mention-color-hover: #3c8b7610;
+
+    --background-primary: #252a3e;
+    --background-secondary: #1e2337;
+    --background-secondary-alt: #1c2438;
+    --background-secondary-alt-alt: #1b1d31;
+    --background-tertiary: #060c24;
+
+    --deprecated-store-bg: var(--background-primary);
+    --background-floating: var(--background-secondary);
+    --background-mobile-primary: var(--background-primary);
+    --activity-card-background: var(--background-secondary);
+    --input-background: var(--background-secondary);
+    --modal-background: var(--background-primary);
+
+    --colortransparency: #0003;
+
+    // Cards
+    --card: #212332;
+
+    // Other stuff
+    --textcolor: #fff;
+    --epicshadow1: #fff3;
+
+    // Font
+    --font-display: var(--font-primary) !important;
+
+    //overriding some discord vars for easy color changes
+    --background-base-low: var(--background-primary);
+    --background-base-lower: var(--background-secondary);
+    --background-base-lowest: var(--background-tertiary);
+
+    --background-surface-high: var(--background-secondary-alt-alt);
+    --background-surface-higher: var(--background-secondary-alt);
+    --background-surface-highest: var(--background-primary);
+
+    --text-brand: var(--main-color);
+
+    --background-mentioned: var(--mention-color);
+    --background-mentioned-hover: var(--mention-color-hover);
+  }
+}

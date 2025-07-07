@@ -1,0 +1,198 @@
+:root {
+  .guilds_a4d4d9 {
+    width: 90px;
+    margin-top: -40px;
+
+    // When full-screen video
+    &.hidden_fea3ef {
+      width: 0 !important;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 135px;
+      left: 0;
+      z-index: 1;
+      width: 90px;
+      height: 100px;
+      background: linear-gradient(360deg, var(--background-tertiary), transparent);
+      pointer-events: none;
+    }
+
+    .scroller_fea3ef {
+      padding: 30px 0;
+
+      // Home button
+      & > .tutorialContainer_c96c45:first-child > .listItem_c96c45 .childWrapper_a6ce15 {
+        background: var(--main-color);
+        color: #fff;
+      }
+
+      // Server
+      .listItem_c96c45 {
+        width: 90px;
+        margin: 0 0 12px;
+
+        .wrapper_c5f96a,
+        .svg_c5f96a {
+          width: 42px;
+          height: 42px;
+        }
+
+        .upperBadge_c5f96a {
+          top: 2px;
+          right: -1px;
+        }
+
+        // Mention badge
+        .lowerBadge_c5f96a {
+          bottom: 4px;
+          right: -5px;
+
+          .numberBadge_df8943 {
+            min-width: 25px;
+            background: var(--main-color) !important;
+            font-size: 8px;
+          }
+          &:last-child .numberBadge_df8943 {
+            box-shadow: 0 0 10px 0 #0008;
+          }
+        }
+
+        // Server icon
+        .wrapper__8436d {
+          &.selected_ae80f7 .childWrapper_a6ce15,
+          &:hover .childWrapper_a6ce15 {
+            background: var(--main-color);
+          }
+
+          .childWrapper_a6ce15 {
+            background: var(--background-secondary);
+          }
+        }
+
+        defs g:last-child {
+          display: none;
+        }
+      }
+
+      // Server Folders
+      .wrapper_bc7085 {
+        width: 90px;
+
+        .expandedFolderBackground_bc7085 {
+          --custom-folder-item-guild-icon-margin: 12px !important;
+
+          left: 21px;
+
+          & ~ ul {
+            .wrapper_c5f96a {
+              width: 42px;
+              height: 42px;
+              border-radius: 50%;
+              overflow: hidden;
+            }
+          }
+        }
+
+        .folderIconWrapper_bc7085 {
+          transition: border-radius 200ms;
+
+          &:hover {
+            border-radius: calc(16px - 4px);
+          }
+        }
+
+        .wrapper_c5f96a {
+          width: 42px;
+
+          & > svg > foreignObject {
+            mask: none;
+
+            .folder_bc7085 {
+              background: transparent;
+            }
+
+            &.expanded {
+              .expandedFolderBackground_bc7085 {
+                background: var(--background-secondary);
+              }
+            }
+          }
+        }
+      }
+
+      // Create server + Discover buttons
+      .circleIconButton_db6521 {
+        border-radius: 999px;
+        border: dashed 2px var(--epicshadow1);
+        background: transparent;
+        color: var(--epicshadow1);
+        transition: all 0.2s;
+      }
+
+      .tutorialContainer_c96c45 {
+        &:hover .circleIconButton_db6521,
+        & + .listItem_c96c45:hover .circleIconButton_db6521 {
+          background: transparent;
+          color: var(--main-color);
+          border-color: var(--main-color);
+        }
+
+        svg > foreignObject,
+        & + .listItem_c96c45 svg > foreignObject {
+          mask: none;
+        }
+      }
+      .wrapperSimple_c5f96a foreignObject {
+        mask: none;
+      }
+
+      // Some space for the avatar
+      & > div:last-child {
+        margin-bottom: 80px;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .footer_aa1bff {
+      width: 100%;
+      padding-bottom: 70px;
+
+      .listItem_c96c45 {
+        width: 100%;
+      }
+    }
+
+    // Mentions & Unread
+    .mention_edf32f {
+      height: 100%;
+      background: linear-gradient(360deg, transparent, var(--background-tertiary));
+      transition: color 0.2s;
+      opacity: 1;
+      text-transform: capitalize;
+      color: var(--textcolor);
+      animation: fade 0.5s;
+      border-radius: 0;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+    .unreadMentionsIndicatorBottom_fea3ef .mention_edf32f {
+      background: transparent;
+    }
+
+    // In server
+    .unreadMentionsIndicatorTop_fea3ef,
+    .unreadMentionsIndicatorBottom_fea3ef {
+      width: 100%;
+      height: 30px;
+      padding: 0;
+    }
+  }
+}

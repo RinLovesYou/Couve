@@ -1,0 +1,126 @@
+@use 'backend' as *;
+
+//resizing
+#{c(popouts expressionPicker resizeHandle)} {
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 36px);
+    background: #0005;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  &:active::before {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+#{c(popouts expressionPicker navButtonActive)} {
+  background: var(--background-primary);
+}
+
+#{c(popouts expressionPicker contentWrapper)} {
+  background: var(--background-secondary);
+}
+
+#{c(popouts expressionPicker positionContainer)} {
+  height: 414px;
+  bottom: calc(100% - 8px);
+  transform: translateZ(0);
+}
+
+//emojis
+#{c(popouts expressionPicker emoji hasTabWrapper)} {
+  border-radius: 8px 8px 0 0;
+}
+
+#{c(popouts expressionPicker emoji header)} {
+  box-shadow: none;
+  background: var(--background-secondary);
+  border-color: transparent;
+}
+
+#{c(popouts expressionPicker emoji item)},
+#{c(popouts expressionPicker emoji itemSelected)},
+#{c(popouts expressionPicker emoji categorySection)},
+#{c(popouts expressionPicker emoji categoryHeader)} {
+  background: var(--background-primary);
+}
+
+#{c(popouts expressionPicker emoji imageLoading)} {
+  background-image: none !important;
+  background-color: var(--background-primary);
+  border-radius: 8px;
+}
+
+#{c(popouts expressionPicker emoji skinOptions)} {
+  background: var(--background-primary);
+  border: none;
+}
+
+#{c(popouts expressionPicker emoji unicodeShortcut)} {
+  border-color: transparent;
+}
+
+#{c(popouts expressionPicker emoji wrapper)},
+#{c(popouts expressionPicker sticker wrapper)} {
+  background: var(--background-secondary);
+  border-color: transparent;
+
+  #{c(popouts categoryList scroller)} {
+    border-color: transparent;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+//gifs
+#{c(popouts expressionPicker gif header)} {
+  box-shadow: none;
+  background: var(--background-secondary);
+  border-color: transparent;
+}
+
+#{c(popouts expressionPicker gif content)} {
+  //get the first div
+  div {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+//stickers
+#{c(popouts expressionPicker sticker header)} {
+  box-shadow: none;
+  background: var(--background-secondary);
+  border-color: transparent;
+}
+
+#{c(popouts expressionPicker inspector)} {
+  position: fixed;
+  top: 0px;
+  right: 25px;
+  border-color: transparent;
+  padding: 0 8px;
+  justify-content: end;
+  width: unset;
+  max-width: 220px;
+  background: transparent;
+}
+
+#{c(popouts expressionPicker sticker packHeader)} {
+  background: var(--background-secondary);
+}
+
+#{c(popouts expressionPicker sticker standardStickerShortcut)} {
+  border-color: transparent;
+}

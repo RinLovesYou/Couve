@@ -1,0 +1,24 @@
+{
+  "name": "couve",
+  "description": "A new-old look for Discord",
+  "license": "MIT",
+  "author": "A user#8169, Nyria#3863, rinlovesyou",
+  "contributors": [
+    "RinLovesYou"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --load-path=src --style=expanded --no-source-map src/main.scss betterdiscord/app.css",
+    "dev": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss  /home/sarah/.config/Vencord/themes/Couve.theme.css",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "npm": "^8.19.4",
+    "pnpm": "^7.33.7",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^3.5.1",
+    "sass": "^1.83.4"
+  }
+}

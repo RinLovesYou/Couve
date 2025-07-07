@@ -1,0 +1,25 @@
+@use 'backend' as *;
+
+#{c(popouts autocomplete popout)} {
+  background: var(--background-secondary);
+  bottom: calc(100% - 8px);
+  border-radius: 8px 8px 0 0;
+  border-color: transparent;
+}
+
+#{c(popouts autocomplete categoryHeader)} {
+  background-color: var(--background-tertiary);
+  border-radius: 6px;
+
+  &::after {
+    content: none;
+  }
+}
+
+#{c(popouts autocomplete contentTitle)} {
+  color: var(--textcolor);
+
+  #{c(popouts categoryList scroller)} {
+    overflow: visible !important;
+  }
+}

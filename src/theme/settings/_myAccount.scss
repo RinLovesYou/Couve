@@ -1,0 +1,121 @@
+@use 'backend' as *;
+
+@media (max-width: 1465px) {
+  #{c(userSettings account profileCard)} {
+    flex-direction: column;
+
+    #{c(profile banner mask)} {
+      position: absolute;
+      min-height: 150px !important;
+      max-width: 100% !important;
+
+      mask {
+        display: none;
+      }
+      foreignObject {
+        y: -51px !important;
+      }
+    }
+
+    // Banner
+    #{c(profile banner banner)} {
+      border-radius: 8px 8px 0 0 !important;
+      height: 200px !important;
+      flex: unset !important;
+    }
+
+    // User info
+    #{c(profile userInfo)} {
+      height: 150px !important;
+      margin-left: 0 !important;
+      justify-content: space-evenly !important;
+
+      // Badges
+      #{c(profile badgeList)} {
+        justify-content: center;
+      }
+    }
+
+    #{c(userSettings account fieldBackground)} {
+      margin-top: 150px !important;
+      flex: unset !important;
+    }
+  }
+}
+
+#{c(userSettings account profileCard)} {
+  display: flex;
+  background-color: var(--background-secondary);
+
+  #{c(profile banner mask)} {
+    mask {
+      display: none;
+    }
+    foreignObject {
+      y: -110px;
+    }
+  }
+
+  // Banner
+  #{c(profile banner banner)} {
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
+    border-radius: 8px 0 0 8px;
+    height: 320px !important;
+    flex: 1;
+  }
+
+  // User info
+  #{c(profile userInfo)} {
+    position: absolute;
+    display: grid;
+    grid-template-areas:
+      'avatar username'
+      'avatar button';
+    gap: 20px;
+    overflow: hidden;
+    height: 100%;
+    padding: 0;
+    justify-content: flex-start;
+    margin-left: 40px;
+
+    // Avatar
+    #{c(userSettings account avatar)} {
+      grid-area: avatar;
+      position: static;
+      width: 120px !important;
+      height: 120px !important;
+      border: none;
+      background: none;
+      align-self: center;
+
+      #{c(avatar mask)} {
+        width: 120px;
+        height: 120px;
+
+        .foreignObject {
+          image-rendering: optimizeQuality;
+        }
+      }
+    }
+
+    #{c(profile badgeList)} {
+      background-color: transparent;
+    }
+
+    // Username
+    & > div:nth-child(2) {
+      grid-area: username;
+      align-self: flex-end;
+    }
+
+    // Edit profile
+    button:last-child {
+      grid-area: button;
+    }
+  }
+
+  #{c(userSettings account fieldBackground)} {
+    margin: 0;
+    flex: 1;
+  }
+}

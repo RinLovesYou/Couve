@@ -1,0 +1,155 @@
+@use 'backend' as *;
+
+#{c(main keyboardMode)} {
+  #{c(guildList focusStroke)} {
+    stroke: var(--main-color);
+    stroke-width: 4px;
+  }
+}
+
+#{c(sidebar sidebar)} {
+  &::after {
+    display: none;
+  }
+}
+
+//the guild sidebar itself
+
+#{c(guildList guilds)} {
+  width: 90px;
+  margin-bottom: 0 !important;
+
+  //creates a shadow effect at the bottom of the guilds list
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    z-index: 1;
+    width: 90px;
+    height: 100px;
+    background: linear-gradient(360deg, var(--background-tertiary), transparent);
+    pointer-events: none;
+  }
+}
+
+//home button
+
+#{c(guildList homeWrapper)} {
+  background: var(--main-color) !important;
+  color: #fff;
+  border-radius: 50%;
+
+  &:hover {
+    background: var(--main-color);
+  }
+}
+
+#{c(guildList scroller)} {
+  margin-bottom: 70px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#{c(guildList listItem)} {
+  width: 90px;
+  margin: 0 0 12px;
+
+  defs g:last-child {
+    display: none;
+  }
+}
+
+#{c(guildList serverWrapper)},
+#{c(guildList serverWrapperSVG)} {
+  width: 42px;
+  height: 42px;
+}
+
+#{c(guildList selected)} {
+  background: var(--main-color);
+
+  #{c(guildList homeWrapper)} {
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 50%;
+
+    &:hover {
+      background: var(--main-color);
+    }
+  }
+}
+
+// folders
+
+#{c(guildList folderGroupBackground)} {
+  --custom-folder-item-guild-icon-margin: 12px !important;
+  background: var(--background-secondary) !important;
+  left: 18px;
+}
+
+#{c(guildList folderGuildsList)} {
+  height: calc(100% + 12px) !important;
+}
+
+#{c(guildList folderIconWrapper)} {
+  transition: border-radius 200ms;
+
+  &:hover {
+    border-radius: 12px;
+  }
+}
+
+#{c(guildList serverWrapper)} {
+  width: 42px;
+  & > svg > foreignObject {
+    border-radius: 50%;
+    mask: none;
+  }
+}
+
+#{c(guildList bottomButton)} {
+  border-radius: 999px;
+  border: dashed 2px var(--epicshadow1);
+  background: transparent;
+  color: var(--epicshadow1);
+  transition: all 0.2s;
+
+  &:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+  }
+}
+
+//mentions
+
+#{c(guildList mention mention)} {
+  height: 100%;
+  background: transparent;
+  transition: color 0.2s;
+  opacity: 1;
+  text-transform: capitalize;
+  color: var(--textcolor);
+  animation: fade 0.5s;
+  border-radius: 0;
+  border-color: transparent;
+  box-shadow: none;
+
+  &:hover {
+    color: var(--main-color);
+  }
+}
+
+#{c(guildList mention top)} {
+  top: 16px;
+}
+
+#{c(guildList mention top)},
+#{c(guildList mention bottom)} {
+  width: 100%;
+  height: 30px;
+  padding: 0;
+}

@@ -1,0 +1,33 @@
+@use 'backend' as *;
+
+#{c(radio item)} {
+  &[aria-checked='true'] {
+    background-color: transparent;
+  }
+}
+#{c(radio refreshIconStroke)} {
+  r: 10 !important; // inline
+  stroke: var(--main-color);
+}
+#{c(radio refreshIcon)} {
+  fill: var(--main-color);
+}
+#{c(radio indicatorChecked)} {
+  color: var(--main-color);
+  #{c(radio refreshIconFill)} {
+    fill: none;
+  }
+  #{c(radio refreshIconStroke)} {
+    stroke: var(--main-color);
+  }
+}
+#{c(radio bar)} {
+  background-color: cv('shading.card');
+  transition: all 0.1s ease;
+  &:hover {
+    box-shadow: inset 0 0 0 2px var(--radio-bar-accent-color, cv('color.hover'));
+  }
+  #{c(radio item)}[aria-checked='true'] & {
+    background-color: var(--radio-bar-accent-color, cv('color.main'));
+  }
+}

@@ -1,0 +1,51 @@
+@use 'backend' as *;
+
+#{c(button button)} {
+  border-radius: 8px;
+  transition: box-shadow 200ms;
+}
+
+// BUTTON FILLED
+#{c(button lookFilled)} {
+  &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
+    background-color: var(--main-color);
+    border: none;
+    &:hover {
+      background-color: var(--main-color-hover);
+    }
+    &:disabled {
+      background-color: var(--main-color);
+    }
+  }
+  &#{c(button colorGreen)} {
+    background-color: var(--main-color);
+    &:hover {
+      background-color: var(--main-color-hover);
+    }
+    &:disabled {
+      background-color: var(--main-color);
+    }
+    border: none;
+  }
+  &#{c(button colorRed)} {
+    border: none;
+  }
+  &:is(#{c(button colorWhite)}, #{c(button colorBrandInverted)}) {
+    color: var(--main-color);
+    border: none;
+    &:hover {
+      color: var(--main-color-hover);
+    }
+  }
+}
+
+// BUTTON OUTLINE
+#{c(button lookOutlined)} {
+  &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
+    border-color: var(--main-color);
+    &:hover {
+      border-color: var(--main-color-hover);
+      background-color: var(--main-color-hover);
+    }
+  }
+}

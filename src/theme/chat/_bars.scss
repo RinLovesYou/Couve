@@ -1,0 +1,102 @@
+@use 'backend' as *;
+
+//new messages bar
+#{c(chat bar newMessages)} {
+  position: static;
+  margin: 5px 40px 0 40px;
+  padding: 5px;
+  background: var(--background-secondary) !important;
+  border-radius: 7px;
+  border-color: transparent;
+  opacity: 1;
+
+  button[class*='barButtonMain_'] {
+    text-align: center;
+  }
+
+  button[class*='barButtonAlt_'] {
+    display: none;
+  }
+}
+
+//jump to present bar
+#{c(chat bar jumpToPresent)} {
+  bottom: 15px;
+  left: unset;
+  height: 40px;
+  background: var(--background-secondary);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-color: transparent !important;
+  margin: 0;
+  opacity: 1;
+  div[class*='barButtonMain_'] {
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #{c(button button)} {
+    display: none;
+  }
+}
+
+#{c(chat chat)} {
+  border-color: transparent !important;
+}
+
+//top bar
+#{c(header headerTitle)} {
+  z-index: 1;
+  background: transparent !important;
+  width: calc(100% - 265px);
+  border-color: transparent !important;
+  border-width: 0;
+  outline: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+#{c(header toolbar)},
+#{c(header topic)} {
+  -webkit-app-region: no-drag;
+}
+
+#{c(header followButton)},
+#{c(header children)}:after {
+  display: none;
+}
+
+#{c(header search)} {
+  position: fixed;
+  right: 10px;
+
+  #{c(header searchBar)} {
+    background: var(--background-primary);
+    width: 200px;
+    padding: 2px 10px;
+    border-radius: 4px;
+    border-color: transparent;
+
+    #{c(header searchFilter)},
+    #{c(header searchAnswer)} {
+      background: transparent;
+    }
+
+    #{c(searchbar settings icon)} {
+      color: var(--main-color);
+    }
+  }
+}
+
+//chat bar
+#{c(chatForm channelTextArea)},
+#{c(chatForm scrollableContainer)},
+#{c(chatForm inner)} {
+  background-color: var(--background-secondary);
+  border-color: transparent;
+}

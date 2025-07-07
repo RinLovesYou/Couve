@@ -1,0 +1,9 @@
+@use 'backend' as *;
+
+#{c(main base)} {
+  &:has(#{c(sidebar panel activity activityPanel)}) {
+    #{c(sidebar panel buttons button)}[aria-label*='Game Activity'] {
+      margin-right: 35px;
+    }
+  }
+}

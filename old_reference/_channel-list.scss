@@ -1,0 +1,195 @@
+:root {
+  // Server name
+  .header_fd6364 {
+    box-shadow: none;
+    padding: 25px;
+    border-radius: 8px;
+    background: transparent !important;
+  }
+
+  // Discord weird way to make space between server name and channels
+  #channels div[style='height: 12px;'],
+  #channels div[style='height: 16px;'] {
+    display: none;
+  }
+
+  // Channel notice
+  .channelNotice-tO6Tus,
+  .channelNotice-3DDmsB {
+    box-shadow: none;
+    width: 170px;
+    background: transparent;
+    margin: 15px;
+    padding: 20px;
+    background: var(--background-primary);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    height: 60px;
+    transition: height 400ms;
+
+    &::before {
+      content: 'announcement';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 1;
+      color: var(--textcolor);
+      z-index: 1;
+      font-size: 24px;
+      font-family: 'Material Icons', sans-serif;
+      transition: opacity 200ms;
+    }
+
+    .message-3KLVy1 {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 400ms;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      width: 100%;
+      margin-bottom: auto;
+
+      .btn-38SvSS,
+      .btn-38SvSS:hover {
+        background: var(--background-secondary-alt-alt);
+        margin: 0 auto;
+        margin-top: 20px;
+        z-index: 1;
+        width: unset;
+      }
+
+      & > div {
+        margin-bottom: auto;
+      }
+    }
+
+    .message-39hdqk {
+      opacity: 0;
+      margin-top: 30px;
+      pointer-events: none;
+      width: calc(100% + 20px);
+      transition: opacity 400ms;
+    }
+
+    .button_dd4f85 {
+      background: var(--background-secondary-alt-alt);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 400ms;
+    }
+
+    &:hover {
+      height: 160px;
+
+      .message-3KLVy1,
+      .message-39hdqk {
+        pointer-events: all;
+        opacity: 1;
+      }
+      &::before {
+        opacity: 0;
+      }
+      .button_dd4f85 {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  // Categories
+  .wrapper_a08117 {
+    padding: 0 22px;
+  }
+
+  .container_a5ad5c {
+    color: var(--textcolor);
+    text-transform: unset;
+    font-size: 14px;
+  }
+
+  // No arrows for categories
+  .icon_a08117 {
+    display: none;
+  }
+
+  // Channels
+  .wrapper_d8bfb3 {
+    height: 30px;
+    margin: 0;
+
+    .link_d8bfb3 {
+      padding: 6px 20px;
+      border-radius: 0;
+    }
+  }
+  .unread_d8bfb3 {
+    left: 0;
+  }
+
+  // Thread channels
+  .typeThread_d8bfb3 .name_d8bfb3 {
+    padding-left: 28px;
+  }
+
+  // New message bar
+  .containerPadding_eba0ba {
+    padding: 0;
+    margin: 0 0 4px 0;
+
+    .bar_eba0ba {
+      padding: 8px;
+      border-radius: 4px;
+      background: var(--main-color);
+
+      .barText_eba0ba,
+      .unreadIcon_eba0ba {
+        color: white !important;
+      }
+    }
+  }
+
+  // No scrollbars
+  .scroller_c43953,
+  .scroller_fea3ef,
+  #channels {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  // List of people on call channels
+  .containerDefault_f6f816:has(.linkBottom_d8bfb3) .list_a478e5 {
+    background-color: var(--background-primary);
+    margin: 12px;
+    padding: 0;
+    border-radius: 12px;
+
+    .draggable_ac3629,
+    .voiceUser_d80634 {
+      height: 40px;
+    }
+
+    .content_d80634 {
+      padding-left: 2px;
+      height: 100%;
+      border-radius: 0;
+
+      .avatar_d80634 {
+        border-radius: var(--avatar-radius);
+      }
+    }
+
+    // me when no overflow: hidden
+    .draggable_ac3629:first-child .content_d80634 {
+      border-radius: 12px 12px 0 0;
+    }
+    .draggable_ac3629:last-child .content_d80634 {
+      border-radius: 0 0 12px 12px;
+    }
+  }
+}

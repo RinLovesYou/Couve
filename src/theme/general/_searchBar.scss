@@ -1,0 +1,23 @@
+@use 'backend' as *;
+
+#{c(searchbar settings container)}:focus-within,
+#{c(searchbar container)}:focus-within {
+  background: var(--background-primary);
+  border-color: var(--main-color) !important;
+
+  svg[class*='icon_'] {
+    color: var(--main-color);
+  }
+}
+
+#{c(searchbar settings container)},
+#{c(searchbar container)} {
+  border-color: var(--background-primary);
+}
+
+#{c(friends searchbar)} {
+  background: var(--background-primary);
+  svg[class*='icon_'] {
+    color: var(--main-color);
+  }
+}

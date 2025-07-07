@@ -1,0 +1,155 @@
+@use 'backend' as *;
+
+:root {
+  // Discord weird way to make space between server name and channels
+  #channels div[style='height: 12px;'],
+  #channels div[style='height: 16px;'] {
+    display: none;
+  }
+}
+
+#{c(sidebar server container)} {
+  background: var(--background-secondary);
+}
+
+#{c(sidebar list)} {
+  min-width: 300px;
+  margin-top: -0.5px;
+}
+
+//server name
+
+#{c(sidebar server header header)} {
+  box-shadow: none;
+  padding: 25px;
+  border-radius: 8px;
+  background: transparent !important;
+  border-color: transparent;
+  z-index: 1;
+}
+
+// categories
+
+#{c(sidebar server category wrapper)} {
+  padding: 0 22px;
+}
+
+#{c(sidebar server category name)} {
+  color: var(--textcolor);
+  text-transform: unset;
+  font-size: 14px;
+}
+
+#{c(sidebar server category collapseIcon)} {
+  display: none;
+}
+
+#{c(sidebar server category addButtonIcon)} {
+  color: var(--main-color);
+}
+
+// channels
+
+#{c(sidebar server channels wrapper)} {
+  height: 30px;
+  margin: 0;
+  left: 7px;
+}
+#{c(sidebar server channels link)} {
+  padding: 6px 20px;
+  border-radius: 0;
+}
+
+#{c(sidebar server channels unread)} {
+  left: 7px;
+}
+
+// thread channels
+
+#{c(sidebar server channels typeThread)} {
+  #{c(sidebar server channels name)} {
+    margin-left: -5px;
+  }
+}
+
+#{c(sidebar server channels threadsSpine)} {
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+#{c(sidebar server channels threadsSpineBorder)} {
+  display: none;
+}
+
+// new message bar
+
+#{c(sidebar server unreadBar containerPadding)},
+#{c(sidebar server unreadBar old container)} {
+  padding: 0;
+  margin: 0 0 4px 0;
+
+  #{c(sidebar server unreadBar bar)},
+  #{c(sidebar server unreadBar old bar)} {
+    border-radius: 4px;
+    background: var(--main-color);
+
+    #{c(sidebar server unreadBar text)},
+    #{c(sidebar server unreadBar old bar)},
+    #{c(sidebar server unreadBar unreadIcon)},
+    #{c(sidebar server unreadBar old icon)} {
+      text-align: center;
+      color: white !important;
+    }
+  }
+}
+
+// no scrollbars
+
+#{c(sidebar server scroller)},
+#channels {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// list of people on call in a channel
+#{c(sidebar server channels container)} {
+  &:has(#{c(sidebar server channels linkBottom)}) {
+    #{c(sidebar server channels voice listGeneric)} {
+      background-color: var(--background-primary);
+      margin: 25px;
+      padding: 0;
+      border-radius: 20px;
+    }
+
+    #{c(sidebar server channels voice userDraggable)},
+    #{c(sidebar server channels voice userDraggable )} {
+      height: 40px;
+    }
+
+    #{c(sidebar server channels voice userContent)} {
+      padding-left: 5px;
+      height: 100%;
+      border-radius: 0;
+    }
+
+    #{c(sidebar server channels voice userAvatar)} {
+      border-radius: var(--avatar-radius);
+    }
+
+    // me when no overflow: hidden
+    #{c(sidebar server channels voice userDraggable)} {
+      &:first-child #{c(sidebar server channels voice userContent)} {
+        border-radius: 20px 20px 0 0;
+      }
+      &:last-child #{c(sidebar server channels voice userContent)} {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+  }
+}
+
+// why be divided when we can be together?
+#{c(sidebar server divider)} {
+  background: transparent;
+}

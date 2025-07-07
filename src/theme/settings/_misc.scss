@@ -1,0 +1,85 @@
+@use 'backend' as *;
+
+//small tings
+
+//boosts
+#{c(userSettings boost boostContainer)} {
+  background: var(--background-secondary);
+}
+
+//gift inventory
+#{c(userSettings gift promotionCard)} {
+  background: var(--background-secondary);
+  border-radius: 8px;
+}
+
+//billing
+
+#{c(userSettings billing hoverablePayment)}:hover {
+  background-color: var(--background-secondary-alt-alt) !important;
+}
+#{c(userSettings billing paymentPane)},
+#{c(userSettings billing codeRedemptionRedirect)} {
+  background: var(--background-secondary);
+  border: none;
+
+  #{c(userSettings billing paginator)},
+  #{c(userSettings billing bottomDivider)} {
+    background: var(--background-secondary);
+    border-color: transparent;
+  }
+
+  #{c(userSettings billing expandedInfo)} {
+    background: var(--background-primary);
+  }
+}
+
+//voice settings
+#{c(userSettings voice notches)}#{c(userSettings voice notchesGray)} {
+  color: var(--background-primary);
+}
+
+//activity status
+#{c(userSettings games addGamePopout)} {
+  background: var(--background-secondary);
+
+  #{c(settings divider)} {
+    display: none;
+  }
+}
+
+#{c(userSettings games gameNameInput)} {
+  padding: 8px;
+
+  &:focus,
+  &:hover {
+    background-color: var(--background-primary);
+    border: none;
+  }
+}
+
+// todo: game overlay (i don't actually have windows so contributions are welcome.
+// .notificationSettings-1U0JsJ {
+//   max-width: unset;
+
+//   .wrapper_b877fa {
+//     border: none;
+//     background: var(--background-secondary);
+//     border-radius: 20px;
+
+//     .option_b877fa {
+//       margin: 10px;
+//       border-radius: 16px;
+//       background: var(--epicshadow1);
+
+//       &:hover {
+//         background: var(--main-color);
+//         opacity: 0.4;
+//       }
+//       &.selected_b877fa {
+//         background: var(--main-color);
+//         box-shadow: unset;
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,16 @@
+@use 'backend' as *;
+
+#{c(chat messagesWrapper)},
+#{c(chatForm form)},
+#{c(chat subtitleContainer)} {
+  background: var(--background-primary);
+}
+
+#{c(chat chatScroller)} {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#{c(chat chat)} {
+}

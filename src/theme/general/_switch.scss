@@ -1,0 +1,12 @@
+@use 'backend' as *;
+
+//  inline styles
+#{c(switch container)} {
+  background: var(--background-secondary) !important;
+  &#{c(switch checked)} {
+    background: var(--main-color) !important;
+    path {
+      fill: var(--main-color);
+    }
+  }
+}

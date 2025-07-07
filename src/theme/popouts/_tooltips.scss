@@ -1,0 +1,9 @@
+@use 'backend' as *;
+
+#{c(tooltips tooltip)} {
+  background: var(--background-secondary-alt);
+}
+
+#{c(tooltips pointer)} {
+  border-top-color: var(--background-secondary-alt) !important;
+}

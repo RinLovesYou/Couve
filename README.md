@@ -48,7 +48,7 @@
 </div>
 
 ## 🫰 Credits
-
-Of course all credits goes to abUwUser/A user, the original creator of this theme and AAGaming that maintained the theme, see his github profile [here](https://github.com/abUwUser)
-
-Also Credit to Nyria, the previous maintainer. find them [here](https://github.com/NYRI4)
+* [abUwUser/A user](https://github.com/abUwUser) - original author
+* [Nyria](https://github.com/NYRI4) - previous maintainer
+* [ClearVision-v7](https://github.dev/ClearVision/ClearVision-v7)/Zerthox - for the class file.
+* [Krammeth](https://github.com/Krammeth) - User Profile ideas/code snippets
