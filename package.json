@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sass --load-path=src --style=expanded --no-source-map src/main.scss betterdiscord/app.css",
-    "dev": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss  /home/sarah/.config/Vencord/themes/Couve.theme.css",
+    "dev": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss  /home/sarah/.config/vesktop/themes/Couve.theme.css",
     "format": "prettier --write ."
   },
   "devDependencies": {
