@@ -635,11 +635,11 @@
   border: none;
 }
 .lookFilled__201d5:is(.colorWhite__201d5, .colorBrandInverted__201d5) {
-  color: var(--main-color);
+  background: var(--main-color);
   border: none;
 }
 .lookFilled__201d5:is(.colorWhite__201d5, .colorBrandInverted__201d5):hover {
-  color: var(--main-color-hover);
+  background: var(--main-color-hover);
 }
 
 .lookOutlined__201d5:is(.colorBrand__201d5, .colorPrimary__201d5) {
@@ -2294,6 +2294,21 @@
 .gameNameInput_cc46f0:focus, .gameNameInput_cc46f0:hover {
   background-color: var(--background-primary);
   border: none;
+}
+
+.vc-special-text,
+.vc-special-title {
+  color: var(--textcolor);
+}
+
+.vc-donate-button {
+  background: var(--main-color);
+  color: var(--textcolor);
+}
+
+.vc-addon-card,
+.vc-settings-theme-links {
+  background: var(--background-secondary) !important;
 }
 
 :root {

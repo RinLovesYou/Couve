@@ -58,6 +58,22 @@
   }
 }
 
+//vencord
+#{c(vencord donationCard text)},
+#{c(vencord donationCard title)} {
+  color: var(--textcolor);
+}
+
+#{c(vencord donationCard donateButton)} {
+  background: var(--main-color);
+  color: var(--textcolor);
+}
+
+#{c(vencord addon card)},
+#{c(vencord themeLinks)} {
+  background: var(--background-secondary) !important;
+}
+
 // todo: game overlay (i don't actually have windows so contributions are welcome.
 // .notificationSettings-1U0JsJ {
 //   max-width: unset;

@@ -31,10 +31,10 @@
     border: none;
   }
   &:is(#{c(button colorWhite)}, #{c(button colorBrandInverted)}) {
-    color: var(--main-color);
+    background: var(--main-color);
     border: none;
     &:hover {
-      color: var(--main-color-hover);
+      background: var(--main-color-hover);
     }
   }
 }
