@@ -57,7 +57,7 @@ $um: (
         background-size: 70px;
 
         &#{c(modals upload fileTypes video)} {
-          background-image: url('vencord:///themes/Couve/assets/video-camera-white-icon.svg') !important;
+          background-image: url('https://raw.githubusercontent.com/RinLovesYou/Couve/refs/heads/main/assets/video-camera-white-icon.svg') !important;
         }
         &#{c(modals upload fileTypes acrobat)} {
         }

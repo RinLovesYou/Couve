@@ -1396,7 +1396,7 @@
   background-size: 70px;
 }
 .uploadModal_dbca3c .inner_dbca3c .file_dbca3c .icon_dbca3c.video_dbca3c {
-  background-image: url("vencord:///themes/Couve/assets/video-camera-white-icon.svg") !important;
+  background-image: url("https://raw.githubusercontent.com/RinLovesYou/Couve/refs/heads/main/assets/video-camera-white-icon.svg") !important;
 }
 .uploadModal_dbca3c .footer_dbca3c {
   background-color: transparent;
