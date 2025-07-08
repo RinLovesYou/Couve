@@ -938,19 +938,20 @@
 }
 
 .container_c8ffbb {
-  background: var(--background-primary);
+  margin-top: -48px;
+  background: var(--background-secondary-alt);
   border-color: transparent;
+  height: auto;
+  padding-bottom: 52px;
 }
 
 .membersWrap_c8ffbb {
-  margin-top: -48px;
+  padding-top: 48px;
   max-height: calc(100% + 48px);
 }
 
 .members_c8ffbb {
-  padding-top: 48px;
   background: var(--background-secondary-alt);
-  margin-bottom: -48px;
 }
 .members_c8ffbb::-webkit-scrollbar {
   display: none;
