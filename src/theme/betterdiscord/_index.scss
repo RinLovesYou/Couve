@@ -1,0 +1,20 @@
+@use 'backend' as *;
+
+.bd-select {
+  background-color: var(--background-secondary);
+  color: var(--textcolor);
+  border-color: var(--background-secondary-alt);
+}
+
+.bd-text-normal {
+  color: var(--textcolor) !important;
+}
+
+.bd-button.selected {
+  background-color: var(--main-color) !important;
+  box-shadow: 0 0 0 2px var(--main-color-hover) !important;
+  &:hover {
+    background-color: var(--main-color-hover) !important;
+    box-shadow: 0 0 0 2px var(--main-color-hover) !important;
+  }
+}

@@ -96,7 +96,7 @@
 //   }
 // }
 
-#{c(main appLayers)}:has(.vc-betterFolders-sidebar) {
+#{c(main appLayers)}:has(#{c(guildList wrapper)}:nth-of-type(2):not(#{c(guildList closed)}), .vc-betterFolders-sidebar) {
   #{c(main base)} {
     #{c(sidebar panel panels)} {
       transform: translateX(182px);

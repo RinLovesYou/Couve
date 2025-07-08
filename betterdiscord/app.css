@@ -269,26 +269,26 @@
   background-color: transparent;
 }
 
-.layers__960e4:has(.vc-betterFolders-sidebar) .base_c48ade .panels_c48ade {
+.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .base_c48ade .panels_c48ade {
   transform: translateX(182px);
   width: calc(100% - 182px);
 }
-.layers__960e4:has(.vc-betterFolders-sidebar) .base_c48ade .avatarWrapper__37e49[aria-expanded] .wrapper__44b0c {
+.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .base_c48ade .avatarWrapper__37e49[aria-expanded] .wrapper__44b0c {
   left: -113.5px;
 }
-.layers__960e4:has(.vc-betterFolders-sidebar) .base_c48ade .unreadMentionsIndicatorBottom_ef3116 {
+.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .base_c48ade .unreadMentionsIndicatorBottom_ef3116 {
   position: fixed;
   width: 90px;
   left: 42px;
   bottom: 0;
 }
-.layers__960e4:has(.vc-betterFolders-sidebar) .base_c48ade .unreadMentionsIndicatorTop_ef3116 {
+.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .base_c48ade .unreadMentionsIndicatorTop_ef3116 {
   position: fixed;
   width: 90px;
   left: 42px;
   top: 22px;
 }
-.layers__960e4:has(.vc-betterFolders-sidebar) .layer__960e4:not(.baseLayer__960e4) {
+.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .layer__960e4:not(.baseLayer__960e4) {
   margin-left: 180px !important;
 }
 
@@ -606,39 +606,49 @@
   color: #fff;
 }
 
-.button__201d5 {
+.button__201d5,
+.bd-button {
   border-radius: 8px;
   transition: box-shadow 200ms;
 }
 
-.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5) {
+.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand),
+.bd-button-filled:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand) {
   background-color: var(--main-color);
   border: none;
 }
-.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5):hover {
+.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):hover,
+.bd-button-filled:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):hover {
   background-color: var(--main-color-hover);
 }
-.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5):disabled {
+.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):disabled,
+.bd-button-filled:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):disabled {
   background-color: var(--main-color);
 }
-.lookFilled__201d5.colorGreen__201d5 {
+.lookFilled__201d5.colorGreen__201d5,
+.bd-button-filled.colorGreen__201d5 {
   background-color: var(--main-color);
   border: none;
 }
-.lookFilled__201d5.colorGreen__201d5:hover {
+.lookFilled__201d5.colorGreen__201d5:hover,
+.bd-button-filled.colorGreen__201d5:hover {
   background-color: var(--main-color-hover);
 }
-.lookFilled__201d5.colorGreen__201d5:disabled {
+.lookFilled__201d5.colorGreen__201d5:disabled,
+.bd-button-filled.colorGreen__201d5:disabled {
   background-color: var(--main-color);
 }
-.lookFilled__201d5.colorRed__201d5 {
+.lookFilled__201d5.colorRed__201d5,
+.bd-button-filled.colorRed__201d5 {
   border: none;
 }
-.lookFilled__201d5:is(.colorWhite__201d5, .colorBrandInverted__201d5) {
+.lookFilled__201d5:is(.colorWhite__201d5, .colorBrandInverted__201d5),
+.bd-button-filled:is(.colorWhite__201d5, .colorBrandInverted__201d5) {
   background: var(--main-color);
   border: none;
 }
-.lookFilled__201d5:is(.colorWhite__201d5, .colorBrandInverted__201d5):hover {
+.lookFilled__201d5:is(.colorWhite__201d5, .colorBrandInverted__201d5):hover,
+.bd-button-filled:is(.colorWhite__201d5, .colorBrandInverted__201d5):hover {
   background: var(--main-color-hover);
 }
 
@@ -2325,6 +2335,25 @@
 .vc-addon-card,
 .vc-settings-theme-links {
   background: var(--background-secondary) !important;
+}
+
+.bd-select {
+  background-color: var(--background-secondary);
+  color: var(--textcolor);
+  border-color: var(--background-secondary-alt);
+}
+
+.bd-text-normal {
+  color: var(--textcolor) !important;
+}
+
+.bd-button.selected {
+  background-color: var(--main-color) !important;
+  box-shadow: 0 0 0 2px var(--main-color-hover) !important;
+}
+.bd-button.selected:hover {
+  background-color: var(--main-color-hover) !important;
+  box-shadow: 0 0 0 2px var(--main-color-hover) !important;
 }
 
 :root {

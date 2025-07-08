@@ -1,13 +1,15 @@
 @use 'backend' as *;
 
-#{c(button button)} {
+#{c(button button)},
+.bd-button {
   border-radius: 8px;
   transition: box-shadow 200ms;
 }
 
 // BUTTON FILLED
-#{c(button lookFilled)} {
-  &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
+#{c(button lookFilled)},
+.bd-button-filled {
+  &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}, .bd-button-color-brand) {
     background-color: var(--main-color);
     border: none;
     &:hover {
@@ -30,6 +32,7 @@
   &#{c(button colorRed)} {
     border: none;
   }
+
   &:is(#{c(button colorWhite)}, #{c(button colorBrandInverted)}) {
     background: var(--main-color);
     border: none;
