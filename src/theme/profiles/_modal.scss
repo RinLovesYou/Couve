@@ -331,6 +331,19 @@
         }
       }
     }
+
+    #{c(profile firendsMoreEditProfileButtons wrapper)} {
+      position: fixed;
+      bottom: 15px;
+      left: calc(45% + 16px);
+      right: unset;
+      top: unset;
+      z-index: 1;
+
+      #{c(button button)} {
+        background: var(--main-color);
+      }
+    }
   }
 
   #{c(profile outer)} {
