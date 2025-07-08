@@ -92,11 +92,12 @@
     }
   }
 }
-
-//chat bar
-#{c(chatForm channelTextArea)},
-#{c(chatForm scrollableContainer)},
-#{c(chatForm inner)} {
-  background-color: var(--background-secondary);
-  border-color: transparent;
+#{c(chat chat)} {
+  //chat bar
+  #{c(chatForm channelTextArea)},
+  #{c(chatForm scrollableContainer)},
+  #{c(chatForm inner)} {
+    background-color: var(--background-secondary);
+    border-color: transparent;
+  }
 }

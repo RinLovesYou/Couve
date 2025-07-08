@@ -1344,9 +1344,9 @@
   color: var(--main-color);
 }
 
-.channelTextArea__74017,
-.scrollableContainer__74017,
-.inner__74017 {
+.chat_f75fb0 .channelTextArea__74017,
+.chat_f75fb0 .scrollableContainer__74017,
+.chat_f75fb0 .inner__74017 {
   background-color: var(--background-secondary);
   border-color: transparent;
 }
