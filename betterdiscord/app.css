@@ -27,6 +27,7 @@
   --background-surface-high: var(--background-secondary-alt-alt);
   --background-surface-higher: var(--background-secondary-alt);
   --background-surface-highest: var(--background-primary);
+  --bg-surface-overlay: var(--background-secondary);
   --text-brand: var(--main-color);
   --background-mentioned: var(--mention-color);
   --background-mentioned-hover: var(--mention-color-hover);
@@ -910,11 +911,6 @@
 
 .loadingPopout__58f1c {
   background: var(--background-secondary);
-}
-
-.popoutContainer__0f481 {
-  background: var(--background-secondary);
-  border-color: transparent;
 }
 
 .base_c48ade:has(.activityPanel_c48ade) .button__67645[aria-label*="Game Activity"] {
