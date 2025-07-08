@@ -146,6 +146,8 @@
 
     #{c(profile username usernameRow)} {
       padding-bottom: 5px;
+      gap: 0;
+      flex-direction: column;
     }
 
     // uuh old name and pronouns and badges and ...
