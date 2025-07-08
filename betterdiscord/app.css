@@ -232,7 +232,7 @@
   transform: translateX(91px);
   width: calc(100% - 91px);
   padding: 10px 8px;
-  background: transparent !important;
+  background: var(--background-secondary);
 }
 
 .activityPanel_c48ade {
@@ -241,7 +241,7 @@
   right: 119px;
   padding: 0;
   border-radius: 8px;
-  background: transparent;
+  background: var(--background-secondary);
   border-color: transparent;
 }
 

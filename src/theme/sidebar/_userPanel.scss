@@ -13,7 +13,7 @@
   //   transform 0.2s ease-out,
   //   width 0.2s ease-out;
   padding: 10px 8px;
-  background: transparent !important;
+  background: var(--background-secondary);
 }
 
 // Game part, i.e. "Go Live"
@@ -23,7 +23,7 @@
   right: 119px;
   padding: 0;
   border-radius: 8px;
-  background: transparent;
+  background: var(--background-secondary);
   border-color: transparent;
 }
 
