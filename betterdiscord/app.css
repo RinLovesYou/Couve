@@ -10,6 +10,7 @@
   --background-secondary-alt: #1c2438;
   --background-secondary-alt-alt: #1b1d31;
   --background-tertiary: #060c24;
+  --background-secondary-opacity: rgba(30, 35, 55, 0.8);
   --deprecated-store-bg: var(--background-primary);
   --background-floating: var(--background-secondary);
   --background-mobile-primary: var(--background-primary);
@@ -1095,14 +1096,25 @@
 .wrapperAudio_cf09d8 .audioControls_cf09d8 {
   background: transparent;
 }
-.wrapperAudio_cf09d8 .audioControls_cf09d8 .mediaBarWrapper_b26b79:hover {
+
+.mediaBarWrapper_b26b79:hover {
   box-shadow: none;
 }
-.wrapperAudio_cf09d8 .audioControls_cf09d8 .mediaBarWrapper_b26b79 .mediaBarProgress_b26b79,
-.wrapperAudio_cf09d8 .audioControls_cf09d8 .mediaBarWrapper_b26b79 .mediaBarProgress_b26b79::after,
-.wrapperAudio_cf09d8 .audioControls_cf09d8 .mediaBarWrapper_b26b79 .mediaBarProgress_b26b79::before,
-.wrapperAudio_cf09d8 .audioControls_cf09d8 .mediaBarWrapper_b26b79 .mediaBarGrabber_b26b79 {
+.mediaBarWrapper_b26b79 .mediaBarProgress_b26b79,
+.mediaBarWrapper_b26b79 .mediaBarProgress_b26b79::after,
+.mediaBarWrapper_b26b79 .mediaBarProgress_b26b79::before,
+.mediaBarWrapper_b26b79 .mediaBarGrabber_b26b79 {
   background: var(--main-color) !important;
+}
+
+.wrapper_cf09d8 {
+  background: var(--background-secondary);
+  border: none;
+  border-radius: 7px;
+  padding: 0;
+}
+.wrapper_cf09d8 .videoControls_cf09d8 {
+  background: var(--background-secondary-opacity);
 }
 
 .wrapper_f61d60 {

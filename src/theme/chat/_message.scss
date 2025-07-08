@@ -149,19 +149,32 @@
 
   #{c(embeds media audioControls)} {
     background: transparent;
+  }
+}
 
-    #{c(media barWrapper)} {
-      &:hover {
-        box-shadow: none;
-      }
+//common bar between audio and video
+#{c(media barWrapper)} {
+  &:hover {
+    box-shadow: none;
+  }
 
-      #{c(media barProgress)},
-      #{c(media barProgress)}::after,
-      #{c(media barProgress)}::before,
-      #{c(media barGrabber)} {
-        background: var(--main-color) !important;
-      }
-    }
+  #{c(media barProgress)},
+  #{c(media barProgress)}::after,
+  #{c(media barProgress)}::before,
+  #{c(media barGrabber)} {
+    background: var(--main-color) !important;
+  }
+}
+
+//video
+#{c(embeds media videoWrapper)} {
+  background: var(--background-secondary);
+  border: none;
+  border-radius: 7px;
+  padding: 0;
+
+  #{c(embeds media videoControls)} {
+    background: var(--background-secondary-opacity);
   }
 }
 
