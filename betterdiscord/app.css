@@ -912,6 +912,11 @@
   background: var(--background-secondary);
 }
 
+.popoutContainer__0f481 {
+  background: var(--background-secondary);
+  border-color: transparent;
+}
+
 .base_c48ade:has(.activityPanel_c48ade) .button__67645[aria-label*="Game Activity"] {
   margin-right: 35px;
 }
