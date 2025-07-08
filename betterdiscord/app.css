@@ -1566,7 +1566,8 @@
 .layer_da8173 .outer_c0bea0 .mask__44b0c rect[fill=black] {
   display: none;
 }
-.layer_da8173 .outer_c0bea0 .body__5be3e {
+.layer_da8173 .outer_c0bea0 .body__5be3e,
+.layer_da8173 .outer_c0bea0 .body_ce8328 {
   position: static;
 }
 .layer_da8173 .outer_c0bea0 .container__63ed3 {
@@ -1589,7 +1590,6 @@
   display: none;
 }
 .layer_da8173 .outer_c0bea0 .usernameRow__63ed3 {
-  padding-bottom: 5px;
   gap: 0;
   flex-direction: column;
 }
