@@ -745,8 +745,7 @@
 }
 
 .card__73069,
-.cardPrimary__73069,
-.card__39ec2 {
+.cardPrimary__73069 {
   background: var(--background-secondary) !important;
 }
 
@@ -1614,6 +1613,9 @@
 }
 .layer_da8173 .outer_c0bea0:not(.custom-user-profile-theme) .inner_c0bea0 {
   background: var(--background-tertiary);
+}
+.layer_da8173 .outer_c0bea0:not(.custom-user-profile-theme) .card__39ec2 {
+  background: var(--background-secondary);
 }
 
 .root__24502.root__49fc1.small__49fc1 {

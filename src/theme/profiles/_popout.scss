@@ -180,6 +180,10 @@
       #{c(profile inner)} {
         background: var(--background-tertiary);
       }
+
+      #{c(profile playing card)} {
+        background: var(--background-secondary);
+      }
     }
   }
 }

@@ -1,8 +1,7 @@
 @use 'backend' as *;
 
 #{c(settings card card)},
-#{c(settings card primary)},
-#{c(profile playing card)} {
+#{c(settings card primary)} {
   background: var(--background-secondary) !important;
 }
 
