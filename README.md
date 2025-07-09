@@ -9,7 +9,7 @@
 
   <br/>
 
-  <a href="https://gibbu.github.io/ThemePreview/?file=https://cdn.jsdelivr.net/gh/NYRI4/Couve/betterdiscord/couve.theme.css"><strong>» Theme Preview</strong></a>
+  <a href="https://rinlovesyou.github.io/Couve/betterdiscord/couve.theme.css"><strong>» Theme Preview</strong></a>
   ・
   <a href="https://github.com/RinLovesYou/Couve/issues">Report an issue</a>
   ・
