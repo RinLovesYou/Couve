@@ -30,8 +30,6 @@
   --background-surface-highest: var(--background-primary);
   --bg-surface-overlay: var(--background-secondary);
   --text-brand: var(--main-color);
-  --background-mentioned: var(--mention-color);
-  --background-mentioned-hover: var(--mention-color-hover);
 }
 
 .bar_c38106 {
@@ -56,13 +54,14 @@
   bottom: 4px;
   right: -5px;
 }
-.lowerBadge_cc5dd2 .numberBadge__2b1f5 {
-  min-width: 25px;
-  background: var(--main-color) !important;
-  font-size: 8px;
-}
 .lowerBadge_cc5dd2 :last-child .numberBadge__2b1f5 {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5333333333);
+}
+
+.numberBadge__2b1f5 {
+  min-width: 25px;
+  background: var(--main-color) !important;
+  font-size: 9px;
 }
 
 :is(.auto__99f8c, .auto_d125d2)::-webkit-scrollbar {
@@ -1294,8 +1293,17 @@
   pointer-events: none;
 }
 
-.mentioned__5126c::before {
+.mentioned__5126c::before,
+.replying__5126c::before {
   background: var(--main-color) !important;
+}
+
+.replying__5126c {
+  background: color-mix(in oklab, hsla(163.87, 58.86%, 61.96%, 0.1607843137) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%)/0.1607843137) var(--theme-base-color-amount, 0%));
+}
+
+.mentioned__5126c {
+  background: color-mix(in oklab, hsla(163.87, 58.86%, 61.96%, 0.0784313725) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%)/0.0784313725) var(--theme-base-color-amount, 0%));
 }
 
 .hasThread_c19a55::after {

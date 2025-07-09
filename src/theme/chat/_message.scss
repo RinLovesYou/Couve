@@ -207,8 +207,16 @@
   }
 }
 
-#{c(chat mentioned)}::before {
+#{c(chat mentioned)}::before,
+#{c(chat replying)}::before {
   background: var(--main-color) !important;
+}
+
+#{c(chat replying)} {
+  background: color-mix(in oklab, hsl(163.87 58.86% 61.96% /0.1607843137254902) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%));
+}
+#{c(chat mentioned)} {
+  background: color-mix(in oklab, hsl(163.87 58.86% 61.96% /0.0784313725490196) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%));
 }
 
 //thread
