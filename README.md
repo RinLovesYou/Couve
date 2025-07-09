@@ -1,4 +1,4 @@
-<img align="right" src="https://nyri4.github.io/Couve/assets/preview.png" alt="Preview" width="40%">
+<img align="right" src="https://rinlovesyou.github.io/Couve/assets/preview.png" alt="Preview" width="40%">
 
 <div align="left">
   <img align="left" src="https://i.imgur.com/k96ZiGw.png" alt="Logo" width="80" height="70">
@@ -9,7 +9,7 @@
 
   <br/>
 
-  <a href="https://rinlovesyou.github.io/Couve/betterdiscord/couve.theme.css"><strong>» Theme Preview</strong></a>
+  <a href="https://gibbu.github.io/ThemePreview/?file=https://rinlovesyou.github.io/Couve/betterdiscord/couve.theme.css"><strong>» Theme Preview</strong></a>
   ・
   <a href="https://github.com/RinLovesYou/Couve/issues">Report an issue</a>
   ・
