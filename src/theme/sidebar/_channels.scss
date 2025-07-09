@@ -64,10 +64,10 @@
 }
 
 // thread channels
-
 #{c(sidebar server channels typeThread)} {
+  padding-left: 5px;
   #{c(sidebar server channels name)} {
-    margin-left: -5px;
+    margin-left: -13px;
   }
 }
 
