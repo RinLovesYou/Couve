@@ -12,32 +12,32 @@
     height: 100%;
     box-sizing: border-box;
 
-    &:has(.container__37bfc:hover) {
-      .container__37bfc {
-        //position: absolute;
-        //padding: 4px 32px 32px;
-        display: flex;
-        width: 80%;
-        border-radius: 0;
-        flex: auto;
-        .tabBarPanel__37bfc {
-          opacity: 1;
-        }
-      }
+    // &:has(.container__37bfc:hover) {
+    //   .container__37bfc {
+    //     //position: absolute;
+    //     //padding: 4px 32px 32px;
+    //     display: flex;
+    //     width: 80%;
+    //     border-radius: 0;
+    //     flex: auto;
+    //     .tabBarPanel__37bfc {
+    //       opacity: 1;
+    //     }
+    //   }
 
-      #{c(profile statusBubbleContainer)} {
-        display: none;
-      }
+    //   #{c(profile statusBubbleContainer)} {
+    //     display: none;
+    //   }
 
-      .profileBody__9c3be {
-        width: 0 !important;
-        flex: 0 0 0 !important;
-        overflow: hidden !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        border: none !important;
-      }
-    }
+    //   .profileBody__9c3be {
+    //     width: 0 !important;
+    //     flex: 0 0 0 !important;
+    //     overflow: hidden !important;
+    //     padding: 0 !important;
+    //     margin: 0 !important;
+    //     border: none !important;
+    //   }
+    // }
   }
 
   .inner_c0bea0 .backgroundImage__9c3be {
@@ -69,6 +69,11 @@
     &::before {
       position: fixed;
       width: 100%;
+      height: 100%;
+    }
+
+    .profileHeader__9c3be {
+      width: calc(55% - 16px);
       height: 100%;
     }
 
@@ -114,8 +119,6 @@
     .profileHeader__9c3be {
       position: static;
       height: 100%;
-      flex: auto;
-      width: calc(55% - 16px);
 
       .avatar__75742 {
         top: 16px;
@@ -373,12 +376,14 @@
     height: 100%;
     border-radius: 0;
     background: transparent;
-    width: calc(45% + 16px);
-    width: 10px;
     flex: auto;
     transition: width 500ms ease-in-out;
     display: flex;
-
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    left: 125px;
+    bottom: 60px;
     .scroller__37bfc {
       position: fixed;
       bottom: 15%;
@@ -416,10 +421,74 @@
     }
 
     .tabBarPanel__37bfc {
-      opacity: 0;
       background: transparent;
-
+      //activity
       .scroller__764cd {
+        .section_bf424d:nth-of-type(1) {
+          .contentImage__42bf5 {
+            width: 25%;
+            height: 25%;
+          }
+        }
+
+        .section_bf424d:nth-of-type(2) {
+          .imageContainer_ef9ae7 {
+            transform: scale(0.8) translateX(-5px);
+          }
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      //mutuals
+      .scroller__28fdc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(20, 0fr);
+        gap: 10px;
+        padding: 12px !important;
+        margin: 0;
+        #{c(profile modal listRow)} {
+          position: relative;
+          z-index: 1;
+          height: 44px;
+          margin: 0;
+          border-radius: 8px;
+          overflow: hidden;
+          background-color: var(--user-profile-overlay-background);
+
+          #{c(profile modal listGuildIcon)},
+          #{c(avatar wrapper)} {
+            position: absolute;
+            right: 0;
+            z-index: -1;
+            image-rendering: optimizeQuality;
+            width: 62% !important;
+            height: 250% !important;
+            margin-right: 0;
+            border-radius: 0;
+            -webkit-mask-image: linear-gradient(90deg, #00000000, #000000cb);
+
+            svg {
+              position: relative;
+              width: 100%;
+              height: 100%;
+
+              foreignObject {
+                mask: none;
+                width: 100%;
+                height: 100%;
+              }
+              circle,
+              rect {
+                display: none;
+              }
+            }
+          }
+        }
+
         &::-webkit-scrollbar {
           display: none;
         }
