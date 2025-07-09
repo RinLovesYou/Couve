@@ -333,13 +333,13 @@
     }
 
     #{c(profile firendsMoreEditProfileButtons wrapper)} {
-      position: fixed;
-      bottom: 15px;
+      bottom: 18px;
       left: calc(45% + 16px);
       right: unset;
       top: unset;
+      flex-direction: column;
       z-index: 1;
-
+      position: absolute;
       #{c(button button)} {
         background: var(--main-color);
       }

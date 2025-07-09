@@ -2083,12 +2083,13 @@
   background-size: 100%;
 }
 .root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .wrapper_da5890 {
-  position: fixed;
-  bottom: 15px;
+  bottom: 18px;
   left: calc(45% + 16px);
   right: unset;
   top: unset;
+  flex-direction: column;
   z-index: 1;
+  position: absolute;
 }
 .root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .wrapper_da5890 .button__201d5 {
   background: var(--main-color);
