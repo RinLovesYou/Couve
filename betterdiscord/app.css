@@ -1088,7 +1088,6 @@
 }
 
 .container_c8ffbb {
-  margin-top: -48px;
   background: var(--background-secondary-alt);
   border-color: transparent;
   height: auto;
@@ -1096,6 +1095,7 @@
 }
 
 .membersWrap_c8ffbb {
+  margin-top: -48px;
   padding-top: 48px;
   max-height: calc(100% + 48px);
 }
