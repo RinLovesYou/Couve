@@ -9,10 +9,10 @@
   "main": "index.js",
   "scripts": {
     "build": "sass --load-path=src --style=expanded --no-source-map src/main.scss betterdiscord/app.css",
-    "dev-vesk": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss  /home/sarah/.config/vesktop/themes/Couve.theme.css",
-    "dev-vc": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss /home/sarah/.config/Vencord/themes/Couve.theme.css",
-    "dev-bd": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss /home/sarah/.config/BetterDiscord/data/stable/custom.css",
-    "dev": "pnpm dev-vesk",
+    "dev-vesktop": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss  ~/.config/vesktop/themes/Couve.theme.css",
+    "dev-vencord": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss ~/.config/Vencord/themes/Couve.theme.css",
+    "dev-betterdiscord": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss ~/.config/BetterDiscord/data/stable/custom.css",
+    "dev-shelter": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss src/shelter-plugin/couve.theme.css",
     "format": "prettier --write ."
   },
   "devDependencies": {

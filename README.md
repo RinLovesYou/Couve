@@ -29,7 +29,7 @@
 <div align="left">
     <img align="left" src="https://i.imgur.com/fXYKU5q.png" alt="Vencord" width="45" height="45">
     <b><p align="left">Vencord</b>
-    <br/>Copy <code>https://raw.githubusercontent.com/RinLovesYou/Couve/refs/heads/main/betterdiscord/couve.theme.css</code> into the box in Settings > Themes > Themes tab </p>
+    <br/>Copy <code>https://rinlovesyou.github.io/Couve/betterdiscord/couve.theme.css</code> into the box in Settings > Themes > Themes tab </p>
 </div><br/>
 
 ## 🖌️ Customization

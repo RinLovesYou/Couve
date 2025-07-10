@@ -1,6 +1,10 @@
 @use 'sass:color';
 @use 'classes' as *;
 
+@function op($color, $opacity) {
+  @return color-mix(in srgb, $color $opacity, transparent);
+}
+
 :is(#{c(main themeLight)}, #{c(main themeDark)}, #{c(main themeDarker)}, #{c(main themeMidnight)}) {
   &,
   &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
@@ -10,16 +14,11 @@
     --main-color: #419e85;
     --main-color-hover: #3c8b76;
 
-    --mention-color: #419e8515;
-    --mention-color-hover: #3c8b7610;
-
     --background-primary: #252a3e;
     --background-secondary: #1e2337;
     --background-secondary-alt: #1c2438;
     --background-secondary-alt-alt: #1b1d31;
     --background-tertiary: #060c24;
-
-    --background-secondary-opacity: rgba(30, 35, 55, 0.8);
 
     --deprecated-store-bg: var(--background-primary);
     --background-floating: var(--background-secondary);

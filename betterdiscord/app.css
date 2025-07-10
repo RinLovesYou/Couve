@@ -3,14 +3,11 @@
   --avatar-radius: 8px;
   --main-color: #419e85;
   --main-color-hover: #3c8b76;
-  --mention-color: #419e8515;
-  --mention-color-hover: #3c8b7610;
   --background-primary: #252a3e;
   --background-secondary: #1e2337;
   --background-secondary-alt: #1c2438;
   --background-secondary-alt-alt: #1b1d31;
   --background-tertiary: #060c24;
-  --background-secondary-opacity: rgba(30, 35, 55, 0.8);
   --deprecated-store-bg: var(--background-primary);
   --background-floating: var(--background-secondary);
   --background-mobile-primary: var(--background-primary);
@@ -1266,7 +1263,7 @@
   padding: 0;
 }
 .wrapper_cf09d8 .videoControls_cf09d8 {
-  background: var(--background-secondary-opacity);
+  background: color-mix(in srgb, var(--background-secondary) 70%, transparent);
 }
 
 .wrapper_f61d60 {
@@ -1296,15 +1293,22 @@
 
 .mentioned__5126c::before,
 .replying__5126c::before {
-  background: var(--main-color) !important;
+  width: 0px;
+  border: 1px solid var(--background-primary);
+  border-right: 4px solid var(--main-color);
+  border-radius: 0;
 }
 
 .replying__5126c {
-  background: color-mix(in oklab, hsla(163.87, 58.86%, 61.96%, 0.1607843137) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%)/0.1607843137) var(--theme-base-color-amount, 0%));
+  background: color-mix(in srgb, var(--main-color) 16%, transparent);
 }
 
 .mentioned__5126c {
-  background: color-mix(in oklab, hsla(163.87, 58.86%, 61.96%, 0.0784313725) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%)/0.0784313725) var(--theme-base-color-amount, 0%));
+  background: color-mix(in srgb, var(--main-color) 7.84%, transparent);
+}
+.mentioned__5126c .embedFull__623de {
+  margin-left: 4px;
+  margin-bottom: -4px;
 }
 
 .hasThread_c19a55::after {
@@ -2513,6 +2517,10 @@
   min-width: unset;
   max-width: 95%;
 }
+.layer__960e4 .contentRegion__23e6b .item__133bf.selected_b3f026,
+.layer__960e4 .contentColumn__23e6b .item__133bf.selected_b3f026 {
+  color: var(--main-color);
+}
 .layer__960e4 .toolsContainer__23e6b {
   position: absolute;
   right: 0px;
@@ -2848,25 +2856,6 @@
 .vc-addon-card,
 .vc-settings-theme-links {
   background: var(--background-secondary) !important;
-}
-
-.bd-select {
-  background-color: var(--background-secondary);
-  color: var(--textcolor);
-  border-color: var(--background-secondary-alt);
-}
-
-.bd-text-normal {
-  color: var(--textcolor) !important;
-}
-
-.bd-button.selected {
-  background-color: var(--main-color) !important;
-  box-shadow: 0 0 0 2px var(--main-color-hover) !important;
-}
-.bd-button.selected:hover {
-  background-color: var(--main-color-hover) !important;
-  box-shadow: 0 0 0 2px var(--main-color-hover) !important;
 }
 
 :root {

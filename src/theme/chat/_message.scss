@@ -174,7 +174,7 @@
   padding: 0;
 
   #{c(embeds media videoControls)} {
-    background: var(--background-secondary-opacity);
+    background: #{op(var(--background-secondary), 70%)};
   }
 }
 
@@ -209,14 +209,24 @@
 
 #{c(chat mentioned)}::before,
 #{c(chat replying)}::before {
-  background: var(--main-color) !important;
+  width: 0px;
+  border: 1px solid var(--background-primary);
+  border-left: 0;
+  border-right: 4px solid var(--main-color);
+
+  border-radius: 0;
 }
 
 #{c(chat replying)} {
-  background: color-mix(in oklab, hsl(163.87 58.86% 61.96% /0.1607843137254902) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%));
+  background: #{op(var(--main-color), 16%)};
 }
 #{c(chat mentioned)} {
-  background: color-mix(in oklab, hsl(163.87 58.86% 61.96% /0.0784313725490196) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%));
+  background: #{op(var(--main-color), 7.84%)};
+
+  #{c(embeds embedFull)} {
+    margin-left: 4px;
+    margin-bottom: -4px;
+  }
 }
 
 //thread
