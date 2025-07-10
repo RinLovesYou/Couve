@@ -90,12 +90,6 @@
   #{c(settings contentColumn)} {
     min-width: unset;
     max-width: 95%;
-
-    #{c(header tabBarItem)} {
-      &#{c(tab selected)} {
-        color: var(--main-color);
-      }
-    }
   }
 
   #{c(other cv settingsToolsContainer)} {

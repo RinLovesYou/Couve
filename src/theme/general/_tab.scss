@@ -1,0 +1,7 @@
+@use 'backend' as *;
+
+#{c(header tabBarItem)} {
+  &#{c(tab selected)} {
+    color: var(--main-color);
+  }
+}

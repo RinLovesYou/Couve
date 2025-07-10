@@ -912,6 +912,10 @@
   background: var(--main-color) !important;
 }
 
+.item__133bf.selected_b3f026 {
+  color: var(--main-color);
+}
+
 .tooltip__382e7 {
   background: var(--background-secondary-alt);
   color: var(--textcolor);
@@ -2517,10 +2521,6 @@
 .layer__960e4 .contentColumn__23e6b {
   min-width: unset;
   max-width: 95%;
-}
-.layer__960e4 .contentRegion__23e6b .item__133bf.selected_b3f026,
-.layer__960e4 .contentColumn__23e6b .item__133bf.selected_b3f026 {
-  color: var(--main-color);
 }
 .layer__960e4 .toolsContainer__23e6b {
   position: absolute;
