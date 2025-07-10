@@ -739,6 +739,7 @@ $classes: (
     // applied when screen sharing and not hovered, hides controls (and children of)
     'gradientBackground': 'gradientBackground__11664',
     'gradientSphere': 'sphere__11664',
+    'pulseGradient': 'pulseGradient__11664',
     // both above are seen in empty vc
     'voiceCallWrapper': 'voiceCallWrapper_a21736',
     // paired with rootChild
@@ -1934,6 +1935,7 @@ $classes: (
     'textContainer': (
       'container': 'container__4d95d',
       'textContainer': 'textContainer__4d95d',
+      'codeView': 'codeView__4d95d',
       'footer': 'footer__4d95d',
       'toggleExpand': 'toggleExpandSection__4d95d',
       'openFullPreview': 'openFullPreviewSection__4d95d',
@@ -3567,7 +3569,7 @@ $classes: (
       'badgeList': 'container__8061a',
       'note': 'note_fcb628',
       'noteTextarea': 'textarea__9daae',
-      'effects': 'profileEffects__01370',
+
       // seems to be used on all of them
       'showOutOfBoundaryComponents': 'showOutOfBoundaryComponents_c69a7b',
 
@@ -3586,6 +3588,7 @@ $classes: (
       'statusBubbleInner': 'inner_ab8609',
       'statusBubbleContent': 'content_ab8609',
 
+      //beeg profile in dms
       'userInfo': 'userInfo__1fed1',
       'header': 'header__7f9c0',
       'body': 'body_b32ca4',
