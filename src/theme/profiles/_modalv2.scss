@@ -424,18 +424,22 @@
       background: transparent;
       //activity
       .scroller__764cd {
-        .section_bf424d:nth-of-type(1) {
-          .contentImage__42bf5 {
-            width: 25%;
-            height: 25%;
-          }
-        }
-
-        .section_bf424d:nth-of-type(2) {
+        .overlay_c0bea0 {
+          padding: 8px;
+          gap: 4px;
           .imageContainer_ef9ae7 {
             transform: scale(0.8) translateX(-5px);
           }
         }
+        // .section_bf424d:nth-of-type(1) {
+        //   .contentImage__42bf5 {
+        //     width: 25%;
+        //     height: 25%;
+        //   }
+        // }
+
+        // .section_bf424d:nth-of-type(2) {
+        // }
 
         &::-webkit-scrollbar {
           display: none;
