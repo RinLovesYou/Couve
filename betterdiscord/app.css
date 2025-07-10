@@ -1295,6 +1295,7 @@
 .replying__5126c::before {
   width: 0px;
   border: 1px solid var(--background-primary);
+  border-left: 0;
   border-right: 4px solid var(--main-color);
   border-radius: 0;
 }
@@ -2856,6 +2857,25 @@
 .vc-addon-card,
 .vc-settings-theme-links {
   background: var(--background-secondary) !important;
+}
+
+.bd-select {
+  background-color: var(--background-secondary);
+  color: var(--textcolor);
+  border-color: var(--background-secondary-alt);
+}
+
+.bd-text-normal {
+  color: var(--textcolor) !important;
+}
+
+.bd-button.selected {
+  background-color: var(--main-color) !important;
+  box-shadow: 0 0 0 2px var(--main-color-hover) !important;
+}
+.bd-button.selected:hover {
+  background-color: var(--main-color-hover) !important;
+  box-shadow: 0 0 0 2px var(--main-color-hover) !important;
 }
 
 :root {
