@@ -13,6 +13,7 @@
     "dev-vencord": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss ~/.config/Vencord/themes/Couve.theme.css",
     "dev-betterdiscord": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss ~/.config/BetterDiscord/data/stable/custom.css",
     "dev-shelter": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss src/shelter-plugin/couve.theme.css",
+    "dev-shelter-plugin": "pnpm lune dev src/shelter-plugin",
     "format": "prettier --write ."
   },
   "devDependencies": {
@@ -22,6 +23,8 @@
     "postcss": "^8.5.1",
     "postcss-cli": "^10.1.0",
     "prettier": "^3.5.1",
-    "sass": "^1.83.4"
+    "sass": "^1.83.4",
+    "@uwu/lune": "^1.5.0",
+    "@uwu/shelter-defs": "^1.4.1"
   }
 }
