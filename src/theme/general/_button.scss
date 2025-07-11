@@ -6,6 +6,28 @@
   transition: box-shadow 200ms;
 }
 
+#{c(button button)} {
+  &:is(#{c(button colorPrimary)}, .bd-button-color-brand) {
+    background-color: var(--main-color);
+    border: none;
+    &:hover {
+      background-color: var(--main-color-hover);
+    }
+    &:disabled {
+      background-color: var(--main-color);
+    }
+  }
+
+  &:is(#{c(button lookLink)}) {
+    background-color: transparent;
+    border: none;
+    color: var(--main-color) !important;
+    &:hover #{c(button contents)} {
+      --button--underline-color: var(--main-color) !important;
+    }
+  }
+}
+
 // BUTTON FILLED
 #{c(button lookFilled)},
 .bd-button-filled {
@@ -36,6 +58,7 @@
   &:is(#{c(button colorWhite)}, #{c(button colorBrandInverted)}) {
     background: var(--main-color);
     border: none;
+    color: var(--textcolor);
     &:hover {
       background: var(--main-color-hover);
     }

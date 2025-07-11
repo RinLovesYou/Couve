@@ -117,5 +117,16 @@
   #{c(userSettings account fieldBackground)} {
     margin: 0;
     flex: 1;
+
+    #{c(button button)} {
+      &:is(#{c(button colorPrimary)}, .bd-button-color-brand) {
+        background-color: transparent;
+        border: none;
+        color: var(--main-color);
+        &:hover #{c(button contents)} {
+          --button--underline-color: var(--main-color) !important;
+        }
+      }
+    }
   }
 }

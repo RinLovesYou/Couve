@@ -755,23 +755,42 @@
   background: var(--background-secondary);
 }
 
-.button__201d5,
+:is(.button__201d5, .button__6af3a),
 .bd-button {
   border-radius: 8px;
   transition: box-shadow 200ms;
 }
 
-.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand),
-.bd-button-filled:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand) {
+:is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand) {
   background-color: var(--main-color);
   border: none;
 }
-.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):hover,
-.bd-button-filled:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):hover {
+:is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):hover {
   background-color: var(--main-color-hover);
 }
-.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):disabled,
-.bd-button-filled:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):disabled {
+:is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):disabled {
+  background-color: var(--main-color);
+}
+:is(.button__201d5, .button__6af3a):is(.lookLink__201d5) {
+  background-color: transparent;
+  border: none;
+  color: var(--main-color) !important;
+}
+:is(.button__201d5, .button__6af3a):is(.lookLink__201d5):hover .contents__201d5 {
+  --button--underline-color: var(--main-color) !important;
+}
+
+.lookFilled__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand),
+.bd-button-filled:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand) {
+  background-color: var(--main-color);
+  border: none;
+}
+.lookFilled__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):hover,
+.bd-button-filled:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):hover {
+  background-color: var(--main-color-hover);
+}
+.lookFilled__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):disabled,
+.bd-button-filled:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):disabled {
   background-color: var(--main-color);
 }
 .lookFilled__201d5.colorGreen__201d5,
@@ -795,16 +814,17 @@
 .bd-button-filled:is(.colorWhite__201d5, .colorBrandInverted__201d5) {
   background: var(--main-color);
   border: none;
+  color: var(--textcolor);
 }
 .lookFilled__201d5:is(.colorWhite__201d5, .colorBrandInverted__201d5):hover,
 .bd-button-filled:is(.colorWhite__201d5, .colorBrandInverted__201d5):hover {
   background: var(--main-color-hover);
 }
 
-.lookOutlined__201d5:is(.colorBrand__201d5, .colorPrimary__201d5) {
+.lookOutlined__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a)) {
   border-color: var(--main-color);
 }
-.lookOutlined__201d5:is(.colorBrand__201d5, .colorPrimary__201d5):hover {
+.lookOutlined__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a)):hover {
   border-color: var(--main-color-hover);
   background-color: var(--main-color-hover);
 }
@@ -1466,7 +1486,7 @@
   padding: 0;
   margin: 0;
 }
-.jumpToPresentBar__0f481 .button__201d5 {
+.jumpToPresentBar__0f481 :is(.button__201d5, .button__6af3a) {
   display: none;
 }
 
@@ -1915,7 +1935,7 @@
   left: 15px;
   z-index: 1;
 }
-.root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .headerButtons__24502 .button__201d5 {
+.root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .headerButtons__24502 :is(.button__201d5, .button__6af3a) {
   background: var(--main-color);
 }
 .root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .mask__44b0c foreignObject {
@@ -2101,7 +2121,7 @@
   z-index: 1;
   position: absolute;
 }
-.root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .wrapper_da5890 .button__201d5 {
+.root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .wrapper_da5890 :is(.button__201d5, .button__6af3a) {
   background: var(--main-color);
 }
 .root__24502.root__49fc1.small__49fc1 .outer_c0bea0:not(.custom-user-profile-theme) .body__24502 {
@@ -2256,8 +2276,8 @@
   left: 15px;
   z-index: 1;
 }
-.root__9c3be.root__49fc1.small__49fc1 .inner_c0bea0 .profileButtons__9c3be .button__201d5,
-.root__9c3be.root__49fc1.small__49fc1 .profile__9c3be .profileButtons__9c3be .button__201d5 {
+.root__9c3be.root__49fc1.small__49fc1 .inner_c0bea0 .profileButtons__9c3be :is(.button__201d5, .button__6af3a),
+.root__9c3be.root__49fc1.small__49fc1 .profile__9c3be .profileButtons__9c3be :is(.button__201d5, .button__6af3a) {
   background: var(--main-color);
   color: var(--textcolor);
 }
@@ -2635,6 +2655,14 @@
 .accountProfileCard__1fed1 .background__1fed1 {
   margin: 0;
   flex: 1;
+}
+.accountProfileCard__1fed1 .background__1fed1 :is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand) {
+  background-color: transparent;
+  border: none;
+  color: var(--main-color);
+}
+.accountProfileCard__1fed1 .background__1fed1 :is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):hover .contents__201d5 {
+  --button--underline-color: var(--main-color) !important;
 }
 
 .column__5a2c6 .outer_c0bea0 {
