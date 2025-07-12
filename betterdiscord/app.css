@@ -1336,6 +1336,20 @@
   margin-bottom: -4px;
 }
 
+.reaction__23977 {
+  background: var(--colortransparency);
+}
+
+.reaction__23977.reactionMe__23977 {
+  background-color: color-mix(in srgb, var(--main-color) 40%, transparent);
+  border-color: var(--main-color);
+  color: var(--textcolor);
+}
+
+.reactionCount__23977 {
+  color: var(--textcolor);
+}
+
 .hasThread_c19a55::after {
   top: 2.5rem !important;
   left: 3.7rem !important;

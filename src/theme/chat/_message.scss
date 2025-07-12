@@ -229,6 +229,20 @@
   }
 }
 
+#{c(chat reactions reaction)} {
+  background: var(--colortransparency);
+}
+
+#{c(chat reactions reaction)}#{c(chat reactions me)} {
+  background-color: #{op(var(--main-color), 40%)};
+  border-color: var(--main-color);
+  color: var(--textcolor);
+}
+
+#{c(chat reactions count)} {
+  color: var(--textcolor);
+}
+
 //thread
 #{c(chat hasThread)} {
   &::after {
