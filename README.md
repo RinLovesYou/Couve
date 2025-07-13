@@ -52,3 +52,6 @@
 * [Nyria](https://github.com/NYRI4) - previous maintainer
 * [ClearVision-v7](https://github.dev/ClearVision/ClearVision-v7)/Zerthox - for the class file.
 * [Krammeth](https://github.com/Krammeth) - User Profile ideas/code snippets
+
+## Notice
+This project includes code licensed under the Apache License 2.0. See THIRD_PARTY_LICENSES for details.
