@@ -186,7 +186,7 @@
   color: var(--epicshadow1);
   transition: all 0.2s;
 }
-.circleIconButton__5bc7e:hover {
+.circleIconButton__5bc7e.selected__5bc7e, .circleIconButton__5bc7e:hover:not(.disabled__5bc7e) {
   background: transparent;
   color: var(--main-color);
   border-color: var(--main-color);
@@ -1607,6 +1607,22 @@
   border-radius: 0 5px 5px 0;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.container__551b0 {
+  background: var(--background-secondary);
+}
+
+.container_a592e1 {
+  border-color: var(--background-tertiary);
+}
+
+.header__551b0 {
+  border-bottom: 0;
+}
+
+.container_e9ef78 {
+  border-top-left-radius: var(--radius-md);
 }
 
 .uploadModal_dbca3c {

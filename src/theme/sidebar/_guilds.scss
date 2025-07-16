@@ -117,7 +117,8 @@
   color: var(--epicshadow1);
   transition: all 0.2s;
 
-  &:hover {
+  &#{c(guildList bottomButtonSelected)},
+  &:hover:not(#{c(guildList bottomButtonDisabled)}) {
     background: transparent;
     color: var(--main-color);
     border-color: var(--main-color);

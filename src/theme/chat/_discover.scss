@@ -1,0 +1,19 @@
+// honestly probably shouldn't be in chat but it is what it is
+
+@use 'backend' as *;
+
+#{c(discover sidebar container)} {
+  background: var(--background-secondary);
+}
+
+#{c(discover container)} {
+  border-color: var(--background-tertiary);
+}
+
+#{c(discover sidebar header)} {
+  border-bottom: 0;
+}
+
+#{c(discover bannerContainer)} {
+  border-top-left-radius: var(--radius-md);
+}
