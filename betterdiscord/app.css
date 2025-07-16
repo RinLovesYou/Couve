@@ -1121,6 +1121,7 @@
   background: var(--background-secondary-alt);
   border-color: transparent;
   height: auto;
+  border-left: none;
 }
 
 .membersWrap_c8ffbb {
@@ -1490,6 +1491,10 @@
 }
 .newMessagesBar__0f481 button[class*=barButtonAlt_] {
   display: none;
+}
+
+.stackedBars__74017:not(:last-child) {
+  border-bottom: 0;
 }
 
 .jumpToPresentBar__0f481 {

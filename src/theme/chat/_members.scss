@@ -4,6 +4,7 @@
   background: var(--background-secondary-alt);
   border-color: transparent;
   height: auto;
+  border-left: none;
 }
 
 #{c(memberList wrap)} {
