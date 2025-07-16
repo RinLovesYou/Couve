@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
 :is(.theme-light, .theme-dark, .theme-darker, .theme-midnight), :is(.theme-light, .theme-dark, .theme-darker, .theme-midnight):is(.theme-light, .theme-dark) {
   --avatar-radius: 8px;
-  --main-color: #419e85;
-  --main-color-hover: #3c8b76;
-  --background-primary: #252a3e;
-  --background-secondary: #1e2337;
-  --background-secondary-alt: #1c2438;
-  --background-secondary-alt-alt: #1b1d31;
-  --background-tertiary: #060c24;
+  --main-color: rgba(65, 158, 133, 1);
+  --main-color-hover: rgba(60, 139, 118, 1);
+  --background-primary: rgba(37, 42, 62, 1);
+  --background-secondary: rgba(30, 35, 55, 1);
+  --background-secondary-alt: rgba(28, 36, 56, 1);
+  --background-secondary-alt-alt: rgba(27, 29, 49, 1);
+  --background-tertiary: rgba(6, 12, 36, 1);
   --deprecated-store-bg: var(--background-primary);
   --background-floating: var(--background-secondary);
   --background-mobile-primary: var(--background-primary);
@@ -755,42 +755,48 @@
   background: var(--background-secondary);
 }
 
-:is(.button__201d5, .button__6af3a),
+.button__201d5,
+.button__6af3a,
 .bd-button {
   border-radius: 8px;
   transition: box-shadow 200ms;
 }
 
-:is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand) {
+.button__201d5:is(.colorPrimary__201d5, .primary__6af3a, .bd-button-color-brand),
+.button__6af3a:is(.colorPrimary__201d5, .primary__6af3a, .bd-button-color-brand) {
   background-color: var(--main-color);
   border: none;
 }
-:is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):hover {
+.button__201d5:is(.colorPrimary__201d5, .primary__6af3a, .bd-button-color-brand):hover,
+.button__6af3a:is(.colorPrimary__201d5, .primary__6af3a, .bd-button-color-brand):hover {
   background-color: var(--main-color-hover);
 }
-:is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):disabled {
+.button__201d5:is(.colorPrimary__201d5, .primary__6af3a, .bd-button-color-brand):disabled,
+.button__6af3a:is(.colorPrimary__201d5, .primary__6af3a, .bd-button-color-brand):disabled {
   background-color: var(--main-color);
 }
-:is(.button__201d5, .button__6af3a):is(.lookLink__201d5) {
+.button__201d5:is(.lookLink__201d5),
+.button__6af3a:is(.lookLink__201d5) {
   background-color: transparent;
   border: none;
   color: var(--main-color) !important;
 }
-:is(.button__201d5, .button__6af3a):is(.lookLink__201d5):hover .contents__201d5 {
+.button__201d5:is(.lookLink__201d5):hover .contents__201d5,
+.button__6af3a:is(.lookLink__201d5):hover .contents__201d5 {
   --button--underline-color: var(--main-color) !important;
 }
 
-.lookFilled__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand),
-.bd-button-filled:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand) {
+.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand),
+.bd-button-filled:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand) {
   background-color: var(--main-color);
   border: none;
 }
-.lookFilled__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):hover,
-.bd-button-filled:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):hover {
+.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):hover,
+.bd-button-filled:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):hover {
   background-color: var(--main-color-hover);
 }
-.lookFilled__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):disabled,
-.bd-button-filled:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):disabled {
+.lookFilled__201d5:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):disabled,
+.bd-button-filled:is(.colorBrand__201d5, .colorPrimary__201d5, .bd-button-color-brand):disabled {
   background-color: var(--main-color);
 }
 .lookFilled__201d5.colorGreen__201d5,
@@ -821,10 +827,10 @@
   background: var(--main-color-hover);
 }
 
-.lookOutlined__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a)) {
+.lookOutlined__201d5:is(.colorBrand__201d5, .colorPrimary__201d5) {
   border-color: var(--main-color);
 }
-.lookOutlined__201d5:is(.colorBrand__201d5, :is(.colorPrimary__201d5, .primary__6af3a)):hover {
+.lookOutlined__201d5:is(.colorBrand__201d5, .colorPrimary__201d5):hover {
   border-color: var(--main-color-hover);
   background-color: var(--main-color-hover);
 }
@@ -1145,6 +1151,9 @@
 .messagesWrapper__36d07 {
   flex-direction: column;
 }
+.messagesWrapper__36d07 .replying__5126c:hover {
+  background: color-mix(in srgb, var(--main-color-hover) 16%, transparent);
+}
 
 .cozy_c19a55 {
   padding-left: 50px !important;
@@ -1331,6 +1340,9 @@
 .mentioned__5126c {
   background: color-mix(in srgb, var(--main-color) 7.84%, transparent);
 }
+.mentioned__5126c:hover {
+  background: color-mix(in srgb, var(--main-color-hover) 7.84%, transparent);
+}
 .mentioned__5126c .embedFull__623de {
   margin-left: 4px;
   margin-bottom: -4px;
@@ -1500,7 +1512,7 @@
   padding: 0;
   margin: 0;
 }
-.jumpToPresentBar__0f481 :is(.button__201d5, .button__6af3a) {
+.jumpToPresentBar__0f481 .button__201d5 {
   display: none;
 }
 
@@ -1949,7 +1961,7 @@
   left: 15px;
   z-index: 1;
 }
-.root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .headerButtons__24502 :is(.button__201d5, .button__6af3a) {
+.root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .headerButtons__24502 .button__201d5 {
   background: var(--main-color);
 }
 .root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .mask__44b0c foreignObject {
@@ -2135,7 +2147,7 @@
   z-index: 1;
   position: absolute;
 }
-.root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .wrapper_da5890 :is(.button__201d5, .button__6af3a) {
+.root__24502.root__49fc1.small__49fc1 .inner_c0bea0 .wrapper_da5890 .button__201d5 {
   background: var(--main-color);
 }
 .root__24502.root__49fc1.small__49fc1 .outer_c0bea0:not(.custom-user-profile-theme) .body__24502 {
@@ -2290,8 +2302,8 @@
   left: 15px;
   z-index: 1;
 }
-.root__9c3be.root__49fc1.small__49fc1 .inner_c0bea0 .profileButtons__9c3be :is(.button__201d5, .button__6af3a),
-.root__9c3be.root__49fc1.small__49fc1 .profile__9c3be .profileButtons__9c3be :is(.button__201d5, .button__6af3a) {
+.root__9c3be.root__49fc1.small__49fc1 .inner_c0bea0 .profileButtons__9c3be .button__201d5,
+.root__9c3be.root__49fc1.small__49fc1 .profile__9c3be .profileButtons__9c3be .button__201d5 {
   background: var(--main-color);
   color: var(--textcolor);
 }
@@ -2670,12 +2682,12 @@
   margin: 0;
   flex: 1;
 }
-.accountProfileCard__1fed1 .background__1fed1 :is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand) {
+.accountProfileCard__1fed1 .background__1fed1 .button__201d5:is(.colorPrimary__201d5, .bd-button-color-brand) {
   background-color: transparent;
   border: none;
   color: var(--main-color);
 }
-.accountProfileCard__1fed1 .background__1fed1 :is(.button__201d5, .button__6af3a):is(:is(.colorPrimary__201d5, .primary__6af3a), .bd-button-color-brand):hover .contents__201d5 {
+.accountProfileCard__1fed1 .background__1fed1 .button__201d5:is(.colorPrimary__201d5, .bd-button-color-brand):hover .contents__201d5 {
   --button--underline-color: var(--main-color) !important;
 }
 
@@ -2816,7 +2828,8 @@
   border-radius: 8px;
 }
 
-.connection_c7f964 {
+.connection_c7f964,
+.authedAppV2__50a54 {
   background: var(--background-secondary);
 }
 
@@ -2824,17 +2837,31 @@
   background: var(--background-secondary);
 }
 
-.connectionHeader_c7f964 {
+.connectionHeader_c7f964,
+.headerV2__50a54 {
   background: transparent;
 }
-.connectionHeader_c7f964 .connectionDelete_c7f964 {
+.connectionHeader_c7f964 .connectionDelete_c7f964,
+.headerV2__50a54 .connectionDelete_c7f964 {
   border-color: transparent;
   border-radius: 50%;
   padding: 8px 8px 5px 8px;
   transition: background 100ms;
 }
-.connectionHeader_c7f964 .connectionDelete_c7f964:hover {
+.connectionHeader_c7f964 .connectionDelete_c7f964:hover,
+.headerV2__50a54 .connectionDelete_c7f964:hover {
   background: rgba(255, 255, 255, 0.1333333333);
+}
+
+.appDetailsContainer__50a54 .appDetailsSection__50a54 {
+  border-bottom: 0;
+}
+
+.permissionCheckmark__50a54 {
+  filter: none;
+  mask: url("https://discord.com/assets/72e4439bf318b5c5.svg") no-repeat;
+  background: var(--main-color);
+  mask-size: contain;
 }
 
 .boostContainer_ceb06a {

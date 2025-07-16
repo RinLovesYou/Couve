@@ -2,6 +2,12 @@
 
 #{c(chat messagesWrapper)} {
   flex-direction: column;
+
+  #{c(chat replying)} {
+    &:hover {
+      background: #{op(var(--main-color-hover), 16%)};
+    }
+  }
 }
 
 #{c(chat cozy)} {
@@ -222,6 +228,10 @@
 }
 #{c(chat mentioned)} {
   background: #{op(var(--main-color), 7.84%)};
+
+  &:hover {
+    background: #{op(var(--main-color-hover), 7.84%)};
+  }
 
   #{c(embeds embedFull)} {
     margin-left: 4px;
