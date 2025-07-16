@@ -607,7 +607,6 @@
 }
 
 .outer_c0bea0:is(.user-profile-sidebar) {
-  border-radius: 8px;
   overflow: unset;
 }
 .outer_c0bea0:is(.user-profile-sidebar) .inner_c0bea0 {
@@ -2565,9 +2564,7 @@
   flex-direction: row;
 }
 .layer__960e4 .sidebarRegion__23e6b .sidebarRegionScroller__23e6b .sidebar__23e6b .info__2debe {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
+  text-align: center;
 }
 .layer__960e4 .sidebarRegion__23e6b .sidebarRegionScroller__23e6b .sidebar__23e6b {
   padding-left: 0 !important;

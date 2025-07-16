@@ -140,7 +140,6 @@
 
 //user profile
 #{c(profile outer)}:is(.user-profile-sidebar) {
-  border-radius: 8px;
   overflow: unset;
 
   #{c(profile inner)} {
