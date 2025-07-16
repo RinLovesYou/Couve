@@ -896,6 +896,7 @@
 
 .checkbox_f525d3.box_f525d3.checked_f525d3 {
   background-color: var(--main-color);
+  border-color: transparent;
 }
 
 :root span[class*=clanTag_],
@@ -1517,7 +1518,7 @@
   padding: 0;
   margin: 0;
 }
-.jumpToPresentBar__0f481 .button__201d5 {
+.jumpToPresentBar__0f481 .button__6af3a {
   display: none;
 }
 
