@@ -2,12 +2,6 @@
 
 #{c(chat messagesWrapper)} {
   flex-direction: column;
-
-  #{c(chat replying)} {
-    &:hover {
-      background: #{op(var(--main-color-hover), 16%)};
-    }
-  }
 }
 
 #{c(chat cozy)} {
@@ -223,15 +217,19 @@
   border-radius: 0;
 }
 
+.mouse-mode.full-motion #{c(chat message)}#{c(chat replying)}:hover {
+  background: #{op(var(--main-color-hover), 16%)};
+}
+
+.mouse-mode.full-motion #{c(chat message)}#{c(chat mentioned)}:hover {
+  background: #{op(var(--main-color-hover), 7.84%)};
+}
+
 #{c(chat replying)} {
   background: #{op(var(--main-color), 16%)};
 }
 #{c(chat mentioned)} {
   background: #{op(var(--main-color), 7.84%)};
-
-  &:hover {
-    background: #{op(var(--main-color-hover), 7.84%)};
-  }
 
   #{c(embeds embedFull)} {
     margin-left: 4px;
