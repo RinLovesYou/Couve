@@ -11,14 +11,14 @@
     // Borders
     --avatar-radius: 8px;
 
-    --main-color: #419e85;
-    --main-color-hover: #3c8b76;
-
-    --background-primary: #252a3e;
-    --background-secondary: #1e2337;
-    --background-secondary-alt: #1c2438;
-    --background-secondary-alt-alt: #1b1d31;
-    --background-tertiary: #060c24;
+    //translate to rgba
+    --main-color: rgba(65, 158, 133, 1);
+    --main-color-hover: rgba(60, 139, 118, 1);
+    --background-primary: rgba(37, 42, 62, 1);
+    --background-secondary: rgba(30, 35, 55, 1);
+    --background-secondary-alt: rgba(28, 36, 56, 1);
+    --background-secondary-alt-alt: rgba(27, 29, 49, 1);
+    --background-tertiary: rgba(6, 12, 36, 1);
 
     --deprecated-store-bg: var(--background-primary);
     --background-floating: var(--background-secondary);

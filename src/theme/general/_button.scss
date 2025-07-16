@@ -1,13 +1,15 @@
 @use 'backend' as *;
 
 #{c(button button)},
+#{c(button new button)},
 .bd-button {
   border-radius: 8px;
   transition: box-shadow 200ms;
 }
 
-#{c(button button)} {
-  &:is(#{c(button colorPrimary)}, .bd-button-color-brand) {
+#{c(button button)},
+#{c(button new button)} {
+  &:is(#{c(button colorPrimary), #{c(button new primary)}}, .bd-button-color-brand) {
     background-color: var(--main-color);
     border: none;
     &:hover {

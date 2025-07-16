@@ -1,6 +1,7 @@
 @use 'backend' as *;
 
-#{c(userSettings connections connection)} {
+#{c(userSettings connections connection)},
+#{c(userSettings authedApps app)} {
   background: var(--background-secondary);
 }
 
@@ -8,7 +9,8 @@
   background: var(--background-secondary);
 }
 
-#{c(userSettings connections connectionHeader)} {
+#{c(userSettings connections connectionHeader)},
+#{c(userSettings authedApps header)} {
   background: transparent;
 
   #{c(userSettings connections connectionDelete)} {
@@ -21,4 +23,16 @@
       background: #fff2;
     }
   }
+}
+
+#{c(userSettings authedApps detailsContainer)} #{c(userSettings authedApps detailsSection)} {
+  border-bottom: 0;
+}
+
+//hacky way to make the checkmarks our color. todo: do it better
+#{c(userSettings authedApps permissionCheck)} {
+  filter: none;
+  mask: url('https://discord.com/assets/72e4439bf318b5c5.svg') no-repeat;
+  background: var(--main-color);
+  mask-size: contain;
 }
