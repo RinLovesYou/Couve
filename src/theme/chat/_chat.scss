@@ -1,8 +1,8 @@
 @use 'backend' as *;
 
 #{c(chat messagesWrapper)},
-#{c(chatForm form)},
-#{c(chat subtitleContainer)} {
+#{c(chat subtitleContainer)},
+#{c(chat chatContentInner)} {
   background: var(--background-primary);
 }
 
@@ -10,7 +10,4 @@
   &::-webkit-scrollbar {
     display: none;
   }
-}
-
-#{c(chat chat)} {
 }

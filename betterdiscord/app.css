@@ -1108,8 +1108,8 @@
 }
 
 .messagesWrapper__36d07,
-.form_f75fb0,
-.subtitleContainer_f75fb0 {
+.subtitleContainer_f75fb0,
+.chatContent_f75fb0 {
   background: var(--background-primary);
 }
 
@@ -1572,6 +1572,9 @@
 .chat_f75fb0 .inner__74017 {
   background-color: var(--background-secondary);
   border-color: transparent;
+}
+.chat_f75fb0 .form_f75fb0 {
+  background: transparent;
 }
 
 .divider__908e2 {
