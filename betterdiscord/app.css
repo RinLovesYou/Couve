@@ -246,6 +246,16 @@
   display: none;
 }
 
+.container_e131a9 {
+  border-bottom: 0;
+}
+
+.align-chat-input .connection_e131a9,
+.align-chat-input .inner_e131a9,
+.align-chat-input .rtcConnectionStatus__06d62 {
+  height: 50px;
+}
+
 .actions__4cd01 {
   margin: 0;
 }

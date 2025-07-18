@@ -31,6 +31,18 @@
   display: none;
 }
 
+#{c(sidebar panel voice container)} {
+  border-bottom: 0;
+}
+
+.align-chat-input {
+  #{c(sidebar panel voice connection)},
+  #{c(sidebar panel voice inner)},
+  #{c(sidebar panel voice rtcConnection status)} {
+    height: 50px;
+  }
+}
+
 #{c(sidebar panel activity actions)} {
   margin: 0;
   #{c(sidebar panel buttons button)} {
