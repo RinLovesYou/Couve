@@ -58,8 +58,8 @@
 #{c(sidebar panel avatarWrapper)}[aria-expanded] {
   #{c(avatar wrapper)} {
     position: fixed;
-    left: -68px;
-    bottom: 22px;
+    left: -64px;
+    bottom: 30px;
     z-index: 1;
   }
 
@@ -81,17 +81,9 @@
       }
     }
 
-    #{c(guildList mention bottom)} {
-      position: fixed;
-      width: 90px;
-      left: 42px;
-      bottom: 0;
-    }
+    #{c(guildList mention bottom)},
     #{c(guildList mention top)} {
-      position: fixed;
-      width: 90px;
-      left: 42px;
-      top: 22px;
+      left: 41px;
     }
   }
 

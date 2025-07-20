@@ -18,6 +18,7 @@
 #{c(guildList guilds)} {
   width: 90px;
   margin-bottom: 0 !important;
+  mask: 0 !important;
 
   //creates a shadow effect at the bottom of the guilds list
   &::before {
@@ -153,4 +154,8 @@
   width: 100%;
   height: 30px;
   padding: 0;
+}
+
+#{c(guildList mention bottom)} {
+  bottom: 0 !important;
 }
