@@ -97,9 +97,10 @@
 }
 
 .guilds_c48ade {
-  width: 90px;
+  --custom-guild-list-width: 90px !important;
   margin-bottom: 0 !important;
   mask: 0 !important;
+  overflow: visible !important;
 }
 .guilds_c48ade::before {
   content: "";
@@ -165,10 +166,10 @@
   height: calc(100% + 12px) !important;
 }
 
-.folderIconWrapper__48112 {
+.folderPreviewWrapper__48112 {
   transition: border-radius 200ms;
 }
-.folderIconWrapper__48112:hover {
+.folderPreviewWrapper__48112:hover {
   border-radius: 12px;
 }
 
@@ -1570,7 +1571,7 @@
 .search__49676 .searchBar__97492 .searchAnswer_bd8186 {
   background: transparent;
 }
-.search__49676 .searchBar__97492 .icon_fea832 {
+.search__49676 .searchBar__97492 .icon_a45028 {
   color: var(--main-color);
 }
 

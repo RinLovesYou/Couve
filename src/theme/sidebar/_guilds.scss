@@ -16,9 +16,10 @@
 //the guild sidebar itself
 
 #{c(guildList guilds)} {
-  width: 90px;
+  --custom-guild-list-width: 90px !important;
   margin-bottom: 0 !important;
   mask: 0 !important;
+  overflow: visible !important;
 
   //creates a shadow effect at the bottom of the guilds list
   &::before {

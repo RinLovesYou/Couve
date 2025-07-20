@@ -451,7 +451,7 @@ $classes: (
   ),
   'text': (
     // These are within the same group but not with the rest. not sure where to put these
-    'textNormalDefaultColor': 'defaultColor__4bd52',
+    'textNormalDefaultColor': 'defaultColor_b717a1',
     'lineClamp1': 'lineClamp1__4bd52',
     'lineClamp2Plus': 'lineClamp2Plus__4bd52',
     'selectableText': 'selectable__4bd52',
@@ -993,7 +993,7 @@ $classes: (
     'cozy': 'cozy_c19a55',
     'compact': 'compact_c19a55',
     'chat': 'chat_f75fb0',
-    'chatSidebarOpen': 'chatSidebarOpen_d880dc',
+    'chatSidebarOpen': 'sidebarOpen_cb9592',
     'threadSidebarOpen': 'threadSidebarOpen_f75fb0',
     'threadSidebarFloating': 'threadSidebarFloating_f75fb0',
     'subtitleContainer': 'subtitleContainer_f75fb0',
@@ -1452,7 +1452,7 @@ $classes: (
 
     'reaction': (
       'reactions': 'reactions_f8896c',
-      'reactionBtn': 'reactionBtn_f8896c',
+      'reactionBtn': 'reactionBtn__23977',
       'icon': 'icon_f8896c',
       'active': 'active_f8896c',
       'visible': 'visible_f8896c',
@@ -2265,7 +2265,7 @@ $classes: (
       'giftTextContainer': 'textContainer_da4aee',
       'giftButton': 'giftCardButton_da4aee',
       // only appears without nitro
-      'footerInnerWrapper': 'innerWrapper_c511e4',
+      'footerInnerWrapper': 'innerWrapper__70f7f',
       // all perks page
       'backButton': 'backButton_b9abc5',
       'arrows': 'leftArrow__3cf14' 'rightArrow__3cf14',
@@ -2289,7 +2289,7 @@ $classes: (
     'pageWrapper': 'pageWrapper__6db1d',
     'page': 'page__6db1d',
 
-    'shopWhatsNew': 'whatsNewSectionBackground_c880e8',
+    'shopWhatsNew': 'whatsNewSection_c880e8',
 
     'loadingCardSkeleton': 'skeleton__72fa0',
     'loadingBanner': 'bannerBody__72fa0',
@@ -2754,7 +2754,7 @@ $classes: (
       // add/create dms' username's cross
       'iconLayout': 'iconLayout_fea832',
       'iconContainer': 'iconContainer_fea832',
-      'icon': 'icon_fea832',
+      'icon': 'icon_a45028',
       'iconVisible': 'visible_fea832',
       'iconClear': 'clear_fea832',
 
@@ -2817,24 +2817,24 @@ $classes: (
     'iconBadgeIcon': 'icon__2b1f5',
     'participating': 'isCurrentUserConnected__650eb',
     // also used in header for some reason?
-    'folderParentWrapper': 'wrapper__48112',
+    'folderParentWrapper': 'folderGroup__48112',
     'folderParentWrapperCollapsed': 'collapsed',
     // class found in JS
     'folderParentWrapperExpanded': 'expanded',
     // class found in JS
-    'folder': 'folder__48112',
+    'folder': 'hiddenVisually__27f77',
     'folderCollapsed': 'collapsed__48112',
     'folderHover': 'hover__48112',
-    'closedFolderIconWrapper': 'closedFolderIconWrapper__48112',
-    'folderGuildIcon': 'guildIcon__48112',
+    'closedFolderIconWrapper': 'folderPreview__48112',
+    'folderGuildIcon': 'folderPreviewGuildIcon__48112',
     'folderGroup': 'folderGroup__48112',
     'folderGroupBackground': 'folderGroupBackground__48112',
     'folderGuildsList': 'folderGuildsList__48112',
     // tiny server icons
-    'folderNoIcon': 'noIcon_f11207',
+    'folderNoIcon': 'noIcon_f34534',
     // shared in settings/boosts?
-    'expandedFolderBackground': 'expandedFolderBackground__48112',
-    'folderIconWrapper': 'folderIconWrapper__48112',
+    'expandedFolderBackground': 'folderGroupBackground__48112',
+    'folderIconWrapper': 'folderPreviewWrapper__48112',
     'expandedFolderIconWrapper': 'expandedFolderIconWrapper__48112',
     'serversInFolderStack': 'stack_dbd263',
     // servers in folder
@@ -3233,14 +3233,14 @@ $classes: (
                 'avatar': 'avatar__07f91',
                 'avatarSmall': 'avatarSmall__07f91',
 
-                'container': 'container__91e7c',
+                'container': 'container__394db',
                 // contains usernameContainer + chipletParent
-                'usernameContainer': 'usernameContainer__91e7c',
+                'usernameContainer': 'usernameContainer__394db',
                 'usernameFont': 'usernameFont__07f91',
                 'username': 'username__07f91',
                 'usernameSpeaking': 'usernameSpeaking__07f91',
-                'chipletParent': 'chipletParent__91e7c',
-                'chipletContainer': 'chipletContainer__91e7c',
+                'chipletParent': 'chipletParent__394db',
+                'chipletContainer': 'chipletContainer__394db',
 
                 'icons': 'icons__07f91',
                 'iconsGroup': 'iconGroup__07f91',
@@ -3631,9 +3631,9 @@ $classes: (
           'nickname': 'nickname__63ed3',
           'userTagUsername': 'userTagUsername__63ed3',
           'guildTagContainer': 'guildTagContainer__63ed3',
-          'biteSize': 'biteSize__63ed3',
+          'biteSize': 'user-profile-popout',
           'panel': 'panel__63ed3',
-          'fullSize': 'fullSize__63ed3',
+          'fullSize': 'user-profile-modal',
           'nicknameIcons': 'nicknameIcons__63ed3',
           'usernameRow': 'usernameRow__63ed3',
           'usernameContainer': 'container__63ed3',
@@ -3653,8 +3653,8 @@ $classes: (
       // "edit profile"
       'firendsMoreEditProfileButtons': (
           'wrapper': 'wrapper_da5890',
-          'biteSize': 'biteSize_da5890',
-          'fullSize': 'fullSize_da5890',
+          'biteSize': 'user-profile-popout',
+          'fullSize': 'user-profile-modal',
           'panel': 'panel_da5890',
         ),
 
@@ -3667,8 +3667,8 @@ $classes: (
       'avatar': (
           'avatar': 'avatar__75742',
           'popover': 'avatarPopover__2d0ab',
-          'biteSize': 'biteSize__75742',
-          'fullSize': 'fullSize__75742',
+          'biteSize': 'user-profile-popout',
+          'fullSize': 'user-profile-modal',
           'panel': 'panel__75742',
           'withReactReply': 'withReactReply__75742',
           'hoisted': 'hoisted__75742',
@@ -3769,13 +3769,13 @@ $classes: (
       // Go to the DMs of someone while your screen is larger than
       // 1132px wide and you've not disabled the panel via header
       'sidebar': (
-          'body': 'body__486c9',
-          'bodyOverlay': 'overlay__486c9',
+          'body': 'body_b32ca4',
+          'bodyOverlay': 'overlay_b32ca4',
           // used over "about me/member since" container
           // encompass both mutual servers and mutual friends
-          'connectionsOverlay': 'overlay_d04d18',
-          'connectionsList': 'list_d04d18',
-          'connectionsDivider': 'divider_d04d18',
+          'connectionsOverlay': 'overlay__3b260',
+          'connectionsList': 'list__3b260',
+          'connectionsDivider': 'divider__3b260',
         ),
 
       // Popoout: click on user in chat or member list
@@ -3857,7 +3857,7 @@ $classes: (
 
     // used in a few places, i'm not entirely sure what's different about it
     'premiumFeatureBorder': 'premiumFeatureBorder__65c15',
-    'featureBorder': 'featureBorder__65c15',
+    'featureBorder': 'featureBorder_fbfab6fbfab6_65c15',
     'featureBackground': 'background__65c15',
 
     'sectionTitle': 'sectionTitle__7bffb',
@@ -3919,7 +3919,7 @@ $classes: (
       'uploadImageOption': 'option__54675',
       'bioTextAreaContainer': 'bioTextAreaContainer__6a919',
       'bioTextArea': 'bioTextArea__6a919',
-      'profileContainer': 'container_ba7f98',
+      'profileContainer': 'container__5a2c6',
 
       'customization': (
         'column': 'column__5a2c6',
@@ -4026,7 +4026,7 @@ $classes: (
       // no nitro
       'perkCard': 'perkCard_b62c4e',
       'footerWrapper': 'wrapper__70f7f',
-      'footerWrapperInner': 'innerWrapperV1__70f7f',
+      'footerWrapperInner': 'innerWrapper__70f7f',
       'footerWrapperBase': 'innerWrapperBase__70f7f',
       'footerSubButton': 'subButton__70f7f',
       'footerGiftButton': 'giftButton_b322b1',
@@ -4093,7 +4093,7 @@ $classes: (
       'preview': 'preview__3e443',
 
       'themesPresets': 'presets__67a11',
-      'themesBasicSelectors': 'basicThemeSelectors_fbfab6',
+      'themesBasicSelectors': 'basicThemeSelectors_fbfab6fbfab6fbfab6',
       'themesSelectorContainer': 'themeSelectionContainer__36dee',
       'themesSelection': 'themeSelection__36dee',
       'themesDefault': 'defaultThemeSelection__36dee',
@@ -4107,7 +4107,7 @@ $classes: (
       'themesLightOverlay': 'lightOverlay__36dee',
       'themesDarkOverlay': 'darkOverlay__36dee',
 
-      'themesFeatureBorder': 'featureBorder_fbfab6',
+      'themesFeatureBorder': 'featureBorder_fbfab6fbfab6fbfab6',
       'themesHeader': 'header__67a11',
       // "Colour", nitro icon, try etc
       'themesHeadings': 'headings__67a11',
@@ -4115,7 +4115,7 @@ $classes: (
       'themesPremiumIcon': 'premiumIcon__67a11',
       'themesNitroWheel': 'nitroWheel_c5f0dc',
       // ON OWN LINE; ALSO APPEARS UNDER SERVER PROFILES
-      'themesTryItOutButton': 'tryItOutButtons_fbfab6',
+      'themesTryItOutButton': 'tryItOutButtons_fbfab6fbfab6fbfab6',
 
       'selectedCircle': 'selectionCircle__36dee',
       'checkmarkCircle': 'checkmarkCircle__36dee',
@@ -4574,16 +4574,16 @@ $classes: (
 
       // Change status
       'mainStatusIcon': 'mainStatusIcon_ad5fac',
-      'statusItem': 'statusItem_af7fb7',
+      'statusItem': 'statusItem_ce8328',
       // within submenu
       'statusMask': 'mask_a423bd',
       'status': 'status_a423bd',
       // inline background color
-      'statusicon': 'icon_af7fb7',
+      'statusicon': 'icon_ce8328',
       // >foreignObject>div has inline style
-      'statusText': 'status_af7fb7',
+      'statusText': 'status_ce8328',
       // contains text
-      'statusDescription': 'description_af7fb7',
+      'statusDescription': 'description_ce8328',
 
       // used with do not disturb and invis
       'accountSwitcher': (
@@ -5003,11 +5003,11 @@ $classes: (
             'emoji': 'emoji__9be63',
           ),
           'add': (
-            'button': 'soundAddButton__58c6c' 'soundAddButtonRefresh__58c6c',
-            'info': 'soundAddInfoRefresh__58c6c',
+            'button': 'soundAddButton_da9eb2' 'soundAddButtonRefresh_da9eb2',
+            'info': 'soundAddInfoRefresh_da9eb2',
             // only appears in refresh
-            'icon': 'soundAddIcon__58c6c' 'soundAddIconRefresh__58c6c',
-            'text': 'soundAddText_c06ee5' 'soundAddTextRefresh__58c6c',
+            'icon': 'soundAddIcon__58c6c' 'soundAddIconRefresh_da9eb2',
+            'text': 'soundAddText_c06ee5' 'soundAddTextRefresh_da9eb2',
           ),
         ),
         'nitro': (
@@ -5237,8 +5237,8 @@ $classes: (
 
     // click on guild tag beside user name
     'guildTag': (
-        'spinner': 'spinnerContainer__86bf6',
-        'container': 'container__86bf6',
+        'spinner': 'spinnerContainer_d3846c',
+        'container': 'container_d3846c',
       ),
 
     'streamPreview': (
@@ -5256,7 +5256,7 @@ $classes: (
 
   'modals': (
     'layer': 'layer_bc663c',
-    'hidden': 'hidden_bc663c',
+    'hidden': 'inactive_bc663c',
     // best way to get this class is to change banner/avi and click gifs
     'focusLock': 'focusLock__49fc1',
     'root': 'root__49fc1',
@@ -5347,12 +5347,12 @@ $classes: (
 
     // When creating a new event
     'createEvent': (
-        'container': 'container_f2ceaa',
-        'progressBar': 'progressBar_f2ceaa',
+        'container': 'container__5537c',
+        'progressBar': 'progressBar__5537c',
         // tab at top, unselected
-        'progressBarSelected': 'selectedProgressBar_f2ceaa',
+        'progressBarSelected': 'selectedProgressBar__5537c',
         // above selected
-        'stepContainer': 'stepContainer_f2ceaa',
+        'stepContainer': 'stepContainer__5537c',
 
         'textInput': 'textInput__97cfe',
         // different line for some reason
@@ -5505,7 +5505,7 @@ $classes: (
         'footer': 'footer_b962dc',
         'submitButton': 'submitButton_b962dc',
         'formItem': 'formItem_b962dc',
-        'resendButton': 'resendButton_b962dc',
+        'resendButton': 'resendButtonContainer_b962dc',
         'confirmation': 'confirmation_b962dc',
         'confirmationContent': 'confirmationContent_b962dc',
         'confirmationButtonRow': 'confirmationButtonRow_b962dc',
