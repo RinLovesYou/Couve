@@ -12,11 +12,6 @@
   background: var(--background-secondary);
 }
 
-#{c(sidebar list)} {
-  min-width: 300px;
-  margin-top: -0.5px;
-}
-
 //server name
 
 #{c(sidebar server header header)} {

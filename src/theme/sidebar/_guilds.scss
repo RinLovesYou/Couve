@@ -20,6 +20,7 @@
   margin-bottom: 0 !important;
   mask: 0 !important;
   overflow: visible !important;
+  grid-area: guilds;
 
   //creates a shadow effect at the bottom of the guilds list
   &::before {
@@ -33,6 +34,10 @@
     background: linear-gradient(360deg, var(--background-tertiary), transparent);
     pointer-events: none;
   }
+}
+
+#{c(guildList closed)} {
+    display: none;
 }
 
 //home button
@@ -65,9 +70,13 @@
 }
 
 #{c(guildList serverWrapper)},
-#{c(guildList serverWrapperSVG)} {
-  width: 42px;
-  height: 42px;
+#{c(guildList serverWrapperSVG)},
+#{c(guildList iconWrapper)},
+//bd i think?
+.folderHeader__48112 {
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50% !important;
 }
 
 #{c(guildList selected)} {
@@ -137,12 +146,17 @@
   text-transform: capitalize;
   color: var(--textcolor);
   animation: fade 0.5s;
-  border-radius: 0;
   border-color: transparent;
   box-shadow: none;
+  border-radius: 8px;
 
   &:hover {
     color: var(--main-color);
+  }
+
+  &:active {
+    color: var(--main-color);
+    background: #{op(var(--main-color), 20%)};
   }
 }
 
@@ -159,4 +173,5 @@
 
 #{c(guildList mention bottom)} {
   bottom: 0 !important;
+  position: absolute;
 }

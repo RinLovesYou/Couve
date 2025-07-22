@@ -2,49 +2,42 @@
 
 #{c(sidebar panel panels)} {
   border-radius: 0;
-  padding-right: 0px;
-  z-index: unset;
   border-color: transparent;
   bottom: 0;
-  left: 0;
-  transform: translateX(91px);
-  width: calc(100% - 91px);
-  // transition:
-  //   transform 0.2s ease-out,
-  //   width 0.2s ease-out;
-  padding: 8px 8px;
+  left: 1px; //idk
+  padding: 0px;
+  width: 100%;
   background: var(--background-secondary);
+  padding-bottom: 10px;
+  overflow: hidden;
+  grid-area: panels;
 }
 
 // Game part, i.e. "Go Live"
 #{c(sidebar panel activity activityPanel)} {
-  position: absolute;
-  bottom: 17px;
-  right: 119px;
-  padding: 0;
-  border-radius: 8px;
-  background: var(--background-secondary);
+  background: transparent;
   border-color: transparent;
+  height: 0;
+  padding: 0 !important;
+  top: 147px;
+}
+
+#{c(sidebar panel activity body)} {
+  height: 0;
+  padding-right: 120px;
 }
 
 #{c(sidebar panel activity gameWrapper)} {
-  display: none;
-}
-
-#{c(sidebar panel voice container)} {
-  border-bottom: 0;
-}
-
-.align-chat-input {
-  #{c(sidebar panel voice connection)},
-  #{c(sidebar panel voice inner)},
-  #{c(sidebar panel voice rtcConnection status)} {
-    height: 50px;
+  min-width: 147px;
+  #{c(sidebar panel activity streamingWrapper)},
+  #{c(sidebar panel activity info)} {
+    display: none;
   }
 }
 
 #{c(sidebar panel activity actions)} {
   margin: 0;
+  padding: 0;
   #{c(sidebar panel buttons button)} {
     color: var(--main-color);
 
@@ -54,11 +47,24 @@
   }
 }
 
+#{c(sidebar panel voice container)} {
+  border-bottom: 0;
+}
+
+//discord still has not fixed this 💀
+.align-chat-input {
+  #{c(sidebar panel voice connection)},
+  #{c(sidebar panel voice inner)},
+  #{c(sidebar panel voice rtcConnection status)} {
+    height: 50px;
+  }
+}
+
 //avatar
-#{c(sidebar panel avatarWrapper)}[aria-expanded] {
+#{c(sidebar panel avatarWrapper)} {
   #{c(avatar wrapper)} {
     position: fixed;
-    left: -64px;
+    left: calc(45px - 16px);
     bottom: 30px;
     z-index: 1;
   }
@@ -68,31 +74,31 @@
   }
 }
 
-#{c(main appLayers)}:has(#{c(guildList wrapper)}:nth-of-type(2):not(#{c(guildList closed)}), .vc-betterFolders-sidebar) {
-  #{c(main base)} {
-    #{c(sidebar panel panels)} {
-      transform: translateX(182px);
-      width: calc(100% - 182px);
-    }
+// #{c(main appLayers)}:has(#{c(guildList wrapper)}:nth-of-type(2):not(#{c(guildList closed)}), .vc-betterFolders-sidebar) {
+//   #{c(main base)} {
+//     #{c(sidebar panel panels)} {
+//       transform: translateX(182px);
+//       width: calc(100% - 182px);
+//     }
 
-    #{c(sidebar panel avatarWrapper)}[aria-expanded] {
-      #{c(avatar wrapper)} {
-        left: calc(-68px - 45.5px);
-      }
-    }
+//     #{c(sidebar panel avatarWrapper)}[aria-expanded] {
+//       #{c(avatar wrapper)} {
+//         left: calc(-68px - 45.5px);
+//       }
+//     }
 
-    #{c(guildList mention bottom)},
-    #{c(guildList mention top)} {
-      left: 41px;
-    }
-  }
+//     #{c(guildList mention bottom)},
+//     #{c(guildList mention top)} {
+//       left: 41px;
+//     }
+//   }
 
-  #{c(main appLayer)} {
-    &:not(#{c(main baseLayer)}) {
-      margin-left: 180px !important;
-    }
-  }
-}
+//   #{c(main appLayer)} {
+//     &:not(#{c(main baseLayer)}) {
+//       margin-left: 180px !important;
+//     }
+//   }
+// }
 
 //buttons
 

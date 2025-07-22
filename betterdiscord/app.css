@@ -101,6 +101,7 @@
   margin-bottom: 0 !important;
   mask: 0 !important;
   overflow: visible !important;
+  grid-area: guilds;
 }
 .guilds_c48ade::before {
   content: "";
@@ -112,6 +113,10 @@
   height: 100px;
   background: linear-gradient(360deg, var(--background-tertiary), transparent);
   pointer-events: none;
+}
+
+.closed_ac0584 {
+  display: none;
 }
 
 .childWrapper__6e9f8 {
@@ -139,9 +144,12 @@
 }
 
 .wrapper_cc5dd2,
-.svg_cc5dd2 {
-  width: 42px;
-  height: 42px;
+.svg_cc5dd2,
+.wrapper__6e9f8,
+.folderHeader__48112 {
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50% !important;
 }
 
 .selected__6e9f8 {
@@ -202,12 +210,16 @@
   text-transform: capitalize;
   color: var(--textcolor);
   animation: fade 0.5s;
-  border-radius: 0;
   border-color: transparent;
   box-shadow: none;
+  border-radius: 8px;
 }
 .mention__3b95d:hover {
   color: var(--main-color);
+}
+.mention__3b95d:active {
+  color: var(--main-color);
+  background: color-mix(in srgb, var(--main-color) 20%, transparent);
 }
 
 .unreadMentionsIndicatorTop_ef3116 {
@@ -223,33 +235,52 @@
 
 .unreadMentionsIndicatorBottom_ef3116 {
   bottom: 0 !important;
+  position: absolute;
 }
 
 .panels_c48ade {
   border-radius: 0;
-  padding-right: 0px;
-  z-index: unset;
   border-color: transparent;
   bottom: 0;
-  left: 0;
-  transform: translateX(91px);
-  width: calc(100% - 91px);
-  padding: 8px 8px;
+  left: 1px;
+  padding: 0px;
+  width: 100%;
   background: var(--background-secondary);
+  padding-bottom: 10px;
+  overflow: hidden;
+  grid-area: panels;
 }
 
 .activityPanel_c48ade {
-  position: absolute;
-  bottom: 17px;
-  right: 119px;
-  padding: 0;
-  border-radius: 8px;
-  background: var(--background-secondary);
+  background: transparent;
   border-color: transparent;
+  height: 0;
+  padding: 0 !important;
+  top: 147px;
+}
+
+.body__5dec7 {
+  height: 0;
+  padding-right: 120px;
 }
 
 .gameWrapper__5dec7 {
+  min-width: 147px;
+}
+.gameWrapper__5dec7 .wrapper_a629d4,
+.gameWrapper__5dec7 .info__5dec7 {
   display: none;
+}
+
+.actions__4cd01 {
+  margin: 0;
+  padding: 0;
+}
+.actions__4cd01 .button__67645 {
+  color: var(--main-color);
+}
+.actions__4cd01 .button__67645:hover {
+  color: var(--main-color);
 }
 
 .container_e131a9 {
@@ -262,39 +293,14 @@
   height: 50px;
 }
 
-.actions__4cd01 {
-  margin: 0;
-}
-.actions__4cd01 .button__67645 {
-  color: var(--main-color);
-}
-.actions__4cd01 .button__67645:hover {
-  color: var(--main-color);
-}
-
-.avatarWrapper__37e49[aria-expanded] .wrapper__44b0c {
+.avatarWrapper__37e49 .wrapper__44b0c {
   position: fixed;
-  left: -64px;
+  left: 29px;
   bottom: 30px;
   z-index: 1;
 }
-.avatarWrapper__37e49[aria-expanded]:hover {
+.avatarWrapper__37e49:hover {
   background-color: transparent;
-}
-
-.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .base_c48ade .panels_c48ade {
-  transform: translateX(182px);
-  width: calc(100% - 182px);
-}
-.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .base_c48ade .avatarWrapper__37e49[aria-expanded] .wrapper__44b0c {
-  left: -113.5px;
-}
-.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .base_c48ade .unreadMentionsIndicatorBottom_ef3116,
-.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .base_c48ade .unreadMentionsIndicatorTop_ef3116 {
-  left: 41px;
-}
-.layers__960e4:has(.wrapper_ef3116:nth-of-type(2):not(.closed_ac0584), .vc-betterFolders-sidebar) .layer__960e4:not(.baseLayer__960e4) {
-  margin-left: 180px !important;
 }
 
 .button__67645 {
@@ -357,11 +363,6 @@
 
 .container__2637a {
   background: var(--background-secondary);
-}
-
-.sidebarList_c48ade {
-  min-width: 300px;
-  margin-top: -0.5px;
 }
 
 .header_f37cb1 {
@@ -632,6 +633,7 @@
   position: absolute;
   height: 200px !important;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
+  mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 35px), 50% 100%, 0 calc(100% - 35px));
 }
 .outer_c0bea0:is(.user-profile-sidebar) .header__7f9c0 > .mask__68edb > foreignObject {
@@ -760,6 +762,30 @@
 .outer_c0bea0:is(.user-profile-sidebar):not(.custom-user-profile-theme) .overlay_c0bea0,
 .outer_c0bea0:is(.user-profile-sidebar):not(.custom-user-profile-theme) .container_ab8609 {
   background: var(--background-secondary);
+}
+
+.sidebar_c48ade {
+  display: grid;
+  grid-template-areas: "guilds sidebar" "guilds panels";
+  grid-template-columns: [start] min-content [sidebarStart] unset [end];
+  grid-template-rows: [start] 1fr [panelsStart] min-content [end];
+}
+
+.sidebarList_c48ade {
+  grid-area: sidebar;
+}
+
+.base_c48ade.vc-betterFolders-sidebar-grid .sidebar_c48ade {
+  grid-template-areas: "guilds betterFoldersSidebar sidebar" "guilds betterFoldersSidebar panels";
+}
+
+.folderContentIsOpen_ac0584 .base_c48ade .sidebar_c48ade {
+  grid-template-areas: "guilds guildsFolderList sidebar" "guilds guildsFolderList panels";
+}
+
+.folderContentIsOpen_ac0584 .base_c48ade {
+  grid-template-areas: "titleBar titleBar titleBar titleBar" "notice notice notice notice" "guildsList guildsList channelsList page";
+  grid-template-columns: [start] min-content [guildsEnd] min-content [guildsEnd] min-content [channelsEnd] 1fr [end];
 }
 
 .button__201d5,
@@ -1112,7 +1138,7 @@
 }
 
 .base_c48ade:has(.activityPanel_c48ade) .button__67645[aria-label*="Game Activity"] {
-  margin-right: 35px;
+  margin-right: 36px;
 }
 
 .messagesWrapper__36d07,

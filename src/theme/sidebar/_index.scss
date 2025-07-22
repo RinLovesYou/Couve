@@ -1,4 +1,38 @@
+@use 'backend' as *;
+
 @forward 'guilds';
 @forward 'userPanel';
 @forward 'channels';
 @forward 'privateChannels';
+
+
+#{c(sidebar sidebar)} {
+  display: grid;
+  grid-template-areas: 'guilds sidebar' 'guilds panels';
+  grid-template-columns: [start] min-content [sidebarStart] unset [end];
+  grid-template-rows: [start] 1fr [panelsStart] min-content [end];
+}
+
+#{c(sidebar list)} {
+  grid-area: sidebar;
+}
+
+//BetterFolders (Vencord)
+#{c(main base)}.vc-betterFolders-sidebar-grid #{c(sidebar sidebar)} {
+  grid-template-areas: 'guilds betterFoldersSidebar sidebar' 'guilds betterFoldersSidebar panels';
+}
+
+//ServerFolders (BetterDiscord)
+.folderContentIsOpen_ac0584 #{c(main base)} #{c(sidebar sidebar)} {
+  grid-template-areas:
+    'guilds guildsFolderList sidebar'
+    'guilds guildsFolderList panels';
+}
+
+.folderContentIsOpen_ac0584 #{c(main base)} {
+  grid-template-areas:
+    'titleBar titleBar titleBar titleBar'
+    'notice notice notice notice'
+    'guildsList guildsList channelsList page';
+  grid-template-columns: [start] min-content [guildsEnd] min-content [guildsEnd] min-content [channelsEnd] 1fr [end];
+}
