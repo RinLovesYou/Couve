@@ -777,7 +777,7 @@
 
 .base_c48ade.vc-betterFolders-sidebar-grid .sidebar_c48ade {
   grid-template-areas: "guilds betterFoldersSidebar sidebar" "guilds betterFoldersSidebar panels";
-  grid-template-columns: [start] 70px [guilds-end] min-content [betterFoldersSidebar-end] auto [end];
+  grid-template-columns: [start] min-content [guilds-end] min-content [betterFoldersSidebar-end] auto [end];
   width: auto !important;
 }
 

@@ -19,7 +19,7 @@
 //BetterFolders (Vencord)
 #{c(main base)}.vc-betterFolders-sidebar-grid #{c(sidebar sidebar)} {
   grid-template-areas: 'guilds betterFoldersSidebar sidebar' 'guilds betterFoldersSidebar panels';
-  grid-template-columns: [start] 70px [guilds-end] min-content [betterFoldersSidebar-end] auto [end];
+  grid-template-columns: [start] min-content [guilds-end] min-content [betterFoldersSidebar-end] auto [end];
   width: auto !important;
 }
 
