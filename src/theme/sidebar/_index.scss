@@ -5,7 +5,6 @@
 @forward 'channels';
 @forward 'privateChannels';
 
-
 #{c(sidebar sidebar)} {
   display: grid;
   grid-template-areas: 'guilds sidebar' 'guilds panels';
@@ -20,6 +19,8 @@
 //BetterFolders (Vencord)
 #{c(main base)}.vc-betterFolders-sidebar-grid #{c(sidebar sidebar)} {
   grid-template-areas: 'guilds betterFoldersSidebar sidebar' 'guilds betterFoldersSidebar panels';
+  grid-template-columns: [start] 70px [guilds-end] min-content [betterFoldersSidebar-end] auto [end];
+  width: auto !important;
 }
 
 //ServerFolders (BetterDiscord)
