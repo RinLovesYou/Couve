@@ -91,6 +91,10 @@
   margin: 3px 0 10px 0;
 }
 
+#{c(friends peopleListItem)} {
+  border: 0;
+}
+
 #{c(friends nowPlayingContainer)} {
   background: var(--background-secondary);
   border-radius: 15px 0 0 15px;
