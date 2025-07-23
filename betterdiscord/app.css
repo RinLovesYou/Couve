@@ -27,6 +27,7 @@
   --background-surface-highest: var(--background-primary);
   --bg-surface-overlay: var(--background-secondary);
   --text-brand: var(--main-color);
+  --custom-guild-list-padding: 28px;
 }
 
 .bar_c38106 {
@@ -96,11 +97,17 @@
   display: none;
 }
 
+.upperBadge_cc5dd2 {
+  right: 0;
+}
+
+.lowerBadge_cc5dd2 {
+  bottom: 0;
+}
+
 .guilds_c48ade {
   --custom-guild-list-width: 90px !important;
   margin-bottom: 0 !important;
-  mask: 0 !important;
-  overflow: visible !important;
   grid-area: guilds;
 }
 .guilds_c48ade::before {
@@ -113,6 +120,19 @@
   height: 100px;
   background: linear-gradient(360deg, var(--background-tertiary), transparent);
   pointer-events: none;
+}
+
+.folderGroupBackground__48112 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.scroller_ef3116 {
+  margin-bottom: 70px;
+}
+.scroller_ef3116::-webkit-scrollbar {
+  display: none;
 }
 
 .closed_ac0584 {
@@ -128,11 +148,13 @@
   background: var(--main-color);
 }
 
-.scroller_ef3116 {
-  margin-bottom: 70px;
+.folderIcon__48112 {
+  border-radius: 50% !important;
+  mask: none !important;
 }
-.scroller_ef3116::-webkit-scrollbar {
-  display: none;
+
+.folderIconWrapper__48112 {
+  padding-left: 5px;
 }
 
 .listItem__650eb {
@@ -143,31 +165,19 @@
   display: none;
 }
 
-.wrapper_cc5dd2,
 .svg_cc5dd2,
-.wrapper__6e9f8,
+.expandedFolderIconWrapper__48112 {
+  width: 42px !important;
+  height: 42px !important;
+  left: -1px !important;
+  border-radius: 50% !important;
+  mask: none !important;
+}
+
 .folderHeader__48112 {
   width: 42px !important;
   height: 42px !important;
   border-radius: 50% !important;
-}
-
-.selected__6e9f8 {
-  background: var(--main-color);
-}
-.selected__6e9f8 .childWrapper__6e9f8 {
-  background: var(--main-color);
-  color: #fff;
-  border-radius: 50%;
-}
-.selected__6e9f8 .childWrapper__6e9f8:hover {
-  background: var(--main-color);
-}
-
-.folderGroupBackground__48112 {
-  --custom-folder-item-guild-icon-margin: 12px !important;
-  background: var(--background-secondary) !important;
-  left: 18px;
 }
 
 .folderGuildsList__48112 {
@@ -181,9 +191,6 @@
   border-radius: 12px;
 }
 
-.wrapper_cc5dd2 {
-  width: 42px;
-}
 .wrapper_cc5dd2 > svg > foreignObject {
   border-radius: 50%;
   mask: none;

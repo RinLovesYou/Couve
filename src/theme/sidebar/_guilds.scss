@@ -13,13 +13,18 @@
   }
 }
 
-//the guild sidebar itself
+#{c(guildList upperBadge)} {
+  right: 0;
+}
 
+#{c(guildList lowerBadge)} {
+  bottom: 0;
+}
+
+//the guild sidebar itself
 #{c(guildList guilds)} {
   --custom-guild-list-width: 90px !important;
   margin-bottom: 0 !important;
-  mask: 0 !important;
-  overflow: visible !important;
   grid-area: guilds;
 
   //creates a shadow effect at the bottom of the guilds list
@@ -36,12 +41,24 @@
   }
 }
 
+#{c(guildList folderGroupBackground)} {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+#{c(guildList scroller)} {
+  margin-bottom: 70px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 #{c(guildList closed)} {
     display: none;
 }
 
 //home button
-
 #{c(guildList homeWrapper)} {
   background: var(--main-color) !important;
   color: #fff;
@@ -52,12 +69,13 @@
   }
 }
 
-#{c(guildList scroller)} {
-  margin-bottom: 70px;
+#{c(guildList folderIcon)}{
+  border-radius: 50% !important;
+  mask: none !important;
+}
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+#{c(guildList serverFolderIconWrapper)} {
+  padding-left: 5px;
 }
 
 #{c(guildList listItem)} {
@@ -69,36 +87,20 @@
   }
 }
 
-#{c(guildList serverWrapper)},
 #{c(guildList serverWrapperSVG)},
-#{c(guildList iconWrapper)},
+#{c(guildList expandedFolderIconWrapper)} {
+  width: 42px !important;
+  height: 42px !important;
+  left: -1px !important;
+  border-radius: 50% !important;
+  mask: none !important;
+}
+
 //bd i think?
 .folderHeader__48112 {
   width: 42px !important;
   height: 42px !important;
   border-radius: 50% !important;
-}
-
-#{c(guildList selected)} {
-  background: var(--main-color);
-
-  #{c(guildList homeWrapper)} {
-    background: var(--main-color);
-    color: #fff;
-    border-radius: 50%;
-
-    &:hover {
-      background: var(--main-color);
-    }
-  }
-}
-
-// folders
-
-#{c(guildList folderGroupBackground)} {
-  --custom-folder-item-guild-icon-margin: 12px !important;
-  background: var(--background-secondary) !important;
-  left: 18px;
 }
 
 #{c(guildList folderGuildsList)} {
@@ -114,13 +116,13 @@
 }
 
 #{c(guildList serverWrapper)} {
-  width: 42px;
   & > svg > foreignObject {
     border-radius: 50%;
     mask: none;
   }
 }
 
+// create server/discover buttons
 #{c(guildList bottomButton)} {
   border-radius: 999px;
   border: dashed 2px var(--epicshadow1);
@@ -137,7 +139,6 @@
 }
 
 //mentions
-
 #{c(guildList mention mention)} {
   height: 100%;
   background: transparent;
