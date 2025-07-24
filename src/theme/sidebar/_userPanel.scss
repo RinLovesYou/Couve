@@ -19,16 +19,16 @@
   border-color: transparent;
   height: 0;
   padding: 0 !important;
-  top: 147px;
+  top: 171px
 }
 
 #{c(sidebar panel activity body)} {
   height: 0;
-  padding-right: 120px;
+  padding-right: 131px;
 }
 
 #{c(sidebar panel activity gameWrapper)} {
-  min-width: 147px;
+  min-width: 133px;
   #{c(sidebar panel activity streamingWrapper)},
   #{c(sidebar panel activity info)} {
     display: none;
@@ -62,6 +62,7 @@
 
 //avatar
 #{c(sidebar panel avatarWrapper)} {
+  min-width: 50px !important;
   #{c(avatar wrapper)} {
     position: fixed;
     left: calc(45px - 16px);

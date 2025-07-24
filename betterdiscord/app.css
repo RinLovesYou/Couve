@@ -263,16 +263,16 @@
   border-color: transparent;
   height: 0;
   padding: 0 !important;
-  top: 147px;
+  top: 171px;
 }
 
 .body__5dec7 {
   height: 0;
-  padding-right: 120px;
+  padding-right: 131px;
 }
 
 .gameWrapper__5dec7 {
-  min-width: 147px;
+  min-width: 133px;
 }
 .gameWrapper__5dec7 .wrapper_a629d4,
 .gameWrapper__5dec7 .info__5dec7 {
@@ -300,6 +300,9 @@
   height: 50px;
 }
 
+.avatarWrapper__37e49 {
+  min-width: 50px !important;
+}
 .avatarWrapper__37e49 .wrapper__44b0c {
   position: fixed;
   left: 29px;
