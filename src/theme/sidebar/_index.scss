@@ -24,7 +24,7 @@
   width: auto !important;
 }
 .base_c48ade.vc-betterFolders-sidebar-grid {
-  grid-template-columns: [start] 90px [guildsListEnd] 90px [betterFoldersSidebarEnd] auto [channelsEnd] 1fr [end];
+  grid-template-columns: [start] min-content [guildsListEnd] min-content [betterFoldersSidebarEnd] auto [channelsEnd] 1fr [end];
 }
 
 //ServerFolders (BetterDiscord)
@@ -34,10 +34,10 @@
     'guilds guildsFolderList panels';
 }
 
-.folderContentIsOpen_ac0584 #{c(main base)} {
-  grid-template-areas:
-    'titleBar titleBar titleBar titleBar'
-    'notice notice notice notice'
-    'guildsList guildsList channelsList page';
-  grid-template-columns: [start] 90px [guildsEnd] 90px [guildsEnd] min-content [channelsEnd] 1fr [end];
-}
+// .folderContentIsOpen_ac0584 #{c(main base)} {
+//   grid-template-areas:
+//     'titleBar titleBar titleBar titleBar'
+//     'notice notice notice notice'
+//     'guildsList guildsList channelsList page';
+//   grid-template-columns: [start] min-content [guildsEnd] min-content [guildsEnd] auto [channelsEnd] 1fr [end];
+// }
