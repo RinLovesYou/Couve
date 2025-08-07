@@ -1801,13 +1801,6 @@
   --avatar-radius: 8px;
 }
 
-.layer_da8173 .outer_c0bea0 {
-  border-radius: 8px;
-  overflow: unset;
-}
-.layer_da8173 .outer_c0bea0 .inner_c0bea0 {
-  overflow: unset;
-}
 .layer_da8173 .outer_c0bea0 .header__5be3e {
   min-height: 210px;
 }
@@ -1835,9 +1828,7 @@
   bottom: -8px;
   left: 16px;
   z-index: 2;
-  box-sizing: border-box;
   border-radius: 0;
-  border: 0;
 }
 .layer_da8173 .outer_c0bea0 .container_ab8609 > .outer_ab8609 {
   border: none;
@@ -1856,9 +1847,7 @@
 }
 .layer_da8173 .outer_c0bea0 .container_ab8609 > .outer_ab8609 > .inner_ab8609 > .content_ab8609 :is(.text-sm\/normal_f9d828, .text-sm\/normal_a8af02, .text-sm\/normal__4ed1a, .text-sm\/normal_a39fe9, .text-sm\/normal_aabef9, .text-sm\/normal_c23051, .text-sm\/normal_cf4812, .text-sm\/normal_b717a1, .text-sm\/normal_df8943, .text-sm\/normal_ec1c2d) {
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
-  display: block;
   max-width: 270px;
 }
 .layer_da8173 .outer_c0bea0 .outer_ab8609::before, .layer_da8173 .outer_c0bea0 .outer_ab8609::after {

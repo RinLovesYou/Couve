@@ -6,13 +6,6 @@
 
 #{c(main layer)} {
   #{c(profile outer)} {
-    border-radius: 8px;
-    overflow: unset;
-
-    #{c(profile inner)} {
-      overflow: unset;
-    }
-
     // Banner
     #{c(profile popout bitesize header)} {
       min-height: 210px;
@@ -48,9 +41,7 @@
       bottom: -8px;
       left: 16px;
       z-index: 2;
-      box-sizing: border-box;
       border-radius: 0;
-      border: 0;
       & > #{c(profile statusBubbleOuter)} {
         border: none;
         box-shadow: none;
@@ -71,9 +62,7 @@
           & > #{c(profile statusBubbleContent)} {
             #{c(text text sm normal)} {
               white-space: nowrap;
-              overflow: hidden;
               text-overflow: ellipsis;
-              display: block;
               max-width: 270px;
             }
           }
