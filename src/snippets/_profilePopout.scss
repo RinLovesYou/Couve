@@ -1,0 +1,182 @@
+@use 'backend/classes' as *;
+
+:root {
+  --avatar-radius: 8px;
+}
+
+#{c(main layer)} {
+  #{c(profile outer)} {
+    border-radius: 8px;
+    overflow: unset;
+
+    #{c(profile inner)} {
+      overflow: unset;
+    }
+
+    // Banner
+    #{c(profile popout bitesize header)} {
+      min-height: 210px;
+    }
+
+    #{c(profile popout bitesize header)} > #{c(profile banner mask)} {
+      overflow: visible;
+      min-height: unset !important;
+      contain: unset;
+
+      #{c(profile banner banner)} {
+        position: absolute;
+        height: 200px !important;
+        -webkit-mask-image: linear-gradient(#000000c2, #000000c2);
+        mask-image: linear-gradient(#000000c2, #000000c2);
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 50% 100%, 0 calc(100% - 25px));
+      }
+
+      & > foreignObject {
+        mask: none;
+      }
+    }
+
+    // Action buttons
+    #{c(profile firendsMoreEditProfileButtons wrapper)} {
+      flex-direction: column;
+    }
+
+    // status
+    #{c(profile statusBubbleContainer)} {
+      top: unset;
+      right: unset;
+      bottom: -8px;
+      left: 16px;
+      z-index: 2;
+      box-sizing: border-box;
+      border-radius: 0;
+      border: 0;
+      & > #{c(profile statusBubbleOuter)} {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        min-width: unset;
+        max-width: unset;
+        border-radius: 0;
+
+        &::before,
+        &::after {
+          display: none;
+        }
+
+        & > #{c(profile statusBubbleInner)} {
+          padding: 0;
+          background: transparent;
+
+          & > #{c(profile statusBubbleContent)} {
+            #{c(text text sm normal)} {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: block;
+              max-width: 270px;
+            }
+          }
+        }
+      }
+    }
+
+    #{c(profile statusBubbleOuter)} {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    // Avatar
+    #{c(profile avatar avatar)} {
+      top: 15px !important;
+      left: calc(50% - 40px) !important;
+
+      #{c(profile avatar overlay)}:after {
+        border-radius: var(--avatar-radius);
+      }
+
+      // View profile mask
+      #{c(profile avatar popover)} {
+        top: 0;
+        left: 0;
+        border-radius: calc(var(--avatar-radius) * 2) !important;
+
+        foreignObject {
+          mask: none !important;
+        }
+      }
+    }
+
+    // Avatar mask
+    #{c(avatar mask)} {
+      foreignObject {
+        border-radius: calc(var(--avatar-radius) * 2) !important;
+      }
+
+      circle,
+      rect[fill='black'] {
+        display: none;
+      }
+    }
+
+    #{c(profile popout bitesize body)},
+    #{c(profile popout fullsize body)} {
+      position: static;
+    }
+
+    // Username
+    #{c(profile username container)} {
+      position: absolute;
+      top: 105px;
+      left: 20px;
+      width: calc(100% - 38px);
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+    }
+
+    #{c(profile username usernameRow)} #{c(profile username clickableUsername)} {
+      width: 100%;
+      h1 {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    #{c(profile username usernameRow)} #{c(profile username nicknameIcons)} {
+      display: none;
+    }
+
+    #{c(profile username usernameRow)} {
+      gap: 0;
+      flex-direction: column;
+    }
+
+    // uuh old name and pronouns and badges and ...
+    #{c(profile username tags)} {
+      margin-top: 2.5px;
+      justify-content: center;
+      flex-direction: row;
+
+      #{c(profile username dotSpacer)} {
+        order: -2;
+      }
+
+      #{c(profile username clickableUsername)} {
+        order: -3;
+      }
+
+      // badges
+      #{c(profile badgeList)} {
+        border: none;
+        background: transparent;
+      }
+
+      #{c(profile username guildTagContainer)} {
+        order: -1;
+      }
+    }
+  }
+}

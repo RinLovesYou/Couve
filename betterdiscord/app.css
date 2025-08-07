@@ -1797,6 +1797,10 @@
   background: var(--background-primary);
 }
 
+:root {
+  --avatar-radius: 8px;
+}
+
 .layer_da8173 .outer_c0bea0 {
   border-radius: 8px;
   overflow: unset;
@@ -1816,6 +1820,7 @@
   position: absolute;
   height: 200px !important;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
+  mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 50% 100%, 0 calc(100% - 25px));
 }
 .layer_da8173 .outer_c0bea0 .header__5be3e > .mask__68edb > foreignObject {
@@ -1926,6 +1931,7 @@
 .layer_da8173 .outer_c0bea0 .tags__63ed3 .guildTagContainer__63ed3 {
   order: -1;
 }
+
 .layer_da8173 .outer_c0bea0:not(.custom-user-profile-theme) .inner_c0bea0 {
   background: var(--background-tertiary);
 }

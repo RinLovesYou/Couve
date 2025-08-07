@@ -1,0 +1,134 @@
+:root {
+  --avatar-radius: 8px;
+}
+
+.layer_da8173 .outer_c0bea0 {
+  border-radius: 8px;
+  overflow: unset;
+}
+.layer_da8173 .outer_c0bea0 .inner_c0bea0 {
+  overflow: unset;
+}
+.layer_da8173 .outer_c0bea0 .header__5be3e {
+  min-height: 210px;
+}
+.layer_da8173 .outer_c0bea0 .header__5be3e > .mask__68edb {
+  overflow: visible;
+  min-height: unset !important;
+  contain: unset;
+}
+.layer_da8173 .outer_c0bea0 .header__5be3e > .mask__68edb .banner__68edb {
+  position: absolute;
+  height: 200px !important;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
+  mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 50% 100%, 0 calc(100% - 25px));
+}
+.layer_da8173 .outer_c0bea0 .header__5be3e > .mask__68edb > foreignObject {
+  mask: none;
+}
+.layer_da8173 .outer_c0bea0 .wrapper_da5890 {
+  flex-direction: column;
+}
+.layer_da8173 .outer_c0bea0 .container_ab8609 {
+  top: unset;
+  right: unset;
+  bottom: -8px;
+  left: 16px;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 0;
+  border: 0;
+}
+.layer_da8173 .outer_c0bea0 .container_ab8609 > .outer_ab8609 {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  min-width: unset;
+  max-width: unset;
+  border-radius: 0;
+}
+.layer_da8173 .outer_c0bea0 .container_ab8609 > .outer_ab8609::before, .layer_da8173 .outer_c0bea0 .container_ab8609 > .outer_ab8609::after {
+  display: none;
+}
+.layer_da8173 .outer_c0bea0 .container_ab8609 > .outer_ab8609 > .inner_ab8609 {
+  padding: 0;
+  background: transparent;
+}
+.layer_da8173 .outer_c0bea0 .container_ab8609 > .outer_ab8609 > .inner_ab8609 > .content_ab8609 :is(.text-sm\/normal_f9d828, .text-sm\/normal_a8af02, .text-sm\/normal__4ed1a, .text-sm\/normal_a39fe9, .text-sm\/normal_aabef9, .text-sm\/normal_c23051, .text-sm\/normal_cf4812, .text-sm\/normal_b717a1, .text-sm\/normal_df8943, .text-sm\/normal_ec1c2d) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 270px;
+}
+.layer_da8173 .outer_c0bea0 .outer_ab8609::before, .layer_da8173 .outer_c0bea0 .outer_ab8609::after {
+  display: none;
+}
+.layer_da8173 .outer_c0bea0 .avatar__75742 {
+  top: 15px !important;
+  left: calc(50% - 40px) !important;
+}
+.layer_da8173 .outer_c0bea0 .avatar__75742 .overlay__75742:after {
+  border-radius: var(--avatar-radius);
+}
+.layer_da8173 .outer_c0bea0 .avatar__75742 .avatarPopover__2d0ab {
+  top: 0;
+  left: 0;
+  border-radius: calc(var(--avatar-radius) * 2) !important;
+}
+.layer_da8173 .outer_c0bea0 .avatar__75742 .avatarPopover__2d0ab foreignObject {
+  mask: none !important;
+}
+.layer_da8173 .outer_c0bea0 .mask__44b0c foreignObject {
+  border-radius: calc(var(--avatar-radius) * 2) !important;
+}
+.layer_da8173 .outer_c0bea0 .mask__44b0c circle,
+.layer_da8173 .outer_c0bea0 .mask__44b0c rect[fill=black] {
+  display: none;
+}
+.layer_da8173 .outer_c0bea0 .body__5be3e,
+.layer_da8173 .outer_c0bea0 .body_ce8328 {
+  position: static;
+}
+.layer_da8173 .outer_c0bea0 .container__63ed3 {
+  position: absolute;
+  top: 105px;
+  left: 20px;
+  width: calc(100% - 38px);
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+.layer_da8173 .outer_c0bea0 .usernameRow__63ed3 .clickableUsername__63ed3 {
+  width: 100%;
+}
+.layer_da8173 .outer_c0bea0 .usernameRow__63ed3 .clickableUsername__63ed3 h1 {
+  display: block;
+  text-align: center;
+}
+.layer_da8173 .outer_c0bea0 .usernameRow__63ed3 .nicknameIcons__63ed3 {
+  display: none;
+}
+.layer_da8173 .outer_c0bea0 .usernameRow__63ed3 {
+  gap: 0;
+  flex-direction: column;
+}
+.layer_da8173 .outer_c0bea0 .tags__63ed3 {
+  margin-top: 2.5px;
+  justify-content: center;
+  flex-direction: row;
+}
+.layer_da8173 .outer_c0bea0 .tags__63ed3 .dotSpacer__63ed3 {
+  order: -2;
+}
+.layer_da8173 .outer_c0bea0 .tags__63ed3 .clickableUsername__63ed3 {
+  order: -3;
+}
+.layer_da8173 .outer_c0bea0 .tags__63ed3 .container__8061a {
+  border: none;
+  background: transparent;
+}
+.layer_da8173 .outer_c0bea0 .tags__63ed3 .guildTagContainer__63ed3 {
+  order: -1;
+}
