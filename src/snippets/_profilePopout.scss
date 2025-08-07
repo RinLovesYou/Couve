@@ -1,9 +1,5 @@
 @use 'backend/classes' as *;
 
-:root {
-  --avatar-radius: 8px;
-}
-
 #{c(main layer)} {
   #{c(profile outer)} {
     // Banner
@@ -82,15 +78,10 @@
       top: 15px !important;
       left: calc(50% - 40px) !important;
 
-      #{c(profile avatar overlay)}:after {
-        border-radius: var(--avatar-radius);
-      }
-
       // View profile mask
       #{c(profile avatar popover)} {
         top: 0;
         left: 0;
-        border-radius: calc(var(--avatar-radius) * 2) !important;
 
         foreignObject {
           mask: none !important;
@@ -100,10 +91,6 @@
 
     // Avatar mask
     #{c(avatar mask)} {
-      foreignObject {
-        border-radius: calc(var(--avatar-radius) * 2) !important;
-      }
-
       circle,
       rect[fill='black'] {
         display: none;
@@ -119,8 +106,9 @@
     #{c(profile username container)} {
       position: absolute;
       top: 105px;
-      left: 20px;
-      width: calc(100% - 38px);
+      left: 0;
+      right: unset;
+      width: 100%;
       text-align: center;
       justify-content: center;
       justify-items: center;
