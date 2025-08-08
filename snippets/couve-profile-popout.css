@@ -1,5 +1,9 @@
+:root {
+  --badges-background: #00000000;
+}
+
 .layer_da8173 .outer_c0bea0 .header__5be3e {
-  min-height: 225px;
+  min-height: 220px;
 }
 .layer_da8173 .outer_c0bea0 .header__5be3e > .mask__68edb {
   overflow: visible;
@@ -106,7 +110,8 @@
 }
 .layer_da8173 .outer_c0bea0 .tags__63ed3 .container__8061a {
   border: none;
-  background: transparent;
+  background: var(--badges-background);
+  border-radius: 8px;
 }
 .layer_da8173 .outer_c0bea0 .tags__63ed3 .guildTagContainer__63ed3 {
   order: -1;

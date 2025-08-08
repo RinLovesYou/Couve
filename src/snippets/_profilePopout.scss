@@ -1,10 +1,14 @@
 @use 'backend/classes' as *;
 
+:root {
+  --badges-background: #00000000;
+}
+
 #{c(main layer)} {
   #{c(profile outer)} {
     // Banner
     #{c(profile popout bitesize header)} {
-      min-height: 225px;
+      min-height: 220px;
     }
 
     #{c(profile popout bitesize header)} > #{c(profile banner mask)} {
@@ -148,7 +152,8 @@
       // badges
       #{c(profile badgeList)} {
         border: none;
-        background: transparent;
+        background: var(--badges-background);
+        border-radius: 8px;
       }
 
       #{c(profile username guildTagContainer)} {
