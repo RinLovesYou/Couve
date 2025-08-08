@@ -4,7 +4,7 @@
   #{c(profile outer)} {
     // Banner
     #{c(profile popout bitesize header)} {
-      min-height: 210px;
+      min-height: 225px;
     }
 
     #{c(profile popout bitesize header)} > #{c(profile banner mask)} {
@@ -34,7 +34,7 @@
     #{c(profile statusBubbleContainer)} {
       top: unset;
       right: unset;
-      bottom: -8px;
+      bottom: -4px;
       left: 16px;
       z-index: 2;
       border-radius: 0;
