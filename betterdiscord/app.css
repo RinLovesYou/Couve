@@ -1161,6 +1161,10 @@
   display: none;
 }
 
+.chatGradientBase__36d07 {
+  background: linear-gradient(to bottom, transparent, var(--background-primary) 72px, var(--background-primary) 100%) !important;
+}
+
 .container_c8ffbb {
   background: var(--background-secondary-alt);
   border-color: transparent;
