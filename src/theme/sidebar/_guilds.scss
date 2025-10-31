@@ -41,7 +41,7 @@
   }
 }
 
-#{c(guildList folderGroupBackground)} {
+#{c(guildList expandedFolderBackground)} {
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -75,7 +75,7 @@
   mask: none !important;
 }
 
-#{c(guildList serverFolderIconWrapper)} {
+#{c(guildList closedFolderIconWrapper)} {
   padding-left: 5px;
 }
 

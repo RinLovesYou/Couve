@@ -37,7 +37,7 @@
     }
 
     // status
-    #{c(profile statusBubbleContainer)} {
+    #{c(profile status container)} {
       top: unset;
       right: unset;
       bottom: 145px;
@@ -46,7 +46,7 @@
       box-sizing: border-box;
       border-radius: 0;
       border: 0;
-      & > #{c(profile statusBubbleOuter)} {
+      & > #{c(profile status outer)} {
         border: none;
         box-shadow: none;
         background: transparent;
@@ -59,11 +59,11 @@
           display: none;
         }
 
-        & > #{c(profile statusBubbleInner)} {
+        & > #{c(profile status inner)} {
           padding: 0;
           background: transparent;
 
-          & > #{c(profile statusBubbleContent)} {
+          & > #{c(profile status content)} {
             #{c(text text sm normal)} {
               white-space: nowrap;
               overflow: hidden;
@@ -76,7 +76,7 @@
       }
     }
 
-    #{c(profile statusBubbleOuter)} {
+    #{c(profile status outer)} {
       &::before,
       &::after {
         display: none;

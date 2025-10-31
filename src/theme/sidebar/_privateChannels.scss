@@ -179,7 +179,7 @@
   }
 
   // status
-  #{c(profile statusBubbleContainer)} {
+  #{c(profile status container)} {
     top: unset;
     right: unset;
     left: unset;
@@ -194,7 +194,7 @@
     width: 308px;
     display: grid;
     justify-content: left;
-    & > #{c(profile statusBubbleOuter)} {
+    & > #{c(profile status outer)} {
       border: none;
       box-shadow: none;
       background: transparent;
@@ -207,11 +207,11 @@
         display: none;
       }
 
-      & > #{c(profile statusBubbleInner)} {
+      & > #{c(profile status inner)} {
         padding: 0;
         background: transparent;
 
-        & > #{c(profile statusBubbleContent)} {
+        & > #{c(profile status content)} {
           display: flex;
           #{c(text text sm normal)} {
             white-space: nowrap;
@@ -225,7 +225,7 @@
     }
   }
 
-  #{c(profile statusBubbleOuter)} {
+  #{c(profile status outer)} {
     &::before,
     &::after {
       display: none;
@@ -269,7 +269,7 @@
     position: static;
   }
 
-  &:has(#{c(profile statusBubbleContainer)}) {
+  &:has(#{c(profile status container)}) {
     #{c(profile body)} {
       padding-top: 52px;
     }
@@ -336,7 +336,7 @@
 
     #{c(profile playing card)},
     #{c(profile overlay)},
-    #{c(profile statusBubbleContainer)} {
+    #{c(profile status container)} {
       background: var(--background-secondary);
     }
   }

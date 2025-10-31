@@ -4,11 +4,11 @@
   --badges-background: #00000000;
 }
 
-#{c(main layer)} {
+.layer__59d0d {
   #{c(profile outer)} {
     // Banner
     #{c(profile popout bitesize header)} {
-      min-height: 220px;
+      min-height: 220px !important;
     }
 
     #{c(profile popout bitesize header)} > #{c(profile banner mask)} {
@@ -35,14 +35,14 @@
     }
 
     // status
-    #{c(profile statusBubbleContainer)} {
+    #{c(profile status container)} {
       top: unset;
       right: unset;
       bottom: -4px;
       left: 16px;
       z-index: 2;
       border-radius: 0;
-      & > #{c(profile statusBubbleOuter)} {
+      & > #{c(profile status outer)} {
         border: none;
         box-shadow: none;
         background: transparent;
@@ -55,11 +55,11 @@
           display: none;
         }
 
-        & > #{c(profile statusBubbleInner)} {
+        & > #{c(profile status inner)} {
           padding: 0;
           background: transparent;
 
-          & > #{c(profile statusBubbleContent)} {
+          & > #{c(profile status content)} {
             #{c(text text sm normal)} {
               white-space: nowrap;
               text-overflow: ellipsis;
@@ -70,7 +70,7 @@
       }
     }
 
-    #{c(profile statusBubbleOuter)} {
+    #{c(profile status outer)} {
       &::before,
       &::after {
         display: none;
@@ -101,8 +101,7 @@
       }
     }
 
-    #{c(profile popout bitesize body)},
-    #{c(profile popout fullsize body)} {
+    #{c(profile popout bitesize body)} {
       position: static;
     }
 
