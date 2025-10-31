@@ -45,7 +45,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  left: 23px;
+  //left: 23px;
 }
 
 #{c(guildList scroller)} {
@@ -81,7 +81,7 @@
 
 #{c(guildList listItem)} {
   width: 90px;
-  margin: 0 0 12px;
+  margin: 0 4px 12px;
 
   defs g:last-child {
     display: none;

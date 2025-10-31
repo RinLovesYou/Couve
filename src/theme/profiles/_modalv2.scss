@@ -476,7 +476,7 @@
 //   #{c(profile outer)} {
 //     &:not(#{c(profile customTheme)}) {
 //       //any coloring of the profile goes in here to not overwrite custom themes.
-//       #{c(profile modal body)} {
+//       #{c(profile modal profileBody)} {
 //         background: var(--background-primary);
 
 //         #{c(profile playing card)} {

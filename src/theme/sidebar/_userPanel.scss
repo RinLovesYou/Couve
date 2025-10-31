@@ -19,16 +19,16 @@
   border-color: transparent;
   height: 0;
   padding: 0 !important;
-  top: 171px
+  top: 153px;
+  left: 135px;
 }
 
 #{c(sidebar panel activity body)} {
   height: 0;
-  padding-right: 132px;
+  position: fixed;
 }
 
 #{c(sidebar panel activity gameWrapper)} {
-  min-width: 133px;
   #{c(sidebar panel activity streamingWrapper)},
   #{c(sidebar panel activity info)} {
     display: none;
@@ -52,13 +52,13 @@
 }
 
 //discord still has not fixed this 💀
-.align-chat-input {
-  #{c(sidebar panel voice connection)},
-  #{c(sidebar panel voice inner)},
-  #{c(sidebar panel voice rtcConnection status)} {
-    height: 50px;
-  }
-}
+// .align-chat-input {
+//   #{c(sidebar panel voice connection)},
+//   #{c(sidebar panel voice inner)},
+//   #{c(sidebar panel voice rtcConnection status)} {
+//     height: 50px;
+//   }
+// }
 
 //avatar
 #{c(sidebar panel avatarWrapper)} {
