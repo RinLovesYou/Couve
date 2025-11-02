@@ -1,7 +1,7 @@
 @use 'backend' as *;
 @use 'snippets/profilePopout' as *;
 
-#{c(main layer)} {
+.layer__59d0d {
   #{c(profile outer)} {
     &:not(#{c(profile customTheme)}) {
       #{c(profile inner)} {

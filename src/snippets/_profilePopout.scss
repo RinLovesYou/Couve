@@ -101,7 +101,8 @@
       }
     }
 
-    #{c(profile popout bitesize body)} {
+    #{c(profile popout bitesize body)},
+    #{c(profile popout bitesize selfBody)} {
       position: static;
     }
 

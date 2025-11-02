@@ -69,7 +69,8 @@
 .layer__59d0d .outer_c0bea0 .mask__44b0c rect[fill=black] {
   display: none;
 }
-.layer__59d0d .outer_c0bea0 .body__5be3e {
+.layer__59d0d .outer_c0bea0 .body__5be3e,
+.layer__59d0d .outer_c0bea0 .body_ce8328 {
   position: static;
 }
 .layer__59d0d .outer_c0bea0 .container__63ed3 {
