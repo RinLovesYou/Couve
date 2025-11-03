@@ -1,22 +1,20 @@
 @use 'backend' as *;
 
 #{c(memberList container)} {
-  background: var(--background-secondary-alt);
   border-color: transparent;
-  height: auto;
   border-left: none;
+  margin-top: -48px;
 }
 
 #{c(memberList wrap)} {
-  margin-top: -48px;
+  //margin-top: -48px;
   padding-top: 48px;
   max-height: calc(100% + 48px);
-  background: var(--background-secondary-alt);
+  height: calc(100% + 48px);
 }
 
 #{c(memberList members)} {
-  background: var(--background-secondary-alt);
-
+  //margin-top: -48px;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -24,7 +22,6 @@
 
 #{c(memberList member)} {
   margin: 0;
-  background: var(--background-secondary-alt);
 }
 
 #{c(memberList layout)} {

@@ -1166,29 +1166,23 @@
 }
 
 .container_c8ffbb {
-  background: var(--background-secondary-alt);
   border-color: transparent;
-  height: auto;
   border-left: none;
+  margin-top: -48px;
 }
 
 .membersWrap_c8ffbb {
-  margin-top: -48px;
   padding-top: 48px;
   max-height: calc(100% + 48px);
-  background: var(--background-secondary-alt);
+  height: calc(100% + 48px);
 }
 
-.members_c8ffbb {
-  background: var(--background-secondary-alt);
-}
 .members_c8ffbb::-webkit-scrollbar {
   display: none;
 }
 
 .member__5d473 {
   margin: 0;
-  background: var(--background-secondary-alt);
 }
 
 .layout__91a9d {
