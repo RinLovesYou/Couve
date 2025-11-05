@@ -1,0 +1,357 @@
+@use 'backend/classes' as *;
+
+:root {
+  --badges-background: #00000000;
+}
+
+#{c(profile modal root)}#{c(modals root)}#{c(modals small)} {
+  width: 800px;
+  height: 400px;
+
+  #{c(profile modal bgImage)} {
+    display: none;
+  }
+
+  & > div,
+  #{c(profile outer)} {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  #{c(profile outer)} {
+    &.custom-theme-background {
+      #{c(profile inner)} {
+        padding: 4px !important;
+        background: linear-gradient(100px (--profile-gradient-primary-color), 100px (--profile-gradient-secondary-color)) !important;
+      }
+    }
+  }
+
+  //Original by https://github.com/Blade04208 "Profile Modal V1 Back" thread in vencord css-snippets
+  #{c(tab selected)} {
+    color: var(--text-secondary) !important;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  #{c(profile inner)}:has(.tabBarItem__37bfc:focus, #{c(tab top)}:focus, .tabBarPanel__37bfc:focus-within, .tabBarPanel__37bfc:focus) {
+    #{c(profile modal profile)} {
+      #{c(chat markup)},
+      .section_bf424d {
+        visibility: hidden !important;
+        pointer-events: none !important;
+      }
+
+      #{c(profile status container)} {
+        display: none !important;
+      }
+    }
+
+    .tabBarPanel__37bfc {
+      display: flex !important;
+      opacity: 1;
+      pointer-events: all !important;
+    }
+
+    #{c(tab top)}::before {
+      color: var(--text-secondary);
+      border-bottom: none !important;
+    }
+
+    #{c(tab selected)} {
+      color: var(--selected-tab-item-color) !important;
+
+      &::after {
+        display: block !important;
+      }
+    }
+  }
+
+  .tabBarPanel__37bfc {
+    opacity: 0;
+    z-index: 999;
+    pointer-events: none !important;
+    padding: 0px 26px;
+  }
+
+  #{c(tab top)}::before {
+    content: 'User Info';
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--text-primary) !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 13px;
+    --tab-item-color: var(--text-primary);
+    cursor: pointer;
+  }
+
+  .tabBarItem__37bfc:hover {
+    color: var(--text-primary) !important;
+    cursor: pointer;
+
+    &::after {
+      display: block;
+    }
+  }
+
+  .tabListScroller__37bfc {
+    position: fixed;
+    bottom: 35px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    border-bottom: unset;
+    gap: 15px;
+
+    #{c(tab top)} {
+      border-bottom: unset;
+      flex-direction: column;
+    }
+
+    #{c(tab item)} {
+      margin-left: 0px !important;
+    }
+  }
+
+  #{c(profile inner)} {
+    max-width: 800px !important;
+    width: 792px; //???????? this results in 800px
+    height: 400px !important;
+    border-radius: 8px;
+    padding: 4px !important;
+    overflow: hidden;
+    position: relative;
+
+    #{c(profile modal profile)} {
+      border-radius: 0;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: calc(55% - 16px);
+    }
+
+    #{c(profile modal profileHeader)} {
+      min-width: unset !important;
+      min-height: unset !important;
+      width: 100%;
+      height: 100%;
+
+      #{c(profile avatar avatar)} {
+        top: 16px;
+        left: 16px;
+
+        circle,
+        rect[fill='black'] {
+          display: none;
+        }
+
+        #{c(avatar mask)} foreignObject {
+          border-radius: calc(var(--avatar-radius) * 2.1) !important;
+        }
+      }
+
+      #{c(profile status container)} {
+        position: fixed;
+        top: unset;
+        left: unset;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        width: calc(45% + 16px);
+        padding: 20px;
+        backdrop-filter: blur(8px);
+        box-sizing: border-box;
+        border-bottom-right-radius: 10px;
+
+        & > #{c(profile status outer)} {
+          border: none;
+          box-shadow: none;
+          background: transparent;
+          min-width: unset;
+          max-width: unset;
+
+          #{c(profile status inner)} {
+            background: transparent;
+          }
+
+          &::before,
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    #{c(profile modal profileHeader)} > #{c(profile banner mask)} {
+      width: 100%;
+      height: 100%;
+
+      #{c(profile banner banner)} {
+        width: 100%;
+        height: 100% !important;
+        z-index: -1;
+        opacity: 0.6;
+        mask-image: linear-gradient(90deg, #000c, #00000049); // vscode thing
+        -webkit-mask-image: linear-gradient(90deg, #000000cc, #00000049);
+      }
+
+      & > foreignObject {
+        mask: none;
+        y: -140px;
+        height: 420px;
+      }
+    }
+
+    #{c(profile modal profileBody)} {
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border-radius: 0;
+      width: calc(45% + 16px);
+      height: 392px;
+      right: 0;
+      padding-left: 16px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      #{c(profile modal profileButtons)} {
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        z-index: 1;
+      }
+
+      #{c(profile username container)} {
+        position: fixed;
+        top: 20px;
+        left: 165px;
+        width: 260px;
+
+        #{c(profile badgeList)} {
+          border: none;
+          background: var(--badges-background);
+          border-radius: 8px;
+        }
+
+        #{c(profile username guildTagContainer)} {
+          order: -1;
+        }
+
+        #{c(profile username dotSpacer)} {
+          order: -2;
+        }
+
+        #{c(profile username userTag)} {
+          order: -3;
+        }
+      }
+
+      section:last-of-type {
+        margin-bottom: 50px;
+      }
+    }
+
+    div[id='mutual_friends-tab'],
+    div[id='mutual_guilds-tab'] {
+      .empty_e766f2 {
+        padding: 0;
+
+        .textContainer_e766f2 {
+          position: fixed;
+          left: unset;
+          width: calc(45% + 16px);
+          max-width: unset;
+          right: 0;
+        }
+      }
+      div[class*='tabPanelScroller__'] {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(20, 0fr);
+        gap: 10px;
+        padding-left: 8px;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        div[class*='row__'] {
+          position: relative;
+          z-index: 1;
+          height: 44px;
+          margin: 0;
+          padding-left: 10px;
+          border-radius: 8px;
+          overflow: hidden;
+          background-color: #ffffff07;
+
+          #{c(avatar wrapper)},
+          #{c(profile modal listGuildIcon)} {
+            position: absolute;
+            right: 0;
+            z-index: -1;
+            width: 62% !important;
+            height: 250% !important;
+            margin-right: 0;
+            border-radius: 0;
+            -webkit-mask-image: linear-gradient(90deg, #00000000, #000000cb);
+
+            svg {
+              position: relative;
+              width: 100%;
+              height: 100%;
+
+              foreignObject {
+                width: 100%;
+                height: 100%;
+                mask: none;
+              }
+              rect,
+              circle {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    div[id='wishlist-tab'],
+    div[id='widgets-tab'],
+    div[id='mutual_friends-tab'],
+    div[id='mutual_guilds-tab'] {
+      padding: 0;
+      padding-left: 12px;
+      padding-right: 12px;
+
+      .tabPanelScroller__37bfc {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .coverList__9a5c3 {
+          grid-template-columns: repeat(3, 88px);
+        }
+      }
+    }
+
+    .empty_e766f2 {
+      padding: 0;
+
+      // .textContainer_e766f2 {
+      //   position: fixed;
+      //   left: unset;
+      //   width: calc(45% + 16px);
+      //   max-width: unset;
+      //   right: 0;
+      // }
+    }
+  }
+}

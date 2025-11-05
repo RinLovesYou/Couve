@@ -9,14 +9,12 @@
   "main": "index.js",
   "scripts": {
     "build-profile-popout": "sass --load-path=src --style=expanded --no-source-map src/snippets/_profilePopout.scss snippets/couve-profile-popout.css",
-
-    "build": "pnpm build-profile-popout && sass --load-path=src --style=expanded --no-source-map src/main.scss betterdiscord/app.css",
-
+    "build-profile-modal": "sass --load-path=src --style=expanded --no-source-map src/snippets/_profileModal.scss snippets/couve-profile-modal.css",
+    "build": "pnpm build-profile-modal && pnpm build-profile-popout && sass --load-path=src --style=expanded --no-source-map src/main.scss betterdiscord/app.css",
     "dev-vesktop": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss  ~/.config/vesktop/themes/Couve.theme.css",
     "dev-vencord": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss ~/.config/Vencord/themes/Couve.theme.css",
     "dev-betterdiscord": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss ~/.config/BetterDiscord/data/stable/custom.css",
     "dev-shelter": "sass --watch --load-path=src --style=expanded --no-source-map src/main.scss src/shelter-plugin/couve.theme.css",
-    
     "dev-shelter-plugin": "pnpm lune dev src/shelter-plugin",
     "format": "prettier --write ."
   },

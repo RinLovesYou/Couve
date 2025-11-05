@@ -6,11 +6,11 @@
  * @version 3.0.0
 */
 
-@import url("https://rinlovesyou.github.io/Couve/betterdiscord/app.css");
+@import url('https://rinlovesyou.github.io/Couve/betterdiscord/app.css');
 
 /* Settings */
 :root {
-  --version: "3.0.0";
+  --version: '3.0.0';
 
   /* Colors */
   --main-color: #419e85;

@@ -16,7 +16,6 @@
   grid-area: sidebar;
 }
 
-
 //BetterFolders (Vencord)
 #{c(main base)}.vc-betterFolders-sidebar-grid #{c(sidebar sidebar)} {
   grid-template-areas: 'guilds betterFoldersSidebar sidebar' 'guilds betterFoldersSidebar panels';

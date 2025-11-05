@@ -9,11 +9,12 @@
 
   <br/>
 
-  <a href="https://gibbu.github.io/ThemePreview/?file=https://rinlovesyou.github.io/Couve/betterdiscord/couve.theme.css"><strong>» Theme Preview</strong></a>
-  ・
-  <a href="https://github.com/RinLovesYou/Couve/issues">Report an issue</a>
-  ・
-  <a href="https://discord.gg/comfy-camp-811203761619337259">Join the support server</a>
+<a href="https://gibbu.github.io/ThemePreview/?file=https://rinlovesyou.github.io/Couve/betterdiscord/couve.theme.css"><strong>» Theme Preview</strong></a>
+・
+<a href="https://github.com/RinLovesYou/Couve/issues">Report an issue</a>
+・
+<a href="https://discord.gg/comfy-camp-811203761619337259">Join the support server</a>
+
 </div>
 <br/>
 
@@ -48,11 +49,13 @@
 </div>
 
 ## 🫰 Credits
-* [abUwUser/A user](https://github.com/abUwUser) - original author
-* [Nyria](https://github.com/NYRI4) - previous maintainer
-* [ClearVision-v7](https://github.dev/ClearVision/ClearVision-v7)/Zerthox - for the class file.
-* [Krammeth](https://github.com/Krammeth) - User Profile ideas/code snippets
-* [oldcord](https://github.com/milbits/oldcord) - grid area changes to bring back the old user panel layout
+
+- [abUwUser/A user](https://github.com/abUwUser) - original author
+- [Nyria](https://github.com/NYRI4) - previous maintainer
+- [ClearVision-v7](https://github.dev/ClearVision/ClearVision-v7)/Zerthox - for the class file.
+- [Krammeth](https://github.com/Krammeth) - User Profile ideas/code snippets
+- [oldcord](https://github.com/milbits/oldcord) - grid area changes to bring back the old user panel layout
 
 ## Notice
+
 This project includes code licensed under the Apache License 2.0. See THIRD_PARTY_LICENSES for details.
