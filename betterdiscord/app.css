@@ -254,7 +254,6 @@
   width: 100%;
   background: var(--background-secondary);
   padding-bottom: 8px;
-  overflow: hidden;
   grid-area: panels;
 }
 
@@ -783,7 +782,7 @@
 
 .base__5e434.vc-betterFolders-sidebar-grid .sidebar__5e434 {
   grid-template-areas: "guilds betterFoldersSidebar sidebar" "guilds betterFoldersSidebar panels";
-  grid-template-columns: [start] min-content [guilds-end] min-content [betterFoldersSidebar-end] auto [end];
+  grid-template-columns: [start] min-content [guildsEnd] min-content [betterFoldersSidebarEnd] auto [end];
   width: auto !important;
 }
 
