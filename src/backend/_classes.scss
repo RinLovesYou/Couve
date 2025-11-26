@@ -894,7 +894,7 @@ $classes: (
     'channelChatWrapper': 'channelChatWrapper_cb9592',
 
     // invisible class to the right side of the call. 0 width.
-    'chatButtonContainer': 'buttonContainer_ffab0d',
+    'chatButtonContainer': 'buttonContainer__6ca73',
   ),
   'stage': (
     // heavily relates to call
@@ -1040,7 +1040,7 @@ $classes: (
     'chatGatedAction': 'action__7184c',
     // buttons
     'chatContentInner': 'chatContent_f75fb0',
-    'chatLoadingWrapper': 'wrapper_cdf8a9',
+    'chatLoadingWrapper': 'wrapper__6c798',
     'messageLoadingWrapper': 'wrapper_fc8177',
     'noChannel': 'noChannel__01d5c',
     // in a server without any channels or loading in
@@ -1060,7 +1060,7 @@ $classes: (
     'replying': 'replying__5126c',
     'hasThread': 'hasThread_c19a55',
     'mentioned': 'mentioned__5126c',
-    'mentionWrapper': 'wrapper__4106a',
+    'mentionWrapper': 'wrapper_cdf8a9',
     'messageSelected': 'selected__5126c',
     'buttons': 'buttons__5126c',
     'buttonsWrapper': 'wrapper_f7ecac',
@@ -1101,7 +1101,7 @@ $classes: (
     // h1
     'chatHeaderDesc': 'description__00de6',
     'chatHeaderButtons': 'channelSettingButtons__1ee8c',
-    'chatHeaderButton': 'button__6e3f1',
+    'chatHeaderButton': 'button_aec7ab',
     'emptyChannelIcon': 'emptyChannelIcon__00de6',
     'chatHeaderMembers': 'members__1ee8c',
 
@@ -1158,16 +1158,16 @@ $classes: (
     'guildBreadcrumbIcon': 'guildBreadcrumbIcon_f75fb0',
 
     'spoiler': (
-      'content': 'spoilerContent__54ab5',
-      'hidden': 'hidden__54ab5',
-      'container': 'spoilerContainer__54ab5',
-      'innerContainer': 'spoilerInnerContainer__54ab5',
+      'content': 'spoilerContent__299eb',
+      'hidden': 'hidden__299eb',
+      'container': 'spoilerContainer__299eb',
+      'innerContainer': 'spoilerInnerContainer__299eb',
       'warning': 'spoilerWarning__54ab5',
-      'warningEmbed': 'embed__54ab5',
+      'warningEmbed': 'embed__299eb',
       'explicitContentWarning': 'explicitContentWarning__54ab5',
-      'markdownContent': 'spoilerMarkdownContent__54ab5',
-      'obscuredTextContent': 'obscuredTextContent__54ab5',
-      'obscuredTextContentInner': 'obscuredTextContentInner__54ab5',
+      'markdownContent': 'spoilerMarkdownContent__299eb',
+      'obscuredTextContent': 'obscuredTextContent__299eb',
+      'obscuredTextContentInner': 'obscuredTextContentInner__299eb',
     ),
 
     'chatWelcomeContainer': 'container__235ca',
@@ -1941,7 +1941,7 @@ $classes: (
     ),
 
     'quests': (
-      'tileContainer': 'container_a244c3',
+      'tileContainer': 'container__23ba6',
       'tile': 'questTile__60f82',
       'tileContent': 'container__956c6',
       'tileDescription': 'rewardDescriptionContainer__956c6',
@@ -1949,12 +1949,12 @@ $classes: (
 
       // video quest modal
       'video': (
-          'root': 'modalRoot_de2fa0',
-          'background': 'modalBg_de2fa0',
-          'body': 'modalBody_de2fa0',
-          'content': 'modalContent_de2fa0',
-          'header': 'contentHeader_de2fa0',
-          'footer': 'contentFooter_de2fa0',
+          'root': 'modalRoot__45776',
+          'background': 'modalBg__45776',
+          'body': 'modalBody__45776',
+          'content': 'modalContent__45776',
+          'header': 'contentHeader__45776',
+          'footer': 'contentFooter__45776',
         ),
     ),
   ),
@@ -2759,7 +2759,7 @@ $classes: (
     'blocked': 'resultsBlocked_c68065',
     'jumpButtonContainer': 'buttonsContainer__02a39',
     'jumpButton': 'button__02a39',
-    'navContainer': 'container_a244c3',
+    'navContainer': 'container__23ba6',
     'errorImage': 'errorImage_a9e706',
     'errorMessage': 'errorMessage_a9e706',
     // paired with emptyResultsText
@@ -2941,7 +2941,7 @@ $classes: (
         // appears with channel in css
         'dm': 'dm__972a0',
         // appears with channel in css, used for individuals and groups
-        'channelContainer': 'container_a244c3',
+        'channelContainer': 'container__23ba6',
         // appears on same element as channel; seems to be unique.
         'interactive': 'interactive__972a0',
         // private only interactive; does not have color+background attached to it, use other interactive for that.
@@ -3657,6 +3657,7 @@ $classes: (
         'outer': 'outer_ab8609',
         'inner': 'inner_ab8609',
         'content': 'content_ab8609',
+        'ring': 'ring_ab8609',
 
         // hover over own status
         'tooltip': 'tooltip__4e35b',
@@ -3701,14 +3702,14 @@ $classes: (
       // "more" (click to show tooltip to block, report profile and copy user id)
       // "edit profile"
       'firendsMoreEditProfileButtons': (
-          'wrapper': 'wrapper__4106a',
+          'wrapper': 'wrapper_cdf8a9',
           'biteSize': 'user-profile-popout',
           'fullSize': 'user-profile-modal',
           'panel': 'panel_da5890',
         ),
 
       // (!) icon. shared between modal+panel+popout
-      'missingConnection': 'container__23ba6',
+      'missingConnection': 'container_a244c3',
 
       // theme the (!) icon with (this)>svg>path{fill}
       // there seems to be a line with things related to the avatars, hense this subcategory.
@@ -3917,7 +3918,7 @@ $classes: (
 
     // used in a few places, i'm not entirely sure what's different about it
     'premiumFeatureBorder': 'premiumFeatureBorder__65c15',
-    'featureBorder': 'featureBorder_fbfab6fbfab6_65c15',
+    'featureBorder': 'featureBorder_fbfab6fbfab6fbfab6fbfab6fbfab6_65c15',
     'featureBackground': 'background__65c15',
 
     'sectionTitle': 'sectionTitle__7bffb',
@@ -3935,7 +3936,7 @@ $classes: (
     'marginBottom40': 'marginBottom40_fd297e',
     'marginBottom60': 'marginBottom60_fd297e',
     'marginLeft8': 'marginLeft8_fd297e',
-    'divider': 'divider__44f7f',
+    'divider': 'divider__1de9c',
     'description': 'description_ddd181',
     'title': 'title_b717a1',
 
@@ -4167,7 +4168,7 @@ $classes: (
       'preview': 'preview__3e443',
 
       'themesPresets': 'presets__67a11',
-      'themesBasicSelectors': 'basicThemeSelectors_fbfab6fbfab6fbfab6',
+      'themesBasicSelectors': 'basicThemeSelectors_fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6',
       'themesSelectorContainer': 'themeSelectionContainer__36dee',
       'themesSelection': 'themeSelection__36dee',
       'themesDefault': 'defaultThemeSelection__36dee',
@@ -4181,7 +4182,7 @@ $classes: (
       'themesLightOverlay': 'lightOverlay__36dee',
       'themesDarkOverlay': 'darkOverlay__36dee',
 
-      'themesFeatureBorder': 'featureBorder_fbfab6fbfab6fbfab6',
+      'themesFeatureBorder': 'featureBorder_fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6',
       'themesHeader': 'header__67a11',
       // "Colour", nitro icon, try etc
       'themesHeadings': 'headings__67a11',
@@ -4189,7 +4190,7 @@ $classes: (
       'themesPremiumIcon': 'premiumIcon__67a11',
       'themesNitroWheel': 'nitroWheel_c5f0dc',
       // ON OWN LINE; ALSO APPEARS UNDER SERVER PROFILES
-      'themesTryItOutButton': 'tryItOutButtons_fbfab6fbfab6fbfab6',
+      'themesTryItOutButton': 'tryItOutButtons_fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6',
 
       'selectedCircle': 'selectionCircle__36dee',
       'checkmarkCircle': 'checkmarkCircle__36dee',
@@ -4371,7 +4372,7 @@ $classes: (
         'notice': 'notice_c9e42f',
         'button': 'button_c9e42f',
         'backbutton': 'backButton_c9e42f',
-        'dropdown': 'container_d843c9',
+        'dropdown': 'container_d4630c',
       ),
     ),
 
@@ -4553,7 +4554,7 @@ $classes: (
     // Shoody name? Yes. Multiple modals use it? Also yes, sadly.
     // It's in the Emojis, Command Autocomplete and Stickers. Open any of them.
     'categoryList': (
-        'wrapper': 'wrapper__0d1ef',
+        'wrapper': 'wrapper__4106a',
         'scroller': 'scroller_affa7e',
         // maybe? it appears in soundboard at the least. can also appear as main scroller
         'listItems': 'listItems_affa7e',
@@ -4931,7 +4932,7 @@ $classes: (
             'wrapper': 'wrapper__8ef02',
             // has ID on it
             'header': 'header__8ef02',
-            'searchWrapper': 'wrapper__0d1ef',
+            'searchWrapper': 'wrapper__4106a',
             // for the bar, use child of above
             'listWrapper': 'listWrapper__8ef02',
             'gridWrapper': 'wrapper_e94b8c',
@@ -5013,7 +5014,7 @@ $classes: (
         'refresh': 'refresh__09f65',
         // less compact version, appears to be the "new" version that is being used.
         'header': 'header__0856d',
-        'searchWrapper': 'wrapper_cdf8a9',
+        'searchWrapper': 'wrapper__6c798',
         'volumeClickArea': 'settingsClickArea__61424',
         'volumeIcon': 'settingsIcon__61424',
 
@@ -5029,7 +5030,7 @@ $classes: (
         // used for icon-based ones when selected
         'listWrapper': 'listWrapper__0856d',
         // wrapper to the wrapper
-        'wrapper': 'wrapper__0d1ef',
+        'wrapper': 'wrapper__4106a',
         // wrapper to the scroller
         // scroller uses the same `modals sidebarList scroller` weirdly enough
         'section': (
@@ -5727,8 +5728,8 @@ $classes: (
     'prune': (
         'pruneDetails': 'pruneDetails_ce3fe1',
         'role': 'role_ce3fe1',
-        'content': 'content_bad290',
-        'spacing': 'spacing_bad290',
+        'content': 'content__1443a',
+        'spacing': 'spacing__1443a',
       ),
 
     // Create Group DM
@@ -5889,7 +5890,7 @@ $classes: (
 
     // Ctrl+N or click the green + at the bottom of the server list
     'addServer': (
-        'modal': 'container_a244c3',
+        'modal': 'container__23ba6',
 
         // first screen "Create a server"
         'createServerHeader': 'header_c04f35',
@@ -6131,7 +6132,7 @@ $classes: (
       ),
 
       'gift': (
-        'spinner': 'spinner__9ae4f',
+        'spinner': 'spinner__1d6c7',
         'header': 'modalHeaderCustomGift_b54a5b',
         'giftBox': 'customGiftBox_d50aac',
         'giftBoxSelected': 'customGiftBoxHighlighted_d50aac',
@@ -6148,7 +6149,7 @@ $classes: (
 
       'payment': (
         'note': 'paymentNote_a8c622',
-        'breadcrumb': 'wrapper__6c798',
+        'breadcrumb': 'wrapper__0d1ef',
         'body': 'body_c6f1a4',
         'table': 'table_fda3e4',
         'cardPageBody': 'body_b25217',
@@ -6905,7 +6906,7 @@ $classes: (
           'createEventCreateStageContainer': 'container__03b47',
           'createEventColorMuted': 'colorMuted_c9946a',
           'createEventColorBrand': 'colorBrand_c9946a',
-          'giftQuestContainer': 'outerContainer__2055a',
+          'giftQuestContainer': 'outerContainer_a963de',
           'giftQuestProgress': 'gridProgressBar__2055a',
           'phoneInput': 'phoneField_a0c54f',
           'phoneInputField': 'inputField_a0c54f',

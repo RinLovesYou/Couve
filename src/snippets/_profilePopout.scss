@@ -35,13 +35,15 @@
     }
 
     // status
-    #{c(profile status container)} {
+    #{c(profile status container)},
+    #{c(profile status ring)} {
       top: unset;
       right: unset;
       bottom: -4px;
       left: 16px;
       z-index: 2;
       border-radius: 0;
+
       & > #{c(profile status outer)} {
         border: none;
         box-shadow: none;
