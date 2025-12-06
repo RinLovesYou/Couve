@@ -45,7 +45,7 @@
 <div align="left">
     <img align="left" src="https://i.imgur.com/fXYKU5q.png" alt="Vencord" width="45" height="45">
     <b><p align="left">Vencord</b>
-    <br/>You need to have the theme in local, not online, then same steps as BetterDiscord</p>
+    <br/>You need to have the theme in local, not online, then do the same steps as BetterDiscord</p>
 </div>
 
 ## 🫰 Credits
