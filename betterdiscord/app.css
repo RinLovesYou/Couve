@@ -635,7 +635,8 @@
 .c0bea05627c5dc35-outer:is(.user-profile-sidebar) .da589062f0c96515-wrapper {
   flex-direction: column;
 }
-.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container {
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container,
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-ring {
   top: unset;
   right: unset;
   left: unset;
@@ -651,7 +652,15 @@
   display: grid;
   justify-content: left;
 }
-.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer {
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container .ab86098b36386ff7-ring,
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-ring .ab86098b36386ff7-ring {
+  background: transparent;
+  bottom: unset;
+  padding: 0;
+  margin: 0;
+}
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer,
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-ring > .ab86098b36386ff7-outer {
   border: none;
   box-shadow: none;
   background: transparent;
@@ -659,17 +668,27 @@
   max-width: unset;
   border-radius: 0;
 }
-.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer::before, .c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer::after {
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer::before, .c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer::after,
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-ring > .ab86098b36386ff7-outer::before,
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-ring > .ab86098b36386ff7-outer::after {
   display: none;
 }
-.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner {
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner,
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-ring > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner {
   padding: 0;
+  border: none;
+  box-shadow: none;
   background: transparent;
+  min-width: unset;
+  max-width: unset;
+  border-radius: 0;
 }
-.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content {
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content,
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-ring > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content {
   display: flex;
 }
-.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content .cf48127484dbde85-text-sm\/normal {
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content .cf48127484dbde85-text-sm\/normal,
+.c0bea05627c5dc35-outer:is(.user-profile-sidebar) .ab86098b36386ff7-ring > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content .cf48127484dbde85-text-sm\/normal {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2022,7 +2041,7 @@
 ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader ._75742e4cc9019aeb-avatar ._44b0c28be7879b7b-mask foreignObject {
   border-radius: calc(var(--avatar-radius) * 2.1) !important;
 }
-._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container {
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring {
   position: fixed;
   top: unset;
   left: unset;
@@ -2035,17 +2054,17 @@
   box-sizing: border-box;
   border-bottom-right-radius: 10px;
 }
-._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container > .ab86098b36386ff7-outer {
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring > .ab86098b36386ff7-outer {
   border: none;
   box-shadow: none;
   background: transparent;
   min-width: unset;
   max-width: unset;
 }
-._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container > .ab86098b36386ff7-outer .ab86098b36386ff7-inner {
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring > .ab86098b36386ff7-outer .ab86098b36386ff7-inner {
   background: transparent;
 }
-._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container > .ab86098b36386ff7-outer::before, ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container > .ab86098b36386ff7-outer::after {
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring > .ab86098b36386ff7-outer::before, ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring > .ab86098b36386ff7-outer::after {
   display: none;
 }
 ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader > ._68edb95846a37624-mask {
@@ -2205,6 +2224,13 @@
 ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner .e766f2028d7616c7-empty {
   padding: 0;
 }
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner .e766f2028d7616c7-empty .e766f2028d7616c7-textContainer {
+  position: fixed;
+  left: unset;
+  width: calc(45% + 16px);
+  max-width: unset;
+  right: 0;
+}
 
 ._960e4207cea8323e-layer {
   transform: unset !important;
@@ -2288,6 +2314,133 @@
 }
 ._960e4207cea8323e-layer ._23e6b439306f125a-noticeRegion ._9a9f981d3524e20f-container {
   background-color: var(--background-secondary) !important;
+}
+
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer {
+  border-radius: 8px;
+  overflow: unset;
+  width: calc(100% + 8px) !important;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .c0bea05627c5dc35-inner {
+  overflow: unset;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .c0bea05627c5dc35-inner:before {
+  width: calc(100% - 8px) !important;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._5a2c624eb18affaa-header {
+  min-height: 210px;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._5a2c624eb18affaa-header > ._68edb95846a37624-mask {
+  overflow: visible;
+  min-height: unset !important;
+  contain: unset;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._5a2c624eb18affaa-header > ._68edb95846a37624-mask ._68edb95846a37624-banner {
+  position: absolute;
+  height: 200px !important;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
+  mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 50% 100%, 0 calc(100% - 25px));
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._5a2c624eb18affaa-header > ._68edb95846a37624-mask > foreignObject {
+  mask: none;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .ab86098b36386ff7-container {
+  top: unset;
+  right: unset;
+  bottom: 145px;
+  left: 21px;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 0;
+  border: 0;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  min-width: unset;
+  max-width: unset;
+  border-radius: 0;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer::before, .ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer::after {
+  display: none;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner {
+  padding: 0;
+  background: transparent;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content .cf48127484dbde85-text-sm\/normal {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 270px;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .ab86098b36386ff7-outer::before, .ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .ab86098b36386ff7-outer::after {
+  display: none;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer .d28e107656edce18-avatar {
+  top: 15px !important;
+  left: calc(50% - 40px) !important;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._44b0c28be7879b7b-mask foreignObject {
+  border-radius: calc(var(--avatar-radius) * 2) !important;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._44b0c28be7879b7b-mask circle,
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._44b0c28be7879b7b-mask rect[fill=black] {
+  display: none;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._5be3ef42f92174b2-body {
+  position: static;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-container {
+  position: absolute;
+  top: 105px;
+  left: 20px;
+  width: calc(100% - 38px);
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  z-index: 2;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-usernameRow ._63ed30c16c7151f2-clickableUsername {
+  width: 100%;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-usernameRow ._63ed30c16c7151f2-clickableUsername h1 {
+  display: block;
+  text-align: center;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-usernameRow ._63ed30c16c7151f2-nicknameIcons {
+  display: none;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-usernameRow {
+  padding-bottom: 5px;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags {
+  margin-top: 5px;
+  justify-content: center;
+  flex-direction: row;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags ._63ed30c16c7151f2-dotSpacer {
+  order: -2;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags ._63ed30c16c7151f2-userTag {
+  order: -3;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags ._8061a5f9dbf6d829-container {
+  border: none;
+  background: transparent;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags ._63ed30c16c7151f2-guildTagContainer {
+  order: -1;
+}
+.ace4f5a2d9b7fc28-customizationSection .c0bea05627c5dc35-outer:not(.custom-user-profile-theme) .c0bea05627c5dc35-inner {
+  background: var(--background-tertiary);
+}
+
+._6a919231d4bdfd4f-bioTextArea {
+  border-radius: 8px;
 }
 
 .c7f964e7e0fc8b47-connection,

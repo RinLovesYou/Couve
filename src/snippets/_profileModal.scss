@@ -155,7 +155,8 @@
         }
       }
 
-      #{c(profile status container)} {
+      #{c(profile status container)}
+      #{c(profile status ring)} {
         position: fixed;
         top: unset;
         left: unset;
@@ -345,13 +346,13 @@
     .e766f2028d7616c7-empty {
       padding: 0;
 
-      // .e766f2028d7616c7-textContainer {
-      //   position: fixed;
-      //   left: unset;
-      //   width: calc(45% + 16px);
-      //   max-width: unset;
-      //   right: 0;
-      // }
+      .e766f2028d7616c7-textContainer {
+        position: fixed;
+        left: unset;
+        width: calc(45% + 16px);
+        max-width: unset;
+        right: 0;
+      }
     }
   }
 }

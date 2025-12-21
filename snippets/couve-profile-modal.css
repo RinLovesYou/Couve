@@ -122,7 +122,7 @@
 ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader ._75742e4cc9019aeb-avatar ._44b0c28be7879b7b-mask foreignObject {
   border-radius: calc(var(--avatar-radius) * 2.1) !important;
 }
-._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container {
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring {
   position: fixed;
   top: unset;
   left: unset;
@@ -135,17 +135,17 @@
   box-sizing: border-box;
   border-bottom-right-radius: 10px;
 }
-._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container > .ab86098b36386ff7-outer {
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring > .ab86098b36386ff7-outer {
   border: none;
   box-shadow: none;
   background: transparent;
   min-width: unset;
   max-width: unset;
 }
-._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container > .ab86098b36386ff7-outer .ab86098b36386ff7-inner {
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring > .ab86098b36386ff7-outer .ab86098b36386ff7-inner {
   background: transparent;
 }
-._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container > .ab86098b36386ff7-outer::before, ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container > .ab86098b36386ff7-outer::after {
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring > .ab86098b36386ff7-outer::before, ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader .ab86098b36386ff7-container .ab86098b36386ff7-ring > .ab86098b36386ff7-outer::after {
   display: none;
 }
 ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner ._9c3bea41fd465666-profileHeader > ._68edb95846a37624-mask {
@@ -304,4 +304,11 @@
 }
 ._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner .e766f2028d7616c7-empty {
   padding: 0;
+}
+._9c3bea41fd465666-root:is(._49fc18ba07c5025f-root, ._8a031a135bfcb9ba-container)._49fc18ba07c5025f-small .c0bea05627c5dc35-inner .e766f2028d7616c7-empty .e766f2028d7616c7-textContainer {
+  position: fixed;
+  left: unset;
+  width: calc(45% + 16px);
+  max-width: unset;
+  right: 0;
 }
