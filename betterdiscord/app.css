@@ -1791,7 +1791,8 @@
 ._59d0d7075b521375-layer .c0bea05627c5dc35-outer .da589062f0c96515-wrapper {
   flex-direction: column;
 }
-._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container,
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-ring {
   top: unset;
   right: unset;
   bottom: -4px;
@@ -1799,7 +1800,8 @@
   z-index: 2;
   border-radius: 0;
 }
-._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer,
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-ring > .ab86098b36386ff7-outer {
   border: none;
   box-shadow: none;
   background: transparent;
@@ -1807,17 +1809,22 @@
   max-width: unset;
   border-radius: 0;
 }
-._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer::before, ._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer::after {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer::before, ._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer::after,
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-ring > .ab86098b36386ff7-outer::before,
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-ring > .ab86098b36386ff7-outer::after {
   display: none;
 }
-._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner,
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-ring > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner {
   padding: 0;
   background: transparent;
 }
-._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content .cf48127484dbde85-text-sm\/normal {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content .cf48127484dbde85-text-sm\/normal,
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-ring > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content .cf48127484dbde85-text-sm\/normal {
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 270px;
+  max-width: 260px;
 }
 ._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-outer::before, ._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-outer::after {
   display: none;

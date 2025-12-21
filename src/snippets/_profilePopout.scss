@@ -35,7 +35,8 @@
     }
 
     // status
-    #{c(profile status container)} {
+    #{c(profile status container)},
+    #{c(profile status ring)} {
       top: unset;
       right: unset;
       bottom: -4px;
@@ -63,8 +64,9 @@
           & > #{c(profile status content)} {
             #{c(text text sm normal)} {
               white-space: nowrap;
+              overflow: hidden;
               text-overflow: ellipsis;
-              max-width: 270px;
+              max-width: 260px;
             }
           }
         }
