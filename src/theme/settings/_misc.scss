@@ -40,13 +40,13 @@
 }
 
 //activity status
-#{c(userSettings games addGamePopout)} {
-  background: var(--background-secondary);
+// #{c(userSettings games addGamePopout)} {
+//   background: var(--background-secondary);
 
-  #{c(settings divider)} {
-    display: none;
-  }
-}
+//   #{c(settings divider)} {
+//     display: none;
+//   }
+// }
 
 #{c(userSettings games gameNameInput)} {
   padding: 8px;

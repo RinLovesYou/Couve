@@ -174,7 +174,7 @@
   }
 
   // Action buttons
-  #{c(profile firendsMoreEditProfileButtons wrapper)} {
+  #{c(profile profileButtons wrapper)} {
     flex-direction: column;
   }
 
@@ -242,7 +242,7 @@
     }
 
     // View profile mask
-    #{c(profile avatar popover)} {
+    #{c(profile avatar overlay)} {
       top: 0;
       left: 0;
       border-radius: calc(var(--avatar-radius) * 2) !important;
@@ -265,12 +265,12 @@
     }
   }
 
-  #{c(profile body)} {
+  #{c(profile sidebar body)} {
     position: static;
   }
 
   &:has(#{c(profile status container)}) {
-    #{c(profile body)} {
+    #{c(profile sidebar body)} {
       padding-top: 52px;
     }
   }

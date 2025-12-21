@@ -4,7 +4,7 @@
   --badges-background: #00000000;
 }
 
-.layer__59d0d {
+._59d0d7075b521375-layer {
   #{c(profile outer)} {
     // Banner
     #{c(profile popout bitesize header)} {
@@ -30,13 +30,12 @@
     }
 
     // Action buttons
-    #{c(profile firendsMoreEditProfileButtons wrapper)} {
+    #{c(profile profileButtons wrapper)} {
       flex-direction: column;
     }
 
     // status
-    #{c(profile status container)},
-    #{c(profile status ring)} {
+    #{c(profile status container)} {
       top: unset;
       right: unset;
       bottom: -4px;
@@ -85,7 +84,7 @@
       left: calc(50% - 40px) !important;
 
       // View profile mask
-      #{c(profile avatar popover)} {
+      #{c(profile avatar overlay)} {
         top: 0;
         left: 0;
 
@@ -103,8 +102,7 @@
       }
     }
 
-    #{c(profile popout bitesize body)},
-    #{c(profile popout bitesize selfBody)} {
+    #{c(profile popout bitesize body)} {
       position: static;
     }
 

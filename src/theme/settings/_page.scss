@@ -68,19 +68,19 @@
         display: none;
       }
 
-      #{c(userSettings sidebar nitroLabel)} {
-        flex-direction: row-reverse;
-        justify-content: flex-end;
+      // #{c(userSettings sidebar nitroLabel)} {
+      //   flex-direction: row-reverse;
+      //   justify-content: flex-end;
 
-        svg {
-          margin-right: 8px;
-        }
+      //   svg {
+      //     margin-right: 8px;
+      //   }
 
-        & + #{c(userSettings sidebar nitroBackgroundSelected)} {
-          background-color: var(--background-modifier-selected);
-          border-radius: 0;
-        }
-      }
+      //   & + #{c(userSettings sidebar nitroBackgroundSelected)} {
+      //     background-color: var(--background-modifier-selected);
+      //     border-radius: 0;
+      //   }
+      // }
     }
   }
 

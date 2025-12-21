@@ -2,29 +2,28 @@
   --badges-background: #00000000;
 }
 
-.layer__59d0d .outer_c0bea0 .header__5be3e {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._5be3ef42f92174b2-header {
   min-height: 220px !important;
 }
-.layer__59d0d .outer_c0bea0 .header__5be3e > .mask__68edb {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._5be3ef42f92174b2-header > ._68edb95846a37624-mask {
   overflow: visible;
   min-height: unset !important;
   contain: unset;
 }
-.layer__59d0d .outer_c0bea0 .header__5be3e > .mask__68edb .banner__68edb {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._5be3ef42f92174b2-header > ._68edb95846a37624-mask ._68edb95846a37624-banner {
   position: absolute;
   height: 200px !important;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
   mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 50% 100%, 0 calc(100% - 25px));
 }
-.layer__59d0d .outer_c0bea0 .header__5be3e > .mask__68edb > foreignObject {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._5be3ef42f92174b2-header > ._68edb95846a37624-mask > foreignObject {
   mask: none;
 }
-.layer__59d0d .outer_c0bea0 .wrapper_cdf8a9 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .da589062f0c96515-wrapper {
   flex-direction: column;
 }
-.layer__59d0d .outer_c0bea0 .container_ab8609,
-.layer__59d0d .outer_c0bea0 .ring_ab8609 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container {
   top: unset;
   right: unset;
   bottom: -4px;
@@ -32,8 +31,7 @@
   z-index: 2;
   border-radius: 0;
 }
-.layer__59d0d .outer_c0bea0 .container_ab8609 > .outer_ab8609,
-.layer__59d0d .outer_c0bea0 .ring_ab8609 > .outer_ab8609 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer {
   border: none;
   box-shadow: none;
   background: transparent;
@@ -41,45 +39,40 @@
   max-width: unset;
   border-radius: 0;
 }
-.layer__59d0d .outer_c0bea0 .container_ab8609 > .outer_ab8609::before, .layer__59d0d .outer_c0bea0 .container_ab8609 > .outer_ab8609::after,
-.layer__59d0d .outer_c0bea0 .ring_ab8609 > .outer_ab8609::before,
-.layer__59d0d .outer_c0bea0 .ring_ab8609 > .outer_ab8609::after {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer::before, ._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer::after {
   display: none;
 }
-.layer__59d0d .outer_c0bea0 .container_ab8609 > .outer_ab8609 > .inner_ab8609,
-.layer__59d0d .outer_c0bea0 .ring_ab8609 > .outer_ab8609 > .inner_ab8609 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner {
   padding: 0;
   background: transparent;
 }
-.layer__59d0d .outer_c0bea0 .container_ab8609 > .outer_ab8609 > .inner_ab8609 > .content_ab8609 .text-sm\/normal_cf4812,
-.layer__59d0d .outer_c0bea0 .ring_ab8609 > .outer_ab8609 > .inner_ab8609 > .content_ab8609 .text-sm\/normal_cf4812 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-container > .ab86098b36386ff7-outer > .ab86098b36386ff7-inner > .ab86098b36386ff7-content .cf48127484dbde85-text-sm\/normal {
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 270px;
 }
-.layer__59d0d .outer_c0bea0 .outer_ab8609::before, .layer__59d0d .outer_c0bea0 .outer_ab8609::after {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-outer::before, ._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ab86098b36386ff7-outer::after {
   display: none;
 }
-.layer__59d0d .outer_c0bea0 .avatar__75742 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._75742e4cc9019aeb-avatar {
   top: 15px !important;
   left: calc(50% - 40px) !important;
 }
-.layer__59d0d .outer_c0bea0 .avatar__75742 .avatarPopover__2d0ab {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._75742e4cc9019aeb-avatar ._75742e4cc9019aeb-overlay {
   top: 0;
   left: 0;
 }
-.layer__59d0d .outer_c0bea0 .avatar__75742 .avatarPopover__2d0ab foreignObject {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._75742e4cc9019aeb-avatar ._75742e4cc9019aeb-overlay foreignObject {
   mask: none !important;
 }
-.layer__59d0d .outer_c0bea0 .mask__44b0c circle,
-.layer__59d0d .outer_c0bea0 .mask__44b0c rect[fill=black] {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._44b0c28be7879b7b-mask circle,
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._44b0c28be7879b7b-mask rect[fill=black] {
   display: none;
 }
-.layer__59d0d .outer_c0bea0 .body__5be3e,
-.layer__59d0d .outer_c0bea0 .body_ce8328 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._5be3ef42f92174b2-body {
   position: static;
 }
-.layer__59d0d .outer_c0bea0 .container__63ed3 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-container {
   position: absolute;
   top: 105px;
   left: 0;
@@ -89,36 +82,36 @@
   justify-content: center;
   justify-items: center;
 }
-.layer__59d0d .outer_c0bea0 .usernameRow__63ed3 .clickableUsername__63ed3 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-usernameRow ._63ed30c16c7151f2-clickableUsername {
   width: 100%;
 }
-.layer__59d0d .outer_c0bea0 .usernameRow__63ed3 .clickableUsername__63ed3 h1 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-usernameRow ._63ed30c16c7151f2-clickableUsername h1 {
   display: block;
   text-align: center;
 }
-.layer__59d0d .outer_c0bea0 .usernameRow__63ed3 .nicknameIcons__63ed3 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-usernameRow ._63ed30c16c7151f2-nicknameIcons {
   display: none;
 }
-.layer__59d0d .outer_c0bea0 .usernameRow__63ed3 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-usernameRow {
   gap: 0;
   flex-direction: column;
 }
-.layer__59d0d .outer_c0bea0 .tags__63ed3 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags {
   margin-top: 2.5px;
   justify-content: center;
   flex-direction: row;
 }
-.layer__59d0d .outer_c0bea0 .tags__63ed3 .dotSpacer__63ed3 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags ._63ed30c16c7151f2-dotSpacer {
   order: -2;
 }
-.layer__59d0d .outer_c0bea0 .tags__63ed3 .clickableUsername__63ed3 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags ._63ed30c16c7151f2-clickableUsername {
   order: -3;
 }
-.layer__59d0d .outer_c0bea0 .tags__63ed3 .container__8061a {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags ._8061a5f9dbf6d829-container {
   border: none;
   background: var(--badges-background);
   border-radius: 8px;
 }
-.layer__59d0d .outer_c0bea0 .tags__63ed3 .guildTagContainer__63ed3 {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-tags ._63ed30c16c7151f2-guildTagContainer {
   order: -1;
 }

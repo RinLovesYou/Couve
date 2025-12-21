@@ -135,15 +135,15 @@
 }
 
 //speaking rings
-#{c(call videoSpeaking)},
-#{c(call videoBorder)}#{c(call videoSpeaking)},
-#{c(call avatarBorder)}#{c(call avatarSpeaking)},
-#{c(avatar speaking)},
-#{c(sidebar server channels voice avatarSpeaking)} {
-  box-shadow:
-    inset 0 0 0 2.5px var(--main-color),
-    inset 0 0 0 4.5px var(--background-secondary);
-}
+// #{c(call videoSpeaking)},
+// #{c(call videoBorder)}#{c(call videoSpeaking)},
+// #{c(call avatarBorder)}#{c(call avatarSpeaking)},
+// #{c(avatar speaking)},
+// #{c(sidebar server channels voice avatarSpeaking)} {
+//   box-shadow:
+//     inset 0 0 0 2.5px var(--main-color),
+//     inset 0 0 0 4.5px var(--background-secondary);
+// }
 
 #{c(call quickSelectPopoutOption)} {
   background: var(--background-primary);

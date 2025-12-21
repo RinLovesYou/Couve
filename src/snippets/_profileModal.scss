@@ -39,10 +39,10 @@
     }
   }
 
-  #{c(profile inner)}:has(.tabBarItem__37bfc:focus, #{c(tab top)}:focus, .tabBarPanel__37bfc:focus-within, .tabBarPanel__37bfc:focus) {
+  #{c(profile inner)}:has(._37bfcf3d457db7a9-tabBarItem:focus, #{c(tab top)}:focus, ._37bfcf3d457db7a9-tabBarPanel:focus-within, ._37bfcf3d457db7a9-tabBarPanel:focus) {
     #{c(profile modal profile)} {
       #{c(chat markup)},
-      .section_bf424d {
+      .bf424dc3dc4c8775-section {
         visibility: hidden !important;
         pointer-events: none !important;
       }
@@ -52,7 +52,7 @@
       }
     }
 
-    .tabBarPanel__37bfc {
+    ._37bfcf3d457db7a9-tabBarPanel {
       display: flex !important;
       opacity: 1;
       pointer-events: all !important;
@@ -72,7 +72,7 @@
     }
   }
 
-  .tabBarPanel__37bfc {
+  ._37bfcf3d457db7a9-tabBarPanel {
     opacity: 0;
     z-index: 999;
     pointer-events: none !important;
@@ -90,7 +90,7 @@
     cursor: pointer;
   }
 
-  .tabBarItem__37bfc:hover {
+  ._37bfcf3d457db7a9-tabBarItem:hover {
     color: var(--text-primary) !important;
     cursor: pointer;
 
@@ -99,7 +99,7 @@
     }
   }
 
-  .tabListScroller__37bfc {
+  ._37bfcf3d457db7a9-tabListScroller {
     position: fixed;
     bottom: 35px;
     left: 20px;
@@ -261,10 +261,10 @@
 
     div[id='mutual_friends-tab'],
     div[id='mutual_guilds-tab'] {
-      .empty_e766f2 {
+      .e766f2028d7616c7-empty {
         padding: 0;
 
-        .textContainer_e766f2 {
+        .e766f2028d7616c7-textContainer {
           position: fixed;
           left: unset;
           width: calc(45% + 16px);
@@ -331,21 +331,21 @@
       padding-left: 12px;
       padding-right: 12px;
 
-      .tabPanelScroller__37bfc {
+      ._37bfcf3d457db7a9-tabPanelScroller {
         &::-webkit-scrollbar {
           display: none;
         }
 
-        .coverList__9a5c3 {
+        ._9a5c352fc10aea40-coverList {
           grid-template-columns: repeat(3, 88px);
         }
       }
     }
 
-    .empty_e766f2 {
+    .e766f2028d7616c7-empty {
       padding: 0;
 
-      // .textContainer_e766f2 {
+      // .e766f2028d7616c7-textContainer {
       //   position: fixed;
       //   left: unset;
       //   width: calc(45% + 16px);
