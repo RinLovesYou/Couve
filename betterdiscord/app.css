@@ -1863,7 +1863,8 @@
 ._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._44b0c28be7879b7b-mask rect[fill=black] {
   display: none;
 }
-._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._5be3ef42f92174b2-body {
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._5be3ef42f92174b2-body,
+._59d0d7075b521375-layer .c0bea05627c5dc35-outer .ce832809562bf737-body {
   position: static;
 }
 ._59d0d7075b521375-layer .c0bea05627c5dc35-outer ._63ed30c16c7151f2-container {
